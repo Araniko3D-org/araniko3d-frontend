@@ -1,3 +1,7 @@
+/* Parent Container */
+.avatar-container {
+  position: relative; /* Positioning */
+}
 
  /* Initials Styles */
  .initials {
@@ -25,9 +29,7 @@
   /* Common Avatar Styles */
 .custom-avatar {
     border-radius: 50%;
-    overflow: hidden;
     background: linear-gradient(180deg, #01242F 0%, #246A81 100%);
-    overflow: hidden;
     position: relative;
   }
   
@@ -51,7 +53,37 @@
     height: 50px;
   }
 
-  /* Large Avatars Overlapping to the Right */
-  .custom-avatar.large + .custom-avatar.large {
-    margin-left: -px; 
+  /* Avatar List Styles */
+  .avatar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   }
+
+  /* Large Avatars Overlapping to the Right
+  .custom-avatar.large + .custom-avatar.large {
+    margin-left: -20px;
+  }
+
+  /* Hover effect to reduce overlap on hover */
+/* .avatar-list:hover .custom-avatar.large + .custom-avatar.large {
+  margin-left: -10px; 
+} */ 
+
+
+li {
+  display: inline-block;
+  position: relative;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+li:nth-child(1)
+li:nth-child(2) 
+li:nth-child(3) 
+li:nth-child(4) 
+li:nth-child(n+2) { margin-left: -50px; }
+
+.avatar-list:hover li:nth-child(n+2) {
+   margin-left: -20px;
+}
