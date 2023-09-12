@@ -1,10 +1,13 @@
 import React from "react";
 import "./App.css";
 import Avatar from "./components/Avatars/Avatar.js";
+import Navbar from "./components/Layout/Navbar.js";
 
 function App() {
   return (
+
     <div className="App">
+      <Navbar/>
       <h1>Avatar Testing</h1>
 
       {/* Render avatars with different sizes and images */}
