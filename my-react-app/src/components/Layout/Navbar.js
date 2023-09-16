@@ -1,5 +1,6 @@
 import React from 'react';
-import './Navbar.css'; 
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 import Button from '../Buttons/Button';
 
 const Navbar = () => {
@@ -7,22 +8,20 @@ const Navbar = () => {
     <header>
       <nav className="navbar">
         <ul className="nav-links">
-            <div className="logo">
-              <img src="your-logo.png" alt="Logo" />
-            </div>
+          <div className="logo">
+            <img src="your-logo.png" alt="Logo" />
+          </div>
 
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Blogs</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/services">Services</Link></li>
+          <li><Link to="/works">Works</Link></li>
+          <li><Link to="/blogs">Blogs</Link></li>
 
-            <div className="button">
-            <Button mode="hover" size="large" >Schedule a demo</Button>
-           </div>
+          <div className="button">
+            <Button mode="hover" size="large">Schedule a demo</Button>
+          </div>
         </ul>
-        
       </nav>
     </header>
   );

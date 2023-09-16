@@ -1,13 +1,17 @@
 /* Navbar.css */
 .navbar {
-    width: 1137px;
-    height: 51.84px;
-    left: 392px;
-    padding: 2px 11px 2px 22px;
-    border-radius: 65px;
-    background: #02141E;
+  position: fixed;
+  left: 50%; 
+  transform: translateX(-50%); 
+  display: flex;
+  width: 1137px;
+  height: 51.84px;
+  justify-content: center;
+  padding: 2px 11px 2px 22px;
+  border-radius: 65px;
+  background: #02141E;
+}
 
-  }
 
   .nav-links {
     list-style: none;

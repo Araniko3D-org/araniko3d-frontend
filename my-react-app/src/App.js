@@ -1,35 +1,25 @@
 import React from "react";
 import "./App.css";
-import Avatar from "./components/Avatars/Avatar.js";
-import Navbar from "./components/Layout/Navbar.js";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Layout/Navbar"; 
+import Home from "./pages/Home"; 
+import About from "./pages/About"; 
+import Works from "./pages/Works"; 
+import Blogs from "./pages/Blogs"; 
+import Services from "./pages/Services"; 
 
 function App() {
   return (
-
-    <div className="App">
-      <Navbar/>
-      <h1>Avatar Testing</h1>
-
-      {/* Render avatars with different sizes and images */}
-      <Avatar src="avatar1.jpg" initials="AB" mode="small" size="small" />
-      <Avatar src="avatar2.jpg" initials="CD" mode="default" size="medium" />
-
-      {/* Render multiple avatars with overlapping profiles */}
-      <ul className="avatar-list">
-        <li>
-          <Avatar src="my-react-app/public/images/avatar.jpg" initials="EF" mode="large" size="large" />
-        </li>
-        <li>
-          <Avatar src="avatar4.jpg" initials="GH" mode="large" size="large" />
-        </li>
-        <li>
-          <Avatar src="avatar4.jpg" initials="GH" mode="large" size="large" />
-        </li>
-        <li>
-          <Avatar src="avatar4.jpg" initials="GH" mode="large" size="large" />
-        </li>
-      </ul>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/works" element={<Works />} />
+        <Route path="/blogs" element={<Blogs />} />
+      </Routes>
+    </Router>
   );
 }
 
