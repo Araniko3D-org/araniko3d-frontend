@@ -21,6 +21,16 @@ const Works = () => {
         </div>
 
         {/* Repeat the frame for more images */}
+        <div className="frame">
+          <div className="image">
+          <img src="/images/temple.jpg" alt="Work 1" />
+          </div>
+          <div className="text-overlay">
+          <h4>Name of heritage</h4>
+           <h5>Method used</h5>
+          </div>
+        </div>
+        
          <div className="frame">
           <div className="image">
           <img src="/images/temple.jpg" alt="Work 1" />
