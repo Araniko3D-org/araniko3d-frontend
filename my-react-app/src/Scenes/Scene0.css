@@ -1,0 +1,72 @@
+.scene{
+  width: 1920px;
+  height: 980px;
+  overflow: hidden;
+}
+/* Background */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place it behind other elements */
+    background-image: url(./images/Rectangle33.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  /* Sky */
+  .sky {
+    position: absolute;
+    width: 1252.07px;
+    height: 229px;
+    top: 305px;
+    left: 295.08px;
+  }
+  
+  /* Forest */
+  .forest {
+    position: absolute;
+    width: 2270.57px;
+    height: 576.95px;
+    top: 400px;
+    left: -204.03px;
+  }
+  
+  /* Sun */
+  .Rectangle35 {
+    position: absolute;
+    width: 184px;
+    height: 184px;
+    top: 437px;
+    left: 900px;
+  }
+  
+  /* Vector */
+  .Vector31 {
+    position: absolute;
+    width: 1920px;
+    height: 393px;
+    top: 393px;
+    left: 100.03px;
+  }
+  
+  /* Mountains */
+  .mountains {
+    position: absolute;
+    width: 2280.8px;
+    height: 528.85px;
+    top: 498.15px;
+    left: -100.83px;
+  }
+  
+  /* Hills */
+  .hill {
+    position: absolute;
+    width: 2134px;
+    height: 593px;
+    top: 420px;
+    left: -104px;
+  }

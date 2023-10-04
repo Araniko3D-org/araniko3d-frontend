@@ -1,26 +1,17 @@
 import React from "react";
-import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Layout/Navbar"; 
-import Home from "./pages/Home"; 
-import About from "./pages/About"; 
-import Works from "./pages/Works"; 
-import Blogs from "./pages/Blogs"; 
-import Services from "./pages/Services"; 
-
-function App() {
+// import Header from "./content/header.js";
+// import Main from "./content/main.js";
+import Scene0 from "./Scenes/Scene0.js";
+import Scene1 from "./Scenes/Scene1.js";
+const App = () => {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/works" element={<Works />} />
-        <Route path="/blogs" element={<Blogs />} />
-      </Routes>
-    </Router>
-  );
+    <div className ="App">
+      <Scene1/>
+      {/* <Header />
+      <Main /> */}
+    </div>
+  )
 }
 
 export default App;
+
