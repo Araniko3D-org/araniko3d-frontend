@@ -1,5 +1,5 @@
 import React from 'react';
-import './Scene1.css'; // Make sure to use the correct CSS file path
+import './Scene1.css'; 
 import skyImage2 from './images/sky.png';
 import forestImage2 from './images/forest.png';
 import SunImage2 from './images/Rectangle35.png';
