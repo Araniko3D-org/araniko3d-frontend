@@ -80,7 +80,7 @@ h2 {
     display: flex;
     justify-content: center;
     padding-top: 15px;
-    font-size: 48px;
+    font-size: 45px;
     color:#fff;
 }
 
@@ -89,9 +89,12 @@ span {
 }
 
 p {
+    display: flex;
     align-items: center;
-    font-size: 24px;
+    font-size: 20px;
     text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
     color:#fff;
 }
 
