@@ -1,6 +1,7 @@
 const works = () => {
     return (
-      <div id='works' className="section">
+      <div className="workpage">
+      <div id='works' className="works-section">
         {/* Display "Our Work" at the top */}
         <h1>OUR WORKS</h1>
   
@@ -39,6 +40,7 @@ const works = () => {
           </div>
           {/* Add more frames as needed */}
         </div>
+      </div>
       </div>
     );
   };

@@ -1,6 +1,6 @@
 const services = () => {
     return (
-      <div id='services' className='service-container'>
+      <div id='services' className='service-section'>
         <h1>SERVICES</h1>
         <div className='content'>
         <h2>Preserving The&nbsp; <span>Essence</span></h2>

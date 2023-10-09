@@ -9,7 +9,7 @@ import hillImage2 from './images/hills.png';
 const Scene1 = () => {
   return (
     <div className='scene1'>
-      <div className='frame'>
+      <div className='rectangular_frame'>
         <div className='circle'>
           <img src={skyImage2} alt='Sky2' className='sky2' />
           <img src={SunImage2} alt='Sun' className='sun2' />
