@@ -7,12 +7,12 @@
   transform: translateX(-50%);
   width: 100%;
   display: flex;
-  max-width: 700px;
-  height: 40px;
+  max-width: 900px;
+  height: 35px;
   justify-content: space-between;
   padding: 2px 11px 2px 22px;
   border-radius: 65px;
-  background: #02141E;
+  background: #FFFFFF4D;
   z-index: 100;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .nav-links li {
-  margin-right: 30px;
+  margin-right: 40px;
 }
 
 .nav-links a {
@@ -106,7 +106,7 @@
 }
 .frame-container {
   position: relative;
-  top: 140px;
+  top: 50px;
   display: flex;
   flex-wrap: wrap;
   gap: 100px;
@@ -148,6 +148,79 @@
 /* .image-section:hover .text-overlay {
     opacity: 0;
 } */
+
+/* How it works  */
+
+
+.Works-section{
+    padding: 20px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%; 
+    overflow: hidden; 
+    flex-direction: column;
+}
+
+.slide-icon {
+  position: absolute;
+  top: 120px;
+  width: 1%;
+  right: 400px;
+}
+
+.HowItWorks {
+  position: absolute;
+  top: 90px;
+  font-size:14px;
+  text-transform: uppercase;
+}
+
+.ItWorks {
+  position: absolute;
+  top: 120px;
+  font-size: 24px;
+}
+.ItWorks span{
+  position: absolute;
+  display: contents;
+  color: #fff;
+  font-size: 24px;
+  left: 90px;
+  font-weight: bold;
+}
+
+.curved-rectangles {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.curved-rectangle {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  max-height: 150px;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.curved-rectangle img {
+  max-width: 100%;
+}
+
+.curved-rectangle h4 {
+  color: #fff;
+  font-size: 18px;
+  margin-top: -30px;
+}
+
 
 /* WebsiteStats css */
 .website-stats-container {
@@ -353,20 +426,20 @@
   }
   .nav-arrow{
     position: absolute;
-    top: 2700px;
+    top: 3500px;
     width: 1%;
     right: 400px;
   }
   
   .OurExperts {
     position: absolute;
-    top: 2650px;
+    top: 3480px;
     font-size: 14px;
     text-transform: uppercase;
 }
   .OExperts {
     position: absolute;
-    top: 2680px;
+    top: 3500px;
     font-size: 24px;
   }
   .OExperts span{
@@ -502,10 +575,10 @@
   position: relative;
   background: rgba(0, 0, 0, 0.8);
   padding: 20px;
-  width: 700px;
+  width: 750px;
   border-radius: 50px;
   z-index: 2;
-  top: 250px;
+  top: 200px;
 }
 .footer-upper {
   position: relative;;
@@ -566,7 +639,7 @@ ul {
   position: absolute;
   display: flex;
   margin-top: 10px;
-  left: 570px;
+  left: 610px;
   top: 140px;
   width: 150px;
   background: rgba(0, 0, 0, 0.8);;

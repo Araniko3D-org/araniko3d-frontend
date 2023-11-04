@@ -36,6 +36,9 @@ const Header = () => {
             <a href="#works" onClick={() => scrollToSection('works')} className={activeLink === 'works' ? 'active' : ''}>Works</a>
           </li>
           <li>
+            <a href="#how_it_works" onClick={() => scrollToSection('how_it_works')} className={activeLink === 'how_it_works' ? 'active' : ''}>How It Works</a>
+          </li>
+          <li>
             <a href="#blogs" onClick={() => scrollToSection('blogs')} className={activeLink === 'blogs' ? 'active' : ''}>Blogs</a>
           </li>
           <li>
