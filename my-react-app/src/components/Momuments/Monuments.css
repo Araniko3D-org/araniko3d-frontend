@@ -1,0 +1,36 @@
+.container {
+  border-width: 1px;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  cursor: pointer;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  width: 300px;
+  height: 400px !important;
+  border-radius: 20px;
+}
+.container:hover {
+  --transform-scale-x: 1.05;
+  --transform-scale-y: 1.05;
+}
+
+.image {
+  /* position: relative; */
+  object-fit: cover !important;
+  width: 100% !important;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  height: 200px !important;
+  /* border-radius: 20px; */
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+.description {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}

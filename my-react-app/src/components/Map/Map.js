@@ -7,6 +7,8 @@ import L from "leaflet"; // Import the 'L' object from the 'leaflet' package
 import Services from "../../content/services";
 import { locationData } from "../../data/locations";
 
+import { Monument } from "../Momuments/Monuments";
+
 console.log(locationData);
 // import Services from "./services";
 
@@ -14,7 +16,7 @@ export const Map = () => {
   const markers = [
     {
       geocode: [27.6735697, 85.3223784],
-      popUp: <Services />,
+      popUp: <Monument data={locationData[0]} />,
       // popUp: "Krishna Mandir",
       iconUrl: "url-to-marker-icon-1.png", // Replace with the actual URL of your marker icon
     },
