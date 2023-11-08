@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "react-image-file-resizer": "^0.4.8"
+    "leaflet": "^1.9.4",
+    "react-image-file-resizer": "^0.4.8",
+    "react-leaflet": "^4.2.1",
+    "react-leaflet-cluster": "^2.1.0",
+    "react-router-dom": "^6.18.0"
   }
 }

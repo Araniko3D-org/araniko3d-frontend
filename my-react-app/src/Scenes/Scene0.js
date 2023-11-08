@@ -7,8 +7,9 @@ import Land from "./images/land.png";
 import Temple from "./images/temple.png";
 import hillImage from "./images/hill.png";
 import Buttons from '../components/Buttons/Button';
-import Wave from './images/wave.png';
-// import { Link } from 'react-router-dom';
+import Wave from './images/wave.png'
+
+import { Link } from 'react-router-dom';
 
 const Scene = () => {
   return (
@@ -29,11 +30,11 @@ const Scene = () => {
         Embark on a Virtual Voyage: Unveiling the Beauty of Nepal!
         </h1>
         <div className="get-started">
-        {/* <Link to="/map"> */}
-          <Buttons mode="hover" size="small" >
-           Get Started
+        <Link to="/map">
+          <Buttons mode="hover" size="small">
+            Get Started
           </Buttons>
-        {/* </Link> */}
+        </Link>
         </div>
       </div>
     </div>
