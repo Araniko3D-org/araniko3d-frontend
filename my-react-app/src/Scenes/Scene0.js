@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 
 const Scene = () => {
   return (
-    <div className='scene'>
+    <div id='scene' className='scene'>
       <div className="background-image">
         {/* Static Background */}
       </div>
@@ -31,7 +31,7 @@ const Scene = () => {
         </h1>
         <div className="get-started">
         <Link to="/map">
-          <Buttons mode="hover" size="small">
+          <Buttons mode="hover" size="small" className="get-started-button">
             Get Started
           </Buttons>
         </Link>

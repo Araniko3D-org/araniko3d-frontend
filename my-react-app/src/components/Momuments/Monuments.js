@@ -15,8 +15,8 @@ export const Monument = ({ data }) => {
       <div className="monument-description">
         <p>
           <span>Description</span>:{" "}
-          {data.description.split(" ").slice(0, 40).join(" ")}
-          {data.description.split(" ").length > 40 ? "..." : ""}
+          {data.description.split(" ").slice(0, 25).join(" ")}
+          {data.description.split(" ").length > 25 ? "..." : ""}
         </p>
 
         <a href={data.mapUrl} >Google map</a>

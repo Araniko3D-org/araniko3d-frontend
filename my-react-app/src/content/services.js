@@ -20,7 +20,7 @@ const services = () => {
               <img src={BhaktapurImage} alt="Work 1" />
             </div>
             <div className="text-overlay">
-              <frameh4>Bhaktapur Durbar Square</frameh4>
+              <h4 className="frameh4">Bhaktapur Durbar Square</h4>
               <h5>Virtual Tourism</h5>
             </div>
           </div>
@@ -31,7 +31,7 @@ const services = () => {
               <img src={NyatapolImage} alt="Work 1" />
             </div>
             <div className="text-overlay">
-              <frameh4>Nyatapol</frameh4>
+              <h4 className="frameh4">Nyatapol</h4>
               <h5>360 degree views</h5>
             </div>
           </div>
@@ -41,7 +41,7 @@ const services = () => {
               <img src={CarpetImage} alt="Work 1" />
             </div>
             <div className="text-overlay">
-              <frameh4>Carpet Exhibition</frameh4>
+              <h4 className="frameh4">Carpet Exhibition</h4>
               <h5>Agumentation</h5>
             </div>
           </div>
