@@ -1,4 +1,6 @@
-import templeImage from "./images/temple.png";
+import BhaktapurImage from "./images/Bhaktapur.png";
+import NyatapolImage from "./images/Nyatapol.png";
+import CarpetImage from "./images/Cartpet.png";
 import slideIcon from "./images/seemore.png";
 const services = () => {
     return (
@@ -14,33 +16,33 @@ const services = () => {
         <div className="frame-container">
           {/* Rectangle with text overlapping at the bottom */}
           <div className="frame">
-            <div className="image">
-              <img src={templeImage} alt="Work 1" />
+            <div className="service-image">
+              <img src={BhaktapurImage} alt="Work 1" />
             </div>
             <div className="text-overlay">
-              <h4>Name of heritage</h4>
-              <h5>Method used</h5>
+              <frameh4>Bhaktapur Durbar Square</frameh4>
+              <h5>Virtual Tourism</h5>
             </div>
           </div>
   
           {/* Repeat the frame for more images */}
           <div className="frame">
-            <div className="image">
-              <img src={templeImage} alt="Work 1" />
+            <div className="service-image">
+              <img src={NyatapolImage} alt="Work 1" />
             </div>
             <div className="text-overlay">
-              <h4>Name of heritage</h4>
-              <h5>Method used</h5>
+              <frameh4>Nyatapol</frameh4>
+              <h5>360 degree views</h5>
             </div>
           </div>
           
           <div className="frame">
-            <div className="image">
-              <img src={templeImage} alt="Work 1" />
+            <div className="service-image">
+              <img src={CarpetImage} alt="Work 1" />
             </div>
             <div className="text-overlay">
-              <h4>Name of heritage</h4>
-              <h5>Method used</h5>
+              <frameh4>Carpet Exhibition</frameh4>
+              <h5>Agumentation</h5>
             </div>
           </div>
           {/* Add more frames as needed */}

@@ -1,4 +1,10 @@
 .monument-container {
+  background: linear-gradient(
+    360deg,
+    #aca777 -3.47%,
+    #a8534e 63.79%,
+    #250bc6 118.52%
+  );
   border-width: 1px;
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -10,27 +16,33 @@
   height: 400px !important;
   border-radius: 20px;
 }
-.monuments-container:hover:hover {
+.monument-container:hover:hover {
   --transform-scale-x: 1.05;
   --transform-scale-y: 1.05;
 }
-
-.image {
+.title{
+  text-align:center;
+  font-size: 13px;
+}
+.monument-image {
   /* position: relative; */
   object-fit: cover !important;
   width: 100% !important;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
-  height: 200px !important;
+  height: 240px !important;
   /* border-radius: 20px; */
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
 }
 
-.monuments-description {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+.monument-description {
+  padding-top: 0rem;
+  padding-bottom: 0.50rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+.monument-description span{
+  font-weight: bold;
 }
