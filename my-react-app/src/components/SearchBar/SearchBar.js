@@ -1,13 +1,13 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom'; 
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
-import './SearchBar.css';
+import "./SearchBar.css";
 
 export const SearchBar = () => {
   const navigate = useNavigate();
 
   const navigateToDescriptionPage = () => {
-    navigate('/description-page'); 
+    navigate("/description-page");
   };
 
   return (
@@ -28,7 +28,10 @@ export const SearchBar = () => {
             do eiusmod tempor <br /> incididunt ut labore et dolore magna...
           </p>
           <div className="flex m-0 p-0 right gap-2">
-            <div className="flex m-0 p-0 gap-2" onClick={navigateToDescriptionPage}>
+            <div
+              className="flex m-0 p-0 gap-2"
+              onClick={navigateToDescriptionPage}
+            >
               <img src="info.svg" alt="" className="m-0 p-0" />
               <p className="m-0 p-0"> Details</p>
             </div>
