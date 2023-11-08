@@ -1,4 +1,4 @@
-.monuments-container {
+.monument-container {
   border-width: 1px;
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -15,7 +15,7 @@
   --transform-scale-y: 1.05;
 }
 
-.monuments-image {
+.image {
   /* position: relative; */
   object-fit: cover !important;
   width: 100% !important;

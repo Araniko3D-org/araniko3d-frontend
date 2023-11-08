@@ -22,17 +22,17 @@ export const Map = () => {
     },
     {
       geocode: [27.6794234, 85.2739021],
-      popUp: "Bhag bhairav",
+      popUp: <Monument data={locationData[1]} />,
       iconUrl: "Krishna", // Replace with the actual URL of your marker icon
     },
     {
       geocode: [27.680058, 85.272057],
-      popUp: "Uma Maheshori",
+      popUp: <Monument data={locationData[2]} />,
       iconUrl: "Bhag bhairav", // Replace with the actual URL of your marker icon
     },
     {
       geocode: [27.6752289, 85.3219734],
-      popUp: "Golden Temple",
+      popUp: <Monument data={locationData[3]} />,
       iconUrl: "url-to-marker-icon-4.png", // Replace with the actual URL of your marker icon
     },
   ];

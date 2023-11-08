@@ -75,10 +75,10 @@ export const locationData = [
       the cultural riches of Nepal, the Uma Maheshwor Temple in Kirtipur is a place where you can 
       connect with the divine and appreciate the artistic heritage of the region.`,
     images: [
-      "uma_maheshwor_1.jpg",
-      "uma_maheshwor_2.jpg",
-      "uma_maheshwor_3.jpg",
-      "uma_maheshwor_4.jpg",
+      "uma_maheshwor_1.jpeg",
+      "uma_maheshwor_2.jpeg",
+      "uma_maheshwor_3.jpeg",
+      "uma_maheshwor_4.jpeg",
     ],
     mapUrl: "https://maps.google.com/?q=27.680058, 85.272057",
     latitude: 27.680058,
@@ -102,10 +102,8 @@ export const locationData = [
       enrichment, the Hiranya Varna Mahavihar of Lalitpur is a place where you can immerse yourself in the 
       beauty of Buddhist culture and spirituality.`,
     images: [
-      "hiranya_varna_mahavihar_1.jpg",
-      "hiranya_varna_mahavihar_2.jpg",
-      "hiranya_varna_mahavihar_3.jpg",
-      "hiranya_varna_mahavihar_4.jpg",
+      "hiranya_varna_mahavihar_1.jpeg",
+      "hiranya_varna_mahavihar_2.jpeg",
     ],
     mapUrl: "https://maps.google.com/?q=27.6735697, 85.3223784",
     latitude: 27.6735697,
