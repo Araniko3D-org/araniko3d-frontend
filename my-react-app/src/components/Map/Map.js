@@ -4,12 +4,18 @@ import MarkerClusterGroup from "react-leaflet-cluster";
 import "leaflet/dist/leaflet.css"; // Import Leaflet CSS
 import "./Map.css"; // Import your custom CSS
 import L from "leaflet"; // Import the 'L' object from the 'leaflet' package
+import Services from "../../content/services";
+import { locationData } from "../../data/locations";
+
+console.log(locationData);
+// import Services from "./services";
 
 export const Map = () => {
   const markers = [
     {
       geocode: [27.6735697, 85.3223784],
-      popUp: "Krishna Mandir",
+      popUp: <Services />,
+      // popUp: "Krishna Mandir",
       iconUrl: "url-to-marker-icon-1.png", // Replace with the actual URL of your marker icon
     },
     {

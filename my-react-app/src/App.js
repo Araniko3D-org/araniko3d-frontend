@@ -1,11 +1,11 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import Header from './content/header.js';
-import Main from './content/main.js';
-import MapPage from './components/MapPage.js';
-import DescriptionPage from './components/DescriptionPage.js';
-import './App.css';
+import Header from "./content/header.js";
+import Main from "./content/main.js";
+import MapPage from "./components/MapPage.js";
+import DescriptionPage from "./components/DescriptionPage.js";
+import "./App.css";
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
             path="/"
             element={
               <>
-                <Header />
+                <Header color={""} />
                 <Main />
               </>
             }
@@ -25,7 +25,7 @@ const App = () => {
             path="/map"
             element={
               <>
-                <Header />
+                <Header color="black" />
                 <MapPage />
               </>
             }
