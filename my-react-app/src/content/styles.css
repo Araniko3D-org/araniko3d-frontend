@@ -316,8 +316,8 @@
   background-size: cover;
   position: absolute;
   width: 100%;
-  height: 60%;
-  top: 200px;
+  height: 70%;
+  top:95px;
   left: 0;
   z-index: 1;
 }
@@ -440,26 +440,25 @@
 /* Experts */
 .experts-section {
   padding: 20px;
-  min-height: 600px;
+  min-height: 400px;
   text-align: center;
 }
 .nav-arrow {
   position: absolute;
-  top: 3500px;
-  width: 1%;
-  right: 400px;
+    top: 2850px;
+    width: 1%;
+    right: 400px;
 }
 
 .OurExperts {
   position: absolute;
-  top: 3480px;
-  font-size: 14px;
-  text-transform: uppercase;
+    top: 2800px;
+    font-size: 24px;
 }
 .OExperts {
   position: absolute;
-  top: 3500px;
-  font-size: 24px;
+    top: 2850px;
+    font-size: 24px;
 }
 .OExperts span {
   position: absolute;
