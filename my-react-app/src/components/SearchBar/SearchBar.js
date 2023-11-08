@@ -54,7 +54,7 @@ export const SearchBar = () => {
 
   const monumentsToDisplay = filteredMonuments.map((data) => {
     return (
-      <div key={data._id}>
+      <div key={data._id} className="monument-item" style={{ cursor: 'pointer' }}>
         <SearchResult data={data} />
       </div>
     );
@@ -73,7 +73,7 @@ export const SearchBar = () => {
         <img src="searchbar.svg" alt="" className="border-none" />
       </div>
       {suggestions.length > 0 && (
-        <ul>
+        <ul className="suggestion">
           {suggestions.map((suggestion, index) => (
             <li key={index} onClick={() => setSearchValue(suggestion)}>
               {suggestion}
