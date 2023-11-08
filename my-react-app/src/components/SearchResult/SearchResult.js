@@ -6,7 +6,7 @@ export const SearchResult = (data) => {
   const navigateToDescriptionPage = () => {
     navigate("/description-page");
   };
-  console.log(data);
+
   return (
     <div className="info">
       <div className="flex m-0 p-0 gap-2">

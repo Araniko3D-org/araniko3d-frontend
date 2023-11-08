@@ -75,7 +75,9 @@ export const SearchBar = () => {
       {suggestions.length > 0 && (
         <ul>
           {suggestions.map((suggestion, index) => (
-            <li key={index}>{suggestion}</li>
+            <li key={index} onClick={() => setSearchValue(suggestion)}>
+              {suggestion}
+            </li>
           ))}
         </ul>
       )}
