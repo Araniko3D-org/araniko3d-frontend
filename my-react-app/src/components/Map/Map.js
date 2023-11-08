@@ -9,7 +9,6 @@ import { locationData } from "../../data/locations";
 
 import { Monument } from "../Momuments/Monuments";
 
-console.log(locationData);
 // import Services from "./services";
 
 export const Map = () => {
