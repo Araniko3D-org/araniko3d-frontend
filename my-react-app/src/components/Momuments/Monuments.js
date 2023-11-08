@@ -7,12 +7,12 @@ export const Monument = ({ data }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="container">
+    <div className="monuments-container">
       {/* //for image // hover:scale-10 */}
-      <img src={`monuments/${data.images[0]}`} alt="" className="image" />
+      <img src={`monuments/${data.images[0]}`} alt="" className="monuments-image" />
       {/* <div className="py-3 px-3" onClick={routeChange}> */}
       <h5>{data.title}</h5>
-      <div className="description">
+      <div className="monuments-description">
         <p>
           <span>Description</span>:{" "}
           {data.description.split(" ").slice(0, 50).join(" ")}

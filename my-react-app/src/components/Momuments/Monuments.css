@@ -1,4 +1,4 @@
-.container {
+.monuments-container {
   border-width: 1px;
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -10,12 +10,12 @@
   height: 400px !important;
   border-radius: 20px;
 }
-.container:hover {
+.monuments-container:hover:hover {
   --transform-scale-x: 1.05;
   --transform-scale-y: 1.05;
 }
 
-.image {
+.monuments-image {
   /* position: relative; */
   object-fit: cover !important;
   width: 100% !important;
@@ -28,7 +28,7 @@
   border-top-right-radius: 0.75rem;
 }
 
-.description {
+.monuments-description {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   padding-left: 0.75rem;
