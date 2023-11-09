@@ -1,6 +1,8 @@
 import React from "react";
 // import { useNavigate } from "react-router-dom";
 import { locationData } from "../../data/locations";
+// import { Link } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 
 import { SearchResult } from "../SearchResult/SearchResult";
 import { useLocation } from "react-router-dom";
@@ -9,7 +11,8 @@ import { useState } from "react";
 
 import "./SearchBar.css";
 
-export const SearchBar = () => {
+export const SearchBar = ({ setCenter, setZoom }) => {
+  // const history = useHistory();
   // const navigate = useNavigate();
 
   // const navigateToDescriptionPage = () => {
@@ -54,7 +57,15 @@ export const SearchBar = () => {
 
   const monumentsToDisplay = filteredMonuments.map((data) => {
     return (
-      <div key={data._id} className="monument-item" style={{ cursor: 'pointer' }}>
+      <div
+        // key={data._id}
+        className="monument-item"
+        style={{ cursor: "pointer" }}
+        onClick={() => {
+          setCenter([data.latitude, data.longitude]);
+          setZoom(16);
+        }}
+      >
         <SearchResult data={data} />
       </div>
     );

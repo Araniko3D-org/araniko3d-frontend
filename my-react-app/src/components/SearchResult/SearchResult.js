@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export const SearchResult = (data) => {
   const navigate = useNavigate();
@@ -6,6 +7,8 @@ export const SearchResult = (data) => {
   const navigateToDescriptionPage = () => {
     navigate("/description-page");
   };
+
+  // const { latitude, longitude } = data.data;
 
   return (
     <div className="info">
@@ -34,6 +37,9 @@ export const SearchResult = (data) => {
           <p className="m-0 p-0"> Map</p>
         </div>
       </div>
+      {/* <Link to={`/map?lat=${latitude}&lng=${longitude}`} className="m-0 p-0">
+        View on Map
+      </Link> */}
     </div>
   );
 };
