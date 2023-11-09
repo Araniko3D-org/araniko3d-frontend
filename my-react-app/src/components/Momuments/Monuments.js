@@ -15,11 +15,20 @@ export const Monument = ({ data }) => {
       <div className="monument-description">
         <p>
           <span>Description</span>:{" "}
-          {data.description.split(" ").slice(0, 40).join(" ")}
-          {data.description.split(" ").length > 40 ? "..." : ""}
+          {data.description.split(" ").slice(0, 25).join(" ")}
+          {data.description.split(" ").length > 25 ? "..." : ""}
         </p>
 
-        <a href={data.mapUrl} >Google map</a>
+        <div className="flex m-0 p-0 right gap-2" style={{ marginTop: '-10px', marginLeft: '-5px' }}>
+  <div className="flex m-0 p-0 gap-2">
+    <img src="info.svg" alt="" className="m-0 p-0" />
+    <p className="m-0 p-0">Details</p>
+  </div>
+  <div className="flex m-0 p-0 gap-2">
+    <img src="location.svg" alt="" className="m-0 p-0" />
+    <p className="m-0 p-0">Map</p>
+  </div>
+</div>
         <p>
           {data.address}, {data.city}, {data.country}
         </p>

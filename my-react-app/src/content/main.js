@@ -1,4 +1,5 @@
 import Scene0 from '../Scenes/Scene0.js';
+import About from './About.js';
 import WebsiteStats from "./WebsiteStats.js";
 import Services from "./services";
 import HowItWorks from "./howItWorks.js";
@@ -10,8 +11,9 @@ const main =() =>{
     return(
         <main className="main">
             <Scene0 />
-            <WebsiteStats />
+            <About/>
             <Services/>
+            <WebsiteStats />
             <HowItWorks/>
             <CustomerReview />
             <Experts />
