@@ -82,19 +82,21 @@
 .ex-nepal {
   font-size: 6vw; /* Responsive font size */
   left: 5%;
+  color: #F5E290;
 }
 
 .embark {
   position: absolute;
   font-size: 2vw; /* Responsive font size */
-  left: 1%;
+  left: 0%;
   top: 60%;
   font-weight: lighter;
   color: #F5E290;
 }
 
 .get-started {
-  left: 5%;
-  top: 40%;
+  position: absolute;
+  left: 0%;
+  top: 90%;
   color: #fff;
 }

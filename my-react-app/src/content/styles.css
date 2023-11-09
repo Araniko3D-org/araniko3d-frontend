@@ -82,7 +82,36 @@
 }
 
 /*contents*/
-
+/* About */
+.about-page{
+  padding: 20px;
+  min-height: 50vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+.about-us{
+  position: absolute;
+  top: 5%;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.about{
+  position: absolute;
+  top: 9%;
+  font-size: 24px;
+}
+.about span{
+  position: absolute;
+  display: contents;
+  color: #fff;
+  font-size: 24px;
+  left: 90px;
+  font-weight: bold;
+}
 /* Services.css */
 .services-section {
   padding: 20px;
@@ -97,38 +126,41 @@
 }
 .slide-icon {
   position: absolute;
-  top: 120px;
+  top: 20%;
   width: 1%;
-  right: 400px;
+  right: 20%;
 }
 .headings {
   position: absolute;
   top: 20px;
-  left: 20px;
+  left: 50px;
   color: white;
 }
 .OurServices {
   position: absolute;
   top: 90px;
+  left: 5%;
   font-size: 14px;
   text-transform: uppercase;
 }
 .OServices {
   position: absolute;
-  top: 120px;
+  top: 110px;
+  left: 5%;
   font-size: 24px;
 }
+
 .OServices span {
   position: absolute;
   display: contents;
   color: #fff;
   font-size: 24px;
-  left: 90px;
+  left: 50%;
   font-weight: bold;
 }
 .frame-container {
   position: relative;
-  top: 50px;
+  top: 60px;
   display: flex;
   flex-wrap: wrap;
   gap: 100px;
@@ -171,6 +203,9 @@
     position: relative;
     color: #fff
 }
+.frameh5{
+  font-weight: lighter;
+}
 /* .image-section:hover .text-overlay {
     opacity: 0;
 } */
@@ -193,12 +228,13 @@
   position: absolute;
   top: 20%;
   width: 1%;
-  right: 25%;
+  right: 30%;
 }
 
 .HowItWorks {
   position: absolute;
   top: 15%;
+  left: 5%;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -206,6 +242,7 @@
 .ItWorks {
   position: absolute;
   top: 20%;
+  left: 5%;
   font-size: 24px;
 }
 .ItWorks span {
@@ -249,7 +286,7 @@
 
 /* WebsiteStats css */
 .website-stats-container {
-  height: 10vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -457,18 +494,20 @@
   position: absolute;
     top: 15%;
     width: 1%;
-    right: 25%;
+    right: 30%;
 }
 
 .OurExperts {
   position: absolute;
   top: 13%;
+  left: 5%;
   font-size: 14px;
   text-transform: uppercase;
 }
 .OExperts {
   position: absolute;
     top: 15%;
+    left: 5%;
     font-size: 24px;
 }
 .OExperts span {

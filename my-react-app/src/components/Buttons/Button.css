@@ -69,8 +69,8 @@
   .medium{
     width: 110px;
     height: 33px;
-    font-size:16px;
-    
+    font-size:14px;
+    background: linear-gradient(180deg, #250e44 -73.33%, #703480 278.33%);
   }
   
   .large{

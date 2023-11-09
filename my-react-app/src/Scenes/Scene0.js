@@ -25,13 +25,13 @@ const Scene = () => {
       <img src={hillImage} alt="hill" className='hill' />
       <img src={Wave} alt="wave" className='wave' />
       <div className="explore-nepal">
-        <h2 className='ex-nepal'>Explore Nepal</h2>
+        <h2 className='ex-nepal'>Araniko 3D</h2>
         <h1 className='embark'>
         Embark on a Virtual Voyage: Unveiling the Beauty of Nepal!
         </h1>
         <div className="get-started">
         <Link to="/map">
-          <Buttons mode="hover" size="small" className="get-started-button">
+          <Buttons mode="hover" size="medium" className="get-started-button">
             Get Started
           </Buttons>
         </Link>
