@@ -25,7 +25,8 @@
 }
 /* header */
 .navbar {
-  background-color: var(--navbar-bg-color, #ffffff4d);
+  /* background-color: var(--navbar-bg-color, #ffffff4d); */
+  background: #02141E;
   position: fixed;
   top: 30px;
   left: 50%;
@@ -64,24 +65,53 @@
 
 .logo img {
   max-width: 90px;
-  padding-right: 70px;
+  padding-right: 80px;
   margin-top: -3px;
 }
 
 .nav-links button {
   width: 70px;
-  margin-left: 70px;
-  margin-top: -4px;
+  margin-left: 100px;
+  margin-top: -6px;
   height: 25px;
   font-size: 12px;
   padding: inherit;
   border-radius: 100px;
   color: #fff;
-  background: linear-gradient(180deg, #55259a -73.33%, #703480 278.33%);
+  background: linear-gradient(180deg, #250e44 -73.33%, #703480 278.33%);
 }
 
 /*contents*/
-
+/* About */
+.about-page{
+  padding: 20px;
+  min-height: 50vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+.about-us{
+  position: absolute;
+  top: 5%;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.about{
+  position: absolute;
+  top: 9%;
+  font-size: 24px;
+}
+.about span{
+  position: absolute;
+  display: contents;
+  color: #fff;
+  font-size: 24px;
+  left: 90px;
+  font-weight: bold;
+}
 /* Services.css */
 .services-section {
   padding: 20px;
@@ -96,38 +126,41 @@
 }
 .slide-icon {
   position: absolute;
-  top: 120px;
+  top: 20%;
   width: 1%;
-  right: 400px;
+  right: 20%;
 }
 .headings {
   position: absolute;
   top: 20px;
-  left: 20px;
+  left: 50px;
   color: white;
 }
 .OurServices {
   position: absolute;
   top: 90px;
+  left: 5%;
   font-size: 14px;
   text-transform: uppercase;
 }
 .OServices {
   position: absolute;
-  top: 120px;
+  top: 110px;
+  left: 5%;
   font-size: 24px;
 }
+
 .OServices span {
   position: absolute;
   display: contents;
   color: #fff;
   font-size: 24px;
-  left: 90px;
+  left: 50%;
   font-weight: bold;
 }
 .frame-container {
   position: relative;
-  top: 50px;
+  top: 60px;
   display: flex;
   flex-wrap: wrap;
   gap: 100px;
@@ -145,26 +178,34 @@
   overflow: hidden;
 }
 
-.service-image {
+
+.service-image img{
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+    height: 100%;
+    object-fit: cover;
 }
 
 .text-overlay {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #20151b;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  transform: translateY(0%);
-  opacity: 1;
-  transition: opacity 0.3s ease;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #20151b;
+    color: white;
+    padding: 0px;
+    text-align: center;
+    transform: translateY(0%);
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
-
+.frameh4{
+  top: 10px;
+    position: relative;
+    color: #fff
+}
+.frameh5{
+  font-weight: lighter;
+}
 /* .image-section:hover .text-overlay {
     opacity: 0;
 } */
@@ -185,21 +226,23 @@
 
 .slide-icon {
   position: absolute;
-  top: 120px;
+  top: 20%;
   width: 1%;
-  right: 400px;
+  right: 30%;
 }
 
 .HowItWorks {
   position: absolute;
-  top: 90px;
+  top: 15%;
+  left: 5%;
   font-size: 14px;
   text-transform: uppercase;
 }
 
 .ItWorks {
   position: absolute;
-  top: 120px;
+  top: 20%;
+  left: 5%;
   font-size: 24px;
 }
 .ItWorks span {
@@ -207,17 +250,18 @@
   display: contents;
   color: #fff;
   font-size: 24px;
-  left: 90px;
+  left: 10%;
   font-weight: bold;
 }
 
 .curved-rectangles {
   display: flex;
   justify-content: space-around;
-  margin-top: 100px;
+  margin-top: 10%;
 }
 
 .curved-rectangle {
+  margin: 100px;
   background: rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   text-align: center;
@@ -242,6 +286,7 @@
 
 /* WebsiteStats css */
 .website-stats-container {
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -317,21 +362,21 @@
   position: absolute;
   width: 100%;
   height: 60%;
-  top: 200px;
+  top:25%;
   left: 0;
   z-index: 1;
 }
 
 .clients {
   position: absolute;
-  top: 10px;
+  top: 5%;
   font-size: 14px;
   text-transform: uppercase;
 }
 
 .what {
   position: absolute;
-  top: 50px;
+  top: 7%;
   font-size: 24px;
 }
 .what span {
@@ -345,6 +390,7 @@
 
 .customer-review-container {
   background: #fff;
+  margin-top:5% ;
   border: 1px solid #ddd;
   border-radius: 5px;
   width: 50%;
@@ -440,50 +486,55 @@
 /* Experts */
 .experts-section {
   padding: 20px;
-  min-height: 600px;
+  max-height: 60vh;
   text-align: center;
+  position: relative;
 }
 .nav-arrow {
   position: absolute;
-  top: 3500px;
-  width: 1%;
-  right: 400px;
+    top: 15%;
+    width: 1%;
+    right: 30%;
 }
 
 .OurExperts {
   position: absolute;
-  top: 3480px;
+  top: 13%;
+  left: 5%;
   font-size: 14px;
   text-transform: uppercase;
 }
 .OExperts {
   position: absolute;
-  top: 3500px;
-  font-size: 24px;
+    top: 15%;
+    left: 5%;
+    font-size: 24px;
 }
 .OExperts span {
   position: absolute;
   display: contents;
   color: #fff;
   font-size: 24px;
-  left: 90px;
+  left: 10%;
   font-weight: bold;
 }
 .expert-container {
   position: relative;
   /* left: 190px; */
-  top: 90px;
+  /* top: 100%; */
   display: flex;
   flex-wrap: wrap;
   gap: 60px;
-  margin-top: 80px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin-top: 30%;
   justify-content: center;
 }
 
 .expert-frame {
   box-sizing: border-box;
-  width: 300px;
-  height: 400px;
+  width: 26.7%;
+  height: 30%;
   border-radius: 20px;
   position: relative;
   overflow: hidden;
@@ -503,13 +554,13 @@
 }
 
 .expert-image img {
-  width: 100px;
+  width: 50%;
   height: 220px;
   border-radius: 50%;
   object-fit: cover;
   position: relative;
   top: -250px;
-  left: -50px;
+  left: -70px;
 }
 
 .expert-social-icons {
@@ -517,7 +568,7 @@
   position: absolute;
   display: flex;
   justify-content: space-between;
-  width: 170px;
+  width: 57.3%;
   top: 230px;
   left: 0px;
   height: 30px;
@@ -525,13 +576,13 @@
 }
 
 .expert-social-icons img {
-  width: 25px;
-  height: 25px;
+  width: 12%;
+  height: 80%;
 }
 .expert-details {
   position: absolute;
-  top: 280px;
-  left: 40px;
+  top: 58%;
+  left: 18%;
 }
 .expert-name {
   font-size: 14px;
@@ -582,7 +633,8 @@
 .copyright {
   position: absolute;
   z-index: 2;
-  left: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   bottom: -100px;
 }
 
@@ -673,6 +725,6 @@ ul {
 
 .footer-column li,
 p {
-  font-size: 12px;
-  font-weight: lighter;
+  font-size: 13px;
+    font-weight: lighter;
 }

@@ -7,21 +7,21 @@ const WebsiteStats = () => {
       <div className="stats-rectangle">
         <div className="stat-circle">
           <div class="circle-content">
-            320+
+            10+
           </div>
           <div class="content-below">CULTURAL SITES</div>
         </div>
         <div className="stat-circle">
           <div class="circle-content">
-            50+
+            3
           </div>
-          <div class="content-below">HAPPY CLIENTS</div>
+          <div class="content-below">DISTRICTS</div>
         </div>
         <div className="stat-circle">
           <div class="circle-content">
-            30+
+            500+
           </div>
-          <div class="content-below">EXPERT MEMBERS</div>
+          <div class="content-below">VIEWS</div>
         </div>
       </div>
     </div>

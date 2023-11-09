@@ -1,88 +1,102 @@
 .scene {
   width: 100%;
-  height: 120vh;
+  height: 140vh;
   position: relative;
   overflow: hidden;
+  text-align: center; /* Center content */
 }
-.sun{
+
+/* Images (example sizes and positions, adjust as needed) */
+.sun {
   position: absolute;
-  width: 120px;
-  height: 120px;
-  top: 235px;
-  left: 750px;
+  width: 10%;
+  height: auto;
+  top: 10%;
+  left: 60%;
 }
-.temple{
+
+.temple {
   position: absolute;
-  width: 481px;
-  height: 604px;
-  top: 70px;
-  left: 988px;
-  z-index: 4;
+    width: 30%;
+    height: auto;
+    top: 10%;
+    left: 70%;
+    z-index: 4;
 }
-.forest{
+
+.forest {
   position: absolute;
-  width: 1480px;
-  height: 485px;
-  top: 180px;
-  left: -23px;
+  width: 80%;
+  height: auto;
+  top: 13%;
+  left: 0%;
   z-index: 1;
 }
-.hill{
+
+.hill {
   position: absolute;
-  width: 1520px;
-  height: 195px;
-  top: 452px;
-  left: -30px;
+  width: 80%;
+  height: auto;
+  top: 39%;
+  left: 0%;
   z-index: 2;
 }
-.land{
-  position: absolute;
-  width: 2171px;
-  height: 150px;
-  top: 550px;
-  left: -30px;
-  z-index: 3;
-}
-.stars{
-  position:absolute;
-  width: 120px;
-  height: 357px;
-  top: -320px;
-  left: -12px;
 
-}
-.wave{
-  left: -250px;
-  top :630px;
-  /* bottom: -0px; */
+.land {
   position: absolute;
+    width: 100%;
+    height: auto;
+    top: 55%;
+    left: 0;
+    z-index: 3;
+}
+
+.star {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 10%;
+  left: 5%;
+}
+
+.wave {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  left: 0;
+  top: 64%;
   z-index: 6;
 }
-.explore-nepal{
-  justify-content: left;
+
+.explore-nepal {
+  text-align: left; /* Adjust text alignment */
   position: absolute;
-  width: 754px;
-  height: 237px;
-  top: 150px;
-  left: 192px;
+  width: 70%; /* Use percentages for responsiveness */
+  height: auto;
+  top: 10%;
+  left: 10%;
   z-index: 5;
 }
-.ex-nepal{
-  position: absolute;
-  font-size: 72px;
-  left: -50px;
+
+.ex-nepal {
+  font-size: 6vw; /* Responsive font size */
+  left: 5%;
+  color: #F5E290;
 }
-.embark{
+
+.embark {
   position: absolute;
-  font-size: 18px;
-  left: -45px;
-  top: -1px;
+  font-size: 2vw; /* Responsive font size */
+  left: 0%;
+  top: 60%;
   font-weight: lighter;
   color: #F5E290;
 }
-.get-started{
+
+.get-started {
   position: absolute;
-  left: -45px;
-  top: 192px;
+  left: 0%;
+  top: 90%;
   color: #fff;
 }
