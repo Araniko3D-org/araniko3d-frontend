@@ -5,9 +5,11 @@
   align-items: center;
   justify-content: flex-start;
   margin: 0;
-  height: 100vh;
+  height: 100%;
   background: #cccccc;
   overflow: hidden;
+  padding: 10px;
+  width: 100%;
 }
 
 .top-bar {
@@ -19,7 +21,7 @@
 }
 
 .page-title {
-  font-size: 24px;
+  font-size: 50px;
   color: #333;
   text-transform: uppercase;
   font-weight: bold;
@@ -43,13 +45,23 @@
 
 .UpperDiv {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
+  width: 80%;
+  height: 100%;
   margin: 50px 0;
 }
 
-.left-column {
+.hero-column {
+  /* position: absolute; */
+  margin: 3rem;
+  width: 100%;
+  height: 80vh;
+}
+
+/* .left-column {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -60,30 +72,31 @@
   left: 150px;
   align-content: space-between;
   flex-wrap: wrap;
-}
+} */
 
 .image {
   width: 100px;
   height: 100px;
 }
 
-.hero-column {
-  display: flex;
-  align-items: center;
-}
-
-.hero {
-  width: 200%;
+/* .hero {
+  width: 100%;
   margin: 0px 450px;
+} */
+
+.main-image {
+  margin-top: 4rem;
+  width: 100%;
+  height: 100%;
 }
 
-.right-column {
+/* .right-column {
   position: absolute;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   right: 10px;
-}
+} */
 
 .description-map-container-top {
   position: absolute;
@@ -124,18 +137,32 @@
 .main-content {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  width: 95%;
+  flex-direction: column;
+  width: 70%;
   gap: 10px;
+  align-items: center;
+  gap: 20px;
 }
 
 .description {
-  width: 50%;
+  width: 100%;
+  overflow-y: auto;
   text-align: justify;
   text-justify: inter-word;
 }
+
+.description-map {
+  display: flex;
+  gap: 10px;
+  overflow-y: hidden;
+}
+
+.description-title {
+  font-weight: 900;
+  font-size: 25px;
+}
 .description p {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .read-more {
@@ -144,10 +171,11 @@
 }
 
 .description-map-container {
-  width: 50%;
+  width: 100%;
   height: 400px;
 }
 
 .youtube-video-container {
-  width: 45%;
+  width: 100%;
+  height: 50vh;
 }

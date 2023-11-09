@@ -26,7 +26,11 @@ export const DescriptionMap = ({ position }) => {
         })}
       >
         <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
+          Sundari Chowk, also known as the Beautiful Courtyard, is a remarkable{" "}
+          <br />
+          architectural gem located within the historic city of
+          <br />
+          Bhaktapur in Nepal's Kathmandu Valley.
         </Popup>
       </Marker>
     </MapContainer>
