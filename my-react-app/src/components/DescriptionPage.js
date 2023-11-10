@@ -58,44 +58,28 @@ The central element of the courtyard is the Tusha Hiti, a sunken water tank with
       />
     );
   }
-  return (
-    <div className="container">
-      <div className="top-bar">
-        <div className="page-title">Sundari Chowk</div>
-        <a className="back-button" href="/">
-          ✖
-        </a>
-      </div>
-      {/* <div className="left-column">
-          <div className="image">
-            <img src={Bhaktapur1} alt="Bhaktapur1" />
-          </div>
-          <div className="image">
-            <img src={Bhaktapur2} alt="Bhaktapur2" />
-          </div>
-          <div className="image">
-            <img src={Bhaktapur3} alt="Bhaktapur3" />
-          </div>
-        </div> */}
-      {/* <div className="hero-column"> */}
+  const imageUrl = { BhaktapurHero };
 
+  return (
+    <>
       <div className="UpperDiv">
         <Swiper
           modules={[Scrollbar, Navigation, Pagination, A11y]}
-          spaceBetween={50}
+          // spaceBetween={50}
           slidesPerView={1}
-          navigation
+          // navigation
           loop={true} // Enable continuous loop
           loopedSlides={4} // Number of total slides (adjust as ne
           pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
+          // scrollbar={{ draggable: true }}
           // onSwiper={(swiper) => console.log(swiper)}
           // onSlideChange={() => console.log("slide change")}
         >
           <SwiperSlide key={1}>
             <div className="hero-column">
               <img
-                src="monuments/sundari_1.jpeg"
+                // src="monuments/sundari_1.jpeg"
+                src={BhaktapurHero}
                 className="main-image"
                 alt="BhaktapurHero"
               />
@@ -133,124 +117,153 @@ The central element of the courtyard is the Tusha Hiti, a sunken water tank with
           </SwiperSlide>
         </Swiper>
       </div>
-
-      <div className="main-content">
-        <div className="description-map">
-          <div className="description">
-            <span className="description-title">Description:</span>
-            <p>{content}</p>
-            {!showFullContent && (
-              <span className="read-more" onClick={toggleContent}>
-                {showFullContent ? "See Less <<" : "See More >>"}
-              </span>
-            )}
+      <div className="description">
+        <div className="desctiption-container">
+          <div className="description-content">
+            <h2 className="description-title">BHAKTAPUR DURBAR SQUARE</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. voluptate{" "}
+            </p>
           </div>
           <div className="description-map-container">
             <DescriptionMap position={[27.6727184, 85.3251013]} />
           </div>
         </div>
-
+      </div>
+      <div className="flex w-full justify-center youtube-video">
         <div className="youtube-video-container">{renderYouTubeVideo()}</div>
       </div>
-    </div>
+      <div className="360-image"></div>
+    </>
   );
 }
 
 export default DescriptionPage;
 
-// {/* <SwiperSlide key={1}>
-//         <div className="image">
-//           <img src={Bhaktapur1} alt="Bhaktapur1" />
-//         </div>
-//       </SwiperSlide>
-//       <SwiperSlide key={2}>
-//         <div className="image">
-//           <img src={Bhaktapur1} alt="Bhaktapur1" />
-//         </div>
-//       </SwiperSlide>
-//       <SwiperSlide key={2}>
-//         <div className="image">
-//           <img src={Bhaktapur3} alt="Bhaktapur3" />
-//         </div>
-//       </SwiperSlide>
-//       <SwiperSlide key={3}>
-//         <div className="image">
-//           <img src={Bhaktapur3} alt="Bhaktapur3" />
-//         </div>
-//       </SwiperSlide>
+// {
+//   /* <div className="container"> */
+// }
+// {
+//   /* <div className="top-bar"> */
+// }
+// {
+//   /* <div className="page-title">Sundari Chowk</div> */
+// }
+// {
+//   /* <a className="back-button" href="/"> */
+// }
+// {
+//   /* ✖ */
+// }
+// {
+//   /* </a> */
+// }
+// {
+//   /* </div> */
+// }
+// {
+//   /* <div className="left-column">
+//     <div className="image">
+//       <img src={Bhaktapur1} alt="Bhaktapur1" />
+//     </div>
+//     <div className="image">
+//       <img src={Bhaktapur2} alt="Bhaktapur2" />
+//     </div>
+//     <div className="image">
+//       <img src={Bhaktapur3} alt="Bhaktapur3" />
+//     </div>
+//   </div> */
+// }
+// {
+//   /* <div className="hero-column"> */
+// }
 
-//     {/* <div> */}
-//       {/* <Swiper
-//       // install Swiper modules
-//       modules={[Navigation, Pagination, Scrollbar, A11y]}
-//       spaceBetween={50}
-//       slidesPerView={1}
-//       navigation
-//       pagination={{ clickable: true }}
-//       // scrollbar={{ draggable: true }}
-//       onSwiper={(swiper) => console.log(swiper)}
-//       onSlideChange={() => console.log("slide change")}
-//     >
-//       <SwiperSlide>
-//         <SwiperSlide key={1}>
-//           <img src={Bhaktapur1} alt="Bhaktapur1" />
-//         </SwiperSlide>
-//       </SwiperSlide>
-//       <SwiperSlide>
-//         <SwiperSlide key={2}>
-//           <img src={Bhaktapur2} alt="Bhaktapur2" />
-//         </SwiperSlide>
-//       </SwiperSlide>
-//       <SwiperSlide>
-//         <SwiperSlide key={3}>
-//           <img src={Bhaktapur3} alt="Bhaktapur3" />
-//         </SwiperSlide>
-//       </SwiperSlide>
-//       <SwiperSlide>
-//         <SwiperSlide key={4}>
-//           <img src={Bhaktapur3} alt="Bhaktapur3" />
-//         </SwiperSlide>
-//       </SwiperSlide>
-//       ...
-//     </Swiper> */}
+// {
+//   /* <div className="UpperDiv">
+//   <Swiper
+//     modules={[Scrollbar, Navigation, Pagination, A11y]}
+//     // spaceBetween={50}
+//     slidesPerView={1}
+//     navigation
+//     loop={true} // Enable continuous loop
+//     loopedSlides={4} // Number of total slides (adjust as ne
+//     pagination={{ clickable: true }}
+//     scrollbar={{ draggable: true }}
+//     // onSwiper={(swiper) => console.log(swiper)}
+//     // onSlideChange={() => console.log("slide change")}
+//   >
+//     <SwiperSlide key={1}>
+//       <div className="hero-column">
+//         <img
+//           // src="monuments/sundari_1.jpeg"
+//           src={BhaktapurHero}
+//           className="main-image"
+//           alt="BhaktapurHero"
+//         />
+//       </div>
+//     </SwiperSlide>
 
-//  <Swiper
-//             // install Swiper modules
-//             // Navigation, Pagination,
-//             modules={[Scrollbar, A11y]}
-//             spaceBetween={50}
-//             slidesPerView={1}
-//             // navigation
-//             // pagination={{ clickable: true }}
-//             // scrollbar={{ draggable: true }}
-//             onSwiper={(swiper) => console.log(swiper)}
-//             onSlideChange={() => console.log("slide change")}
-//           >
-//             <SwiperSlide key={1}>
-//               <div className="hero">
-//                 <img src={BhaktapurHero} alt="BhaktapurHero" />
-//               </div>
-//             </SwiperSlide>
+//     <SwiperSlide key={2}>
+//       <div className="hero-column">
+//         <img
+//           src="monuments/sundari_2.jpeg"
+//           className="main-image"
+//           alt="Bhaktapur1"
+//         />
+//       </div>
+//     </SwiperSlide>
 
-//             <SwiperSlide key={2}>
-//               <div className="hero">
-//                 {/* <img src={BhaktapurHero} alt="BhaktapurHero" /> */}
-//                 <img src={Bhaktapur1} alt="Bhaktapur1" />
-//               </div>
-//             </SwiperSlide>
+//     <SwiperSlide key={3}>
+//       <div className="hero-column">
+//         <img
+//           src="monuments/sundari_3.jpeg"
+//           className="main-image"
+//           alt="BhaktapurHero"
+//         />
+//       </div>
+//     </SwiperSlide>
 
-//             <SwiperSlide key={3}>
-//               <div className="hero">
-//                 <img src={BhaktapurHero} alt="BhaktapurHero" />
-//                 {/* <img src={Bhaktapur2} alt="Bhaktapur2" /> */}
-//               </div>
-//             </SwiperSlide>
+//     <SwiperSlide key={4}>
+//       <div className="hero-column">
+//         <img
+//           src="monuments/sundari_4.webp"
+//           className="main-image"
+//           alt="BhaktapurHero"
+//         />
+//       </div>
+//     </SwiperSlide>
+//   </Swiper>
+// </div>
 
-//             <SwiperSlide key={4}>
-//               <div className="hero">
-//                 <img src={BhaktapurHero} alt="BhaktapurHero" />
-//                 {/* <img src={Bhaktapur3} alt="Bhaktapur3" /> */}
-//               </div>
-//             </SwiperSlide>
-//             <SwiperSlide> ...</SwiperSlide>
-//           </Swiper> */}
+// <div className="main-content">
+//   <div className="description-map">
+//     <div className="description">
+//       <span className="description-title">Description:</span>
+//       <p>{content}</p>
+//       {!showFullContent && (
+//         <span className="read-more" onClick={toggleContent}>
+//           {showFullContent ? "See Less <<" : "See More >>"}
+//         </span>
+//       )}
+//     </div>
+//     <div className="description-map-container">
+//       <DescriptionMap position={[27.6727184, 85.3251013]} />
+//     </div>
+//   </div>
+
+//   <div className="youtube-video-container">{renderYouTubeVideo()}</div>
+// </div>
+// </div> */
+// }
