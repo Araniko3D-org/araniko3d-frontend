@@ -4,7 +4,11 @@ import { useState, useEffect } from "react";
 import "./Monuments.css";
 
 export const Monument = ({ data }) => {
-  const navigate = useNavigate();
+    const navigate = useNavigate();
+
+  const navigateToDescriptionPage = () => {
+    navigate("/description-page");
+  };
 
   return (
     <div className="monument-container ">
@@ -20,15 +24,17 @@ export const Monument = ({ data }) => {
         </p>
 
         <div className="flex m-0 p-0 right gap-2" style={{ marginTop: '-10px', marginLeft: '-5px' }}>
-  <div className="flex m-0 p-0 gap-2">
-    <img src="info.svg" alt="" className="m-0 p-0" />
-    <p className="m-0 p-0">Details</p>
-  </div>
-  <div className="flex m-0 p-0 gap-2">
-    <img src="location.svg" alt="" className="m-0 p-0" />
-    <p className="m-0 p-0">Map</p>
-  </div>
-</div>
+          <div className="flex m-0 p-0 gap-2"
+                onClick={navigateToDescriptionPage}
+              >
+            <img src="info.svg" alt="" className="m-0 p-0" />
+            <p className="m-0 p-0">Details</p>
+          </div>
+          <div className="flex m-0 p-0 gap-2">
+            <img src="location.svg" alt="" className="m-0 p-0" />
+            <p className="m-0 p-0">Map</p>
+          </div>
+        </div>
         <p>
           {data.address}, {data.city}, {data.country}
         </p>

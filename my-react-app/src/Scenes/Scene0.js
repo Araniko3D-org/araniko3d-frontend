@@ -27,7 +27,7 @@ const Scene = () => {
       <div className="explore-nepal">
         <h2 className='ex-nepal'>Araniko 3D</h2>
         <h1 className='embark'>
-        Embark on a Virtual Voyage: Unveiling the Beauty of Nepal!
+        Cultural Resilience Through Digital Preservation 
         </h1>
         <div className="get-started">
         <Link to="/map">
