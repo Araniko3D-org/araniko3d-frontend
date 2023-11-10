@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+#buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #333;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.button:nth-child(1) {
+  left: 90px;
+}
+.button:nth-child(2) {
+  left: 0;
+}
+.button:nth-child(3) {
+  right: 0;
+}
+.button:nth-child(4) {
+  right: 90px;
+}
