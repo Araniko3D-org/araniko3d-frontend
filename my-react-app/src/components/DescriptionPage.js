@@ -145,7 +145,9 @@ The central element of the courtyard is the Tusha Hiti, a sunken water tank with
       <div className="flex w-full justify-center youtube-video">
         <div className="youtube-video-container">{renderYouTubeVideo()}</div>
       </div>
-      <div class="image-container"></div>
+      <div className="pano-image">
+        <div class="image-container"></div>
+      </div>
     </>
   );
 }

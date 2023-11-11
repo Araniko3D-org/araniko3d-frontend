@@ -242,3 +242,11 @@
 .justify-center {
   justify-content: center;
 }
+
+.pano-image {
+  width: 80% !important;
+}
+
+.image-container {
+  width: 80% !important;
+}

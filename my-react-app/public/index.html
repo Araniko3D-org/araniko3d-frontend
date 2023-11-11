@@ -27,6 +27,15 @@
     <title>React App</title>
   </head>
   <body>
+    <style>
+      /*.panolens-container {
+        width: 80% !important;
+        height: 80% !important;
+        background-color: transparent !important;
+        transition: all 0.5s ease; /* Optional: Add a smooth transition
+      }
+*/
+    </style>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -57,13 +66,42 @@
         autoRotate: true,
         autoRotateSpeed: 0.3,
         controlBar: true,
+        width: "80%",
       });
 
       panorama.link(panorama2, infospotPositions[0]);
       panorama2.link(panorama, infospotPositions[1]);
 
       viewer.add(panorama, panorama2);
+      /*
+      window.onload = function () {
+        const panorama = new PANOLENS.ImagePanorama("images/panel1.jpeg");
+        const panorama2 = new PANOLENS.ImagePanorama("images/pano5.jpg");
+        let imageContainer = document.querySelector(".image-container");
+
+        var infospotPositions = [
+          new THREE.Vector3(-2136.06, 16.3, 890.14),
+          new THREE.Vector3(-3136.06, 296.3, -4290.14),
+        ];
+
+        const viewer = new PANOLENS.Viewer({
+          container: imageContainer,
+          autoRotate: true,
+          autoRotateSpeed: 0.3,
+          controlBar: true,
+          width: "80%",
+        });
+
+        panorama.link(panorama2, infospotPositions[0]);
+        panorama2.link(panorama, infospotPositions[1]);
+
+        viewer.add(panorama, panorama2);
+
+        // Show the Panolens container once it's loaded
+        imageContainer.style.display = "block";
+      };
+      */
     </script>
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
   </body>
 </html>
