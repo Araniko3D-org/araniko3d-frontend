@@ -16,8 +16,8 @@ const experts = () => {
       <div className="nav-arrow">
           <img src={NavArrow} alt="Slide Icon" />
         </div>
-        <p className="OurExperts">Our Experts</p>
-        <p className="OExperts">Our <span>Experts</span></p>
+        <p className="OurExperts">Our Team</p>
+        <p className="OExperts">Our <span>Team</span></p>
 
         {/* Create a container for the frames */}
         <div className="expert-container">
