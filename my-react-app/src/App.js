@@ -6,7 +6,6 @@ import Main from "./content/main.js";
 import MapPage from "./components/MapPage.js";
 import DescriptionPage from "./components/DescriptionPage.js";
 import "./App.css";
-import Footer from "./content/footer.js";
 
 const App = () => {
   return (
