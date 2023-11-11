@@ -1,8 +1,11 @@
 .form-container {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Inter" !important;
+  background-color: white;
 }
 .grid-container {
   display: grid;
@@ -39,7 +42,92 @@
 }
 
 .grid-container > :last-child {
+  color: white;
+  border-radius: 20px;
+  border: 0px solid;
+  padding: 10px 50px;
+  font-weight: 500;
+  background-color: #4d21a1;
   grid-column: span 2; /* Span two columns */
   justify-self: center; /* Center the item horizontally within the grid cell */
-  width: 50%;
+  /* width: 50%; */
+}
+
+.contact-us-container {
+  color: white;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    358.74deg,
+    #aca777 -7.08%,
+    #a8534e 51.24%,
+    #250bc6 107.39%
+  );
+  display: flex;
+  line-height: 0%;
+}
+.contact-us-contents {
+  width: 80%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 85%;
+  line-height: 0px;
+}
+
+.contact-us-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us-content :nth-child(3),
+.contact-us-content :nth-child(4) {
+  text-decoration: underline;
+}
+
+.contact-us-content :nth-child(3) {
+  font-weight: 700;
+}
+
+.contact-us-content p {
+  font-size: 16px;
+}
+.contact-us-header {
+  font-size: 34px;
+  font-family: "Inter" !important;
+  font-weight: 600;
+}
+
+.contact-us-icons {
+  display: flex;
+  gap: 25px;
+}
+
+.contact-us-icon {
+  height: 25px;
+}
+
+.next-step-container {
+  color: #4d21a1;
+}
+
+.next-step-container h5 {
+  font-size: 24px;
+  line-height: 0;
+  font-weight: 300;
+}
+
+.next-step-container h3 {
+  font-size: 34px;
+  line-height: 0;
+  font-family: "Inter" !important;
+  font-weight: 900;
+}
+
+.contact-us-second-container {
+  display: flex;
+  background-color: #efefef;
+  justify-content: space-around;
 }
