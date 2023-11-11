@@ -1,7 +1,20 @@
+.DescriptionPage{
+  background: linear-gradient(
+    360deg,
+    #aca777 -3.47%,
+    #a8534e 63.79%,
+    #250bc6 118.52%
+  );
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
 /* Your global styles */
 .swiper-pagination {
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
   padding: 10px;
+  z-index: 1;
 }
 
 /* Custom styles for pagination bullets */
@@ -21,55 +34,7 @@
   opacity: 1;
 }
 
-/* DescriptionPage.css */
-/* .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  margin: 0;
-  height: 100%;
-  background: #cccccc;
-  overflow: hidden;
-  padding: 10px;
-  width: 100%;
-} */
 
-/* .top-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 10px 0;
-} */
-
-/* .page-title {
-  font-size: 50px;
-  color: #333;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-stretch: expanded;
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-} */
-
-/* .back-button {
-  font-size: 24px;
-  text-decoration: none;
-  color: #333;
-  text-transform: uppercase;
-  font-weight: bold;
-  position: absolute;
-  right: 30px;
-  top: 10px;
-} */
-
-* {
-  margin: 0;
-  padding: 0;
-}
 
 .UpperDiv {
   width: 100%;
@@ -136,7 +101,6 @@
 
 .nav a {
   text-decoration: none;
-  color: blue;
   margin: 5px 5px;
 }
 
@@ -168,12 +132,10 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  padding: 20px 0;
+  position: relative;
+  z-index: 2;
+  margin-top: -100px;
 
-  /* text-align: justify; */
-  text-justify: inter-word;
-  /* overflow-y: auto; */
-  background-color: aqua;
 }
 
 .desctiption-container {
@@ -186,7 +148,7 @@
     255,
     255,
     255,
-    0.8
+    0.3
   ); /* Add a semi-transparent background */
   backdrop-filter: blur(2px); /* Adjust the blur amount as needed */
   border-radius: 5px;
@@ -196,8 +158,10 @@
   width: 70%;
 }
 .description-map-container {
-  width: 30%;
-  height: 300px;
+  position: relative;
+    top: 10%;
+    width: 30%;
+    height: 300px;
 }
 /* .description-map {
   display: flex;
@@ -215,12 +179,12 @@
 
 .description-title {
   font-weight: 900;
-  font-size: 53px;
+  font-size: 36px;
   color: #fff;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 .description p {
-  font-size: 24px;
+  font-size: 20px;
   padding: 10px 0;
 }
 
@@ -229,18 +193,29 @@
   cursor: pointer;
 } */
 
-.youtube-video {
+/* .youtube-video {
   background: #000;
-}
+} */
 
 .youtube-video-container {
-  border: 8px solid #fff;
-  width: 80%;
-  height: 50vh;
+  /* border: 8px solid #fff; */
+  width: 83%;
+  height: 60vh;
 }
 
 .justify-center {
   justify-content: center;
+  margin-top: 10%;
+  position: relative;
+}
+
+.Place-title{
+  position: relative;
+    margin-top: 5%;
+    left: 5%;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
 }
 
 .pano-image {

@@ -77,6 +77,24 @@ const experts = () => {
             </div>
           </div>
 
+          <div className="expert-frame">
+            <div className="background-image">
+              <img src={BgImage} alt="Expert Background" />
+            </div>
+            <div className="expert-image">
+              <img src={Expert3} alt="Expert" />
+            </div>
+            <div className="expert-social-icons">
+              <img src={FacebookIcon} alt="Facebook" />
+              <img src={LinkedinIcon} alt="LinkedIn" />
+              <img src={TwitterIcon} alt="Twitter" />
+            </div>
+            <div className="expert-details">
+              <div className="expert-name">Ram Shyam</div>
+              <div className="expert-position">HR</div>
+            </div>
+          </div>
+
           {/* Add more frames for additional experts as needed */}
         </div>
       </div>

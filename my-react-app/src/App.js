@@ -26,7 +26,7 @@ const App = () => {
             path="/map"
             element={
               <>
-                <Header color="black" />
+                <Header />
                 <MapPage />
               </>
             }
@@ -35,9 +35,8 @@ const App = () => {
             path="/description-page"
             element={
               <>
-                <Header color="" />
+                <Header />
                 <DescriptionPage />
-                <Footer />
               </>
             }
           />

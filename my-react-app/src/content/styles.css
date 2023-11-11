@@ -33,7 +33,7 @@
   transform: translateX(-50%);
   width: 100%;
   display: flex;
-  max-width: 900px;
+  max-width: 950px;
   height: 35px;
   justify-content: space-between;
   padding: 2px 11px 2px 22px;
@@ -45,7 +45,7 @@
 .nav-links {
   font-size: 12px;
   list-style: none;
-  margin-top: 12px;
+  margin-top: 1px;
   display: flex;
 }
 
@@ -134,28 +134,28 @@
   overflow: hidden;
   flex-direction: column;
 }
-.slide-icon {
+.slide {
   position: absolute;
-  top: 20%;
+  top: 13%;
   width: 1%;
-  right: 20%;
+  right: 30%;
 }
-.headings {
+/* .headings {
   position: absolute;
   top: 20px;
   left: 50px;
   color: white;
-}
+} */
 .OurServices {
   position: absolute;
-  top: 90px;
+  top: 10%;
   left: 5%;
   font-size: 14px;
   text-transform: uppercase;
 }
 .OServices {
   position: absolute;
-  top: 110px;
+  top: 13%;
   left: 5%;
   font-size: 24px;
 }
@@ -170,7 +170,7 @@
 }
 .frame-container {
   position: relative;
-  top: 60px;
+  top: 30%;
   display: flex;
   flex-wrap: wrap;
   gap: 100px;
@@ -202,19 +202,20 @@
     right: 0;
     background: #20151b;
     color: white;
-    padding: 0px;
     text-align: center;
     transform: translateY(0%);
     opacity: 1;
     transition: opacity 0.3s ease;
 }
 .frameh4{
-  top: 10px;
+  top: 0px;
     position: relative;
     color: #fff
 }
 .frameh5{
-  font-weight: lighter;
+  position: relative;
+    font-weight: lighter;
+    top: 10px;
 }
 /* .image-section:hover .text-overlay {
     opacity: 0;
@@ -251,7 +252,7 @@
 
 .ItWorks {
   position: absolute;
-  top: 20%;
+  top: 18%;
   left: 5%;
   font-size: 24px;
 }
@@ -291,12 +292,12 @@
 .curved-rectangle h4 {
   color: #fff;
   font-size: 18px;
-  margin-top: -30px;
+  margin-top: -40px;
 }
 
 /* WebsiteStats css */
 .website-stats-container {
-  height: 50vh;
+  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -496,7 +497,7 @@
 /* Experts */
 .experts-section {
   padding: 20px;
-  max-height: 60vh;
+  max-height: 80vh;
   text-align: center;
   position: relative;
 }
@@ -516,7 +517,7 @@
 }
 .OExperts {
   position: absolute;
-    top: 15%;
+    top: 16%;
     left: 5%;
     font-size: 24px;
 }
@@ -530,15 +531,10 @@
 }
 .expert-container {
   position: relative;
-  /* left: 190px; */
-  /* top: 100%; */
   display: flex;
-  flex-wrap: wrap;
-  gap: 60px;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  margin-top: 30%;
-  justify-content: center;
+  justify-content: space-between;
+  margin-top: 15%;
+  margin-left: 10%;
 }
 
 .expert-frame {
@@ -556,7 +552,7 @@
 
 .background-image {
   width: 60%;
-  height: 270px; /* Adjust the height as needed */
+  height: 270px;
   object-fit: cover;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -623,11 +619,12 @@
   color: white;
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 
 .top-image {
   position: relative;
-  bottom: 32px;
+  bottom: 110px;
 }
 
 .bottom-image {
@@ -653,15 +650,15 @@
   position: relative;
   background: rgba(0, 0, 0, 0.8);
   padding: 20px;
-  width: 750px;
+  width: 950px;
   border-radius: 50px;
   z-index: 2;
-  top: 200px;
+  top: 150px;
 }
 .footer-upper {
   position: relative;
   text-align: center;
-  padding: 25px 0;
+  padding: 20px 0;
   z-index: 1;
 }
 
@@ -689,7 +686,7 @@
 
 ul {
   list-style: none;
-  padding: 0;
+  padding: 10px;
 }
 
 .email-input {
@@ -717,11 +714,11 @@ ul {
   position: absolute;
   display: flex;
   margin-top: 10px;
-  left: 610px;
+  left: 790px;
   top: 140px;
   width: 150px;
-  background: rgba(0, 0, 0, 0.8);
-}
+  /* background: rgba(0, 0, 0, 0.3);*/
+} 
 
 .social-icons a {
   margin-right: 10px;

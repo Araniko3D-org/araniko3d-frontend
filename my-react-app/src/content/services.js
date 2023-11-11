@@ -9,7 +9,7 @@ const services = () => {
     return (
       <div className="workpage">
       <div id='services' className="services-section">
-      <div className="slide-icon">
+      <div className="slide">
       <Link to="/map">
           <img src={slideIcon} alt="Slide Icon" />
       </Link>
