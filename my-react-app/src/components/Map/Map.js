@@ -43,6 +43,12 @@ export const Map = ({ center, zoom }) => {
     },
   ];
 
+  const customClusterIcon = new L.Icon({
+    iconUrl: "icon.svg",
+    iconSize: [40, 40], // Adjust the size as needed
+    iconAnchor: [20, 20], // Adjust the anchor point if needed
+  });
+
   return (
     <MapContainer
       key={`${center[0]}-${center[1]}-${zoom}`}
@@ -65,7 +71,10 @@ export const Map = ({ center, zoom }) => {
   `}
       </style>
 
-      <MarkerClusterGroup chunkedLoading>
+      <MarkerClusterGroup
+        chunkedLoading
+        iconCreateFunction={() => customClusterIcon}
+      >
         {markers.map((marker, index) => (
           <Marker
             key={index}

@@ -146,24 +146,25 @@ The central element of the courtyard is the Tusha Hiti, a sunken water tank with
       <div className="flex w-full justify-center youtube-video">
         <div className="youtube-video-container">{renderYouTubeVideo()}</div>
       </div>
-      <div className="360-image"></div>
-
-    {/* Near by places */}
+      <div className="pano-image">
+        <div class="image-container"></div>
+      </div>
+      {/* Near by places */}
       <div className="Near-by-palces">
         <p className="Place-title">Near By Places</p>
         <div className="frame-container">
           {/* Rectangle with text overlapping at the bottom */}
-          
+
           <div className="frame">
             <div className="service-image">
               <img src={BhaktapurImage} alt="Work 1" />
             </div>
             <div className="text-overlay">
               <h4 className="frameh4">Bhaktapur Durbar Square</h4>
-              <h5 className='frameh5'>Bhaktapur</h5>
+              <h5 className="frameh5">Bhaktapur</h5>
             </div>
           </div>
-  
+
           {/* Repeat the frame for more images */}
           <div className="frame">
             <div className="service-image">
@@ -171,20 +172,18 @@ The central element of the courtyard is the Tusha Hiti, a sunken water tank with
             </div>
             <div className="text-overlay">
               <h4 className="frameh4">Uma Maheswori</h4>
-              <h5 className='frameh5'>Kritipur</h5>
+              <h5 className="frameh5">Kritipur</h5>
             </div>
-            
           </div>
-          
+
           <div className="frame">
             <div className="service-image">
               <img src={BhagBhairav} alt="Work 1" />
             </div>
             <div className="text-overlay">
               <h4 className="frameh4">BhagBhairab</h4>
-              <h5 className='frameh5'>Kritipur</h5>
+              <h5 className="frameh5">Kritipur</h5>
             </div>
-            
           </div>
           {/* Add more frames as needed */}
         </div>
@@ -196,4 +195,3 @@ The central element of the courtyard is the Tusha Hiti, a sunken water tank with
 }
 
 export default DescriptionPage;
-

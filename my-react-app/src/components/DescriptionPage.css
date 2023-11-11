@@ -1,4 +1,4 @@
-.DescriptionPage{
+.DescriptionPage {
   background: linear-gradient(
     360deg,
     #aca777 -3.47%,
@@ -33,8 +33,6 @@
   border-color: #fff;
   opacity: 1;
 }
-
-
 
 .UpperDiv {
   width: 100%;
@@ -135,7 +133,6 @@
   position: relative;
   z-index: 2;
   margin-top: -100px;
-
 }
 
 .desctiption-container {
@@ -159,9 +156,9 @@
 }
 .description-map-container {
   position: relative;
-    top: 10%;
-    width: 30%;
-    height: 300px;
+  top: 10%;
+  width: 30%;
+  height: 300px;
 }
 /* .description-map {
   display: flex;
@@ -209,11 +206,19 @@
   position: relative;
 }
 
-.Place-title{
+.Place-title {
   position: relative;
-    margin-top: 5%;
-    left: 5%;
-    font-size: 16px;
-    color: #fff;
-    font-weight: bold;
+  margin-top: 5%;
+  left: 5%;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.pano-image {
+  width: 80% !important;
+}
+
+.image-container {
+  width: 80% !important;
 }

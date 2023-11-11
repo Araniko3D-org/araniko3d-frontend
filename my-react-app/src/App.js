@@ -30,13 +30,14 @@ const App = () => {
               </>
             }
           />
-          <Route path="/description-page" 
-          element={
-          <>
-            <Header/>
-            <DescriptionPage />
-          </>
-          } 
+          <Route
+            path="/description-page"
+            element={
+              <>
+                <Header />
+                <DescriptionPage />
+              </>
+            }
           />
         </Routes>
       </div>
