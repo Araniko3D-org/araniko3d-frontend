@@ -13,8 +13,8 @@ const Footer = () => {
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
-      width: "100%",
-      height: "200px", // Adjust the height as needed
+      width: "200%",
+      height: "200px", 
     };
   
     const bottomImageStyle = {
@@ -23,7 +23,7 @@ const Footer = () => {
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       width: "100%",
-      height: "200px", // Adjust the height as needed
+      height: "250px", 
     };
   
   

@@ -25,12 +25,19 @@ const App = () => {
             path="/map"
             element={
               <>
-                <Header color="black" />
+                <Header />
                 <MapPage />
               </>
             }
           />
-          <Route path="/description-page" element={<DescriptionPage />} />
+          <Route path="/description-page" 
+          element={
+          <>
+            <Header/>
+            <DescriptionPage />
+          </>
+          } 
+          />
         </Routes>
       </div>
     </Router>

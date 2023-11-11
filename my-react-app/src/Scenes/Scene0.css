@@ -70,9 +70,9 @@
 }
 
 .explore-nepal {
-  text-align: left; /* Adjust text alignment */
+  text-align: left; 
   position: absolute;
-  width: 70%; /* Use percentages for responsiveness */
+  width: 70%; 
   height: auto;
   top: 10%;
   left: 10%;
@@ -80,18 +80,18 @@
 }
 
 .ex-nepal {
-  font-size: 6vw; /* Responsive font size */
+  font-size: 6vw; 
   left: 5%;
   color: #F5E290;
 }
 
 .embark {
   position: absolute;
-  font-size: 2vw; /* Responsive font size */
-  left: 0%;
-  top: 60%;
-  font-weight: lighter;
-  color: #F5E290;
+    font-size: 2vw;
+    left: 0%;
+    top: 65%;
+    font-weight: lighter;
+    color: #F5E290;
 }
 
 .get-started {

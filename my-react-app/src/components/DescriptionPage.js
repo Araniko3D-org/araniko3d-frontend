@@ -1,10 +1,11 @@
 // DescriptionPage.js
 import React, { useState } from "react";
 import "./DescriptionPage.css";
+import Footer from "../content/footer.js";
 import BhaktapurHero from "./images/BhaktapurHero.png";
-import Bhaktapur1 from "./images/Bhaktapur1.png";
-import Bhaktapur2 from "./images/Bhaktapur2.png";
-import Bhaktapur3 from "./images/Bhaktapur3.png";
+import BhaktapurImage from "../content/images/Bhaktapur.png";
+import UmaMaheswori from "../content/images/Umamaheswori.jpeg";
+import BhagBhairav from "../content/images/BhagBhairav.jpg";
 import { DescriptionMap } from "../components/DescriptionMap/DescriptionMap";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -61,7 +62,7 @@ The central element of the courtyard is the Tusha Hiti, a sunken water tank with
   const imageUrl = { BhaktapurHero };
 
   return (
-    <>
+    <div className="DescriptionPage">
       <div className="UpperDiv">
         <Swiper
           modules={[Scrollbar, Navigation, Pagination, A11y]}
@@ -146,124 +147,53 @@ The central element of the courtyard is the Tusha Hiti, a sunken water tank with
         <div className="youtube-video-container">{renderYouTubeVideo()}</div>
       </div>
       <div className="360-image"></div>
-    </>
+
+    {/* Near by places */}
+      <div className="Near-by-palces">
+        <p className="Place-title">Near By Places</p>
+        <div className="frame-container">
+          {/* Rectangle with text overlapping at the bottom */}
+          
+          <div className="frame">
+            <div className="service-image">
+              <img src={BhaktapurImage} alt="Work 1" />
+            </div>
+            <div className="text-overlay">
+              <h4 className="frameh4">Bhaktapur Durbar Square</h4>
+              <h5 className='frameh5'>Bhaktapur</h5>
+            </div>
+          </div>
+  
+          {/* Repeat the frame for more images */}
+          <div className="frame">
+            <div className="service-image">
+              <img src={UmaMaheswori} alt="Work 1" />
+            </div>
+            <div className="text-overlay">
+              <h4 className="frameh4">Uma Maheswori</h4>
+              <h5 className='frameh5'>Kritipur</h5>
+            </div>
+            
+          </div>
+          
+          <div className="frame">
+            <div className="service-image">
+              <img src={BhagBhairav} alt="Work 1" />
+            </div>
+            <div className="text-overlay">
+              <h4 className="frameh4">BhagBhairab</h4>
+              <h5 className='frameh5'>Kritipur</h5>
+            </div>
+            
+          </div>
+          {/* Add more frames as needed */}
+        </div>
+      </div>
+
+      <Footer />
+    </div>
   );
 }
 
 export default DescriptionPage;
 
-// {
-//   /* <div className="container"> */
-// }
-// {
-//   /* <div className="top-bar"> */
-// }
-// {
-//   /* <div className="page-title">Sundari Chowk</div> */
-// }
-// {
-//   /* <a className="back-button" href="/"> */
-// }
-// {
-//   /* ✖ */
-// }
-// {
-//   /* </a> */
-// }
-// {
-//   /* </div> */
-// }
-// {
-//   /* <div className="left-column">
-//     <div className="image">
-//       <img src={Bhaktapur1} alt="Bhaktapur1" />
-//     </div>
-//     <div className="image">
-//       <img src={Bhaktapur2} alt="Bhaktapur2" />
-//     </div>
-//     <div className="image">
-//       <img src={Bhaktapur3} alt="Bhaktapur3" />
-//     </div>
-//   </div> */
-// }
-// {
-//   /* <div className="hero-column"> */
-// }
-
-// {
-//   /* <div className="UpperDiv">
-//   <Swiper
-//     modules={[Scrollbar, Navigation, Pagination, A11y]}
-//     // spaceBetween={50}
-//     slidesPerView={1}
-//     navigation
-//     loop={true} // Enable continuous loop
-//     loopedSlides={4} // Number of total slides (adjust as ne
-//     pagination={{ clickable: true }}
-//     scrollbar={{ draggable: true }}
-//     // onSwiper={(swiper) => console.log(swiper)}
-//     // onSlideChange={() => console.log("slide change")}
-//   >
-//     <SwiperSlide key={1}>
-//       <div className="hero-column">
-//         <img
-//           // src="monuments/sundari_1.jpeg"
-//           src={BhaktapurHero}
-//           className="main-image"
-//           alt="BhaktapurHero"
-//         />
-//       </div>
-//     </SwiperSlide>
-
-//     <SwiperSlide key={2}>
-//       <div className="hero-column">
-//         <img
-//           src="monuments/sundari_2.jpeg"
-//           className="main-image"
-//           alt="Bhaktapur1"
-//         />
-//       </div>
-//     </SwiperSlide>
-
-//     <SwiperSlide key={3}>
-//       <div className="hero-column">
-//         <img
-//           src="monuments/sundari_3.jpeg"
-//           className="main-image"
-//           alt="BhaktapurHero"
-//         />
-//       </div>
-//     </SwiperSlide>
-
-//     <SwiperSlide key={4}>
-//       <div className="hero-column">
-//         <img
-//           src="monuments/sundari_4.webp"
-//           className="main-image"
-//           alt="BhaktapurHero"
-//         />
-//       </div>
-//     </SwiperSlide>
-//   </Swiper>
-// </div>
-
-// <div className="main-content">
-//   <div className="description-map">
-//     <div className="description">
-//       <span className="description-title">Description:</span>
-//       <p>{content}</p>
-//       {!showFullContent && (
-//         <span className="read-more" onClick={toggleContent}>
-//           {showFullContent ? "See Less <<" : "See More >>"}
-//         </span>
-//       )}
-//     </div>
-//     <div className="description-map-container">
-//       <DescriptionMap position={[27.6727184, 85.3251013]} />
-//     </div>
-//   </div>
-
-//   <div className="youtube-video-container">{renderYouTubeVideo()}</div>
-// </div>
-// </div> */
-// }
