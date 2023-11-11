@@ -3,5 +3,43 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: blue;
+}
+.grid-container {
+  display: grid;
+  grid-template-rows: auto; /* Define four rows */
+  grid-template-columns: 1fr 1fr; /* Define two columns for the second row */
+
+  /* Optional: Set grid gap for better visualization */
+  gap: 10px;
+}
+
+.error {
+  color: red;
+  padding: 0;
+  margin: 0;
+}
+
+.input-fields {
+  padding: 1rem 0;
+}
+
+.grid-container > :first-child {
+  grid-column: 1 / span 2; /* Span two columns */
+}
+
+.grid-item:nth-child(4),
+.grid-item:nth-child(5) {
+  grid-column: 1 / span 2; /* Span two columns */
+}
+
+.form-input {
+  border: none;
+  border-bottom: 1px solid #000; /* Add a bottom border with your desired color (here, it's black) */
+  outline: none; /* Remove the default focus outline (optional) */
+}
+
+.grid-container > :last-child {
+  grid-column: span 2; /* Span two columns */
+  justify-self: center; /* Center the item horizontally within the grid cell */
+  width: 50%;
 }

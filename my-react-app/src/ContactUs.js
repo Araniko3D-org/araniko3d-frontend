@@ -20,43 +20,48 @@ const ContactUs = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    // You can perform further actions, e.g., sending the data to a server
   };
 
   return (
     <div className="form-container">
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div>
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="grid-container 
+"
+      >
+        <div className="input-fields grid-item">
           <label>Email:</label>
-          <input {...register("email")} />
-          <p>{formState.errors.email?.message}</p>
+          <input {...register("email")} className="form-input" />
+          <p className="error">{formState.errors.email?.message}</p>
         </div>
 
-        <div>
+        <div className="input-fields grid-item">
           <label>First Name:</label>
-          <input {...register("firstName")} />
-          <p>{formState.errors.firstName?.message}</p>
+          <input {...register("firstName")} className="form-input" />
+          <p className="error">{formState.errors.firstName?.message}</p>
         </div>
 
-        <div>
+        <div className="input-fields grid-item">
           <label>Last Name:</label>
-          <input {...register("lastName")} />
-          <p>{formState.errors.lastName?.message}</p>
+          <input {...register("lastName")} className="form-input" />
+          <p className="error">{formState.errors.lastName?.message}</p>
         </div>
 
-        <div>
+        <div className="input-fields grid-item">
           <label>Organization Name:</label>
-          <input {...register("organization")} />
-          <p>{formState.errors.organization?.message}</p>
+          <input {...register("organization")} className="form-input" />
+          <p className="error">{formState.errors.organization?.message}</p>
         </div>
 
-        <div>
+        <div className="input-fields grid-item">
           <label>Message:</label>
-          <input {...register("message")} />
-          <p>{formState.errors.message?.message}</p>
+          <input {...register("message")} className="form-input" />
+          <p className="error">{formState.errors.message?.message}</p>
         </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit" className="grid-item submit-button">
+          Submit
+        </button>
       </form>
     </div>
   );
