@@ -7,6 +7,8 @@ import MapPage from "./components/MapPage.js";
 import DescriptionPage from "./components/DescriptionPage.js";
 import "./App.css";
 
+import ContactUs from "./ContactUs.js";
+
 const App = () => {
   return (
     <Router>
@@ -36,6 +38,16 @@ const App = () => {
               <>
                 <Header />
                 <DescriptionPage />
+              </>
+            }
+          />
+
+          <Route
+            path="/contactus"
+            element={
+              <>
+                <Header />
+                <ContactUs />
               </>
             }
           />
