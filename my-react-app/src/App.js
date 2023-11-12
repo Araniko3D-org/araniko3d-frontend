@@ -43,6 +43,16 @@ const App = () => {
           />
 
           <Route
+            path="/description-page/:title"
+            element={
+              <>
+                <Header />
+                <DescriptionPage />
+              </>
+            }
+          />
+
+          <Route
             path="/contactus"
             element={
               <>

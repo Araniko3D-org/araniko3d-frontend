@@ -21,6 +21,7 @@ export const locationData = [
       immerse yourself in Nepal's vibrant culture, the Krishna Temple is a place where you can 
       experience the beauty of spirituality and artistry in one stunning location.`,
     images: [
+      "KrishnaTemple.jpeg",
       "krishna_temple_1.jpeg",
       "krishna_temple_2.jpeg",
       "krishna_temple_3.png",
@@ -28,6 +29,7 @@ export const locationData = [
     mapUrl: "https://maps.google.com/?q=27.6752289, 85.3219734",
     latitude: 27.6752289,
     longitude: 85.3219734,
+    location: "Patan, Lalitpur",
   },
   {
     title: "Bhag Bhairav of Kirtipur",
@@ -52,6 +54,7 @@ export const locationData = [
     mapUrl: "https://maps.google.com/?q=27.6794234, 85.2739021",
     latitude: 27.6794234,
     longitude: 85.2739021,
+    location: "Kirtipur, Kathmandu",
   },
   {
     title: "Uma Maheshwor Temple of Kirtipur",
@@ -76,6 +79,7 @@ export const locationData = [
       connect with the divine and appreciate the artistic heritage of the region.`,
     images: [
       "uma_maheshwor_1.jpeg",
+      "Umamaheswori.jpeg",
       "uma_maheshwor_2.jpeg",
       "uma_maheshwor_3.jpeg",
       "uma_maheshwor_4.jpeg",
@@ -83,6 +87,7 @@ export const locationData = [
     mapUrl: "https://maps.google.com/?q=27.680058, 85.272057",
     latitude: 27.680058,
     longitude: 85.272057,
+    location: "Kirtipur, Kathmandu",
   },
   {
     title: "Hiranya Varna Mahavihar of Lalitpur",
@@ -108,5 +113,62 @@ export const locationData = [
     mapUrl: "https://maps.google.com/?q=27.6735697, 85.3223784",
     latitude: 27.6735697,
     longitude: 85.3223784,
+    location: "Hiranya Varna Mahavihar Bakhundole, Patan, Lalitpur",
+  },
+  {
+    title: "Sundari Chowk",
+    description: `Sundari Chowk is a historic courtyard located in the heart of Patan, Nepal.
+      This exquisite courtyard is known for its architectural beauty and cultural significance.
+
+      Sundari Chowk features intricate woodcarvings, traditional Newari architecture, and a
+      serene atmosphere. The courtyard is surrounded by stunning structures, including temples
+      and palaces, making it a captivating destination for visitors.
+
+      The detailed craftsmanship of Sundari Chowk reflects the rich artistic heritage of the
+      region. The courtyard is not only a visual delight but also a peaceful space where
+      visitors can experience the cultural charm of Patan.
+
+      Whether you are an architecture enthusiast, a history buff, or a traveler seeking the
+      authentic cultural experience, Sundari Chowk is a must-visit destination within the
+      vibrant city of Patan.`,
+    images: [
+      "sundari_chowk_3.jpeg",
+      "sundari_chowk_1.jpeg",
+      "sundari_chowk_2.jpeg",
+      "sundari_chowk_4.jpeg",
+    ],
+    mapUrl: "https://maps.google.com/?q=27.673662, 85.321977",
+    latitude: 27.673662,
+    longitude: 85.321977,
+    location: "Patan Durbar Square, Lalitpur",
+  },
+  {
+    title: "Mul Chowk",
+    description: `Mul Chowk is a historic courtyard situated in Bhaktapur, Nepal.
+      This charming chowk is known for its cultural significance and traditional architecture.
+
+      Mul Chowk features intricate woodcarvings, a central water fountain, and surrounding
+      structures that showcase the artistic craftsmanship of the Newari people. The chowk
+      is a peaceful retreat within the bustling city of Bhaktapur.
+
+      The courtyard is often used for various cultural events, ceremonies, and festivals.
+      Visitors to Mul Chowk can explore the details of the woodcarvings, appreciate the
+      cultural ambiance, and witness the vibrant life of Bhaktapur.
+
+      Whether you are a cultural explorer, a photography enthusiast, or a traveler seeking
+      authentic experiences, Mul Chowk offers a glimpse into the rich heritage of Bhaktapur.`,
+    images: [
+      "mul_chowk_6.jpeg",
+      "mul_chowk_5.jpeg",
+      "mul_chowk_3.jpeg",
+      "mul_chowk_4.jpeg",
+      "mul_chowk_2.jpeg",
+
+      // "mul_chowk_1.webp",
+    ],
+    mapUrl: "https://maps.google.com/?q=27.672854, 85.428495",
+    latitude: 27.672854,
+    longitude: 85.428495,
+    location: "Mul Chowk, Lalitpur",
   },
 ];
