@@ -1,26 +1,47 @@
-// Import necessary modules
-import React from "react";
-import { AppRegistry, View, Image } from "react-360";
+// import React, { useEffect } from "react";
+// import * as PANOLENS from "panolens";
+// // import "panolens.min.js";
+// import "./360image.css"; // Import your custom styles
 
-// Create a React component
-class Your360ImageComponent extends React.Component {
-  render() {
-    return (
-      <View>
-        <Image
-          style={{
-            width: 1000, // Adjust width as needed
-            height: 600, // Adjust height as needed
-          }}
-          source={{ uri: "path/to/your/360-image.jpg" }}
-        />
-      </View>
-    );
-  }
-}
+// // import * as THREE from "three";
 
-// Register the component
-AppRegistry.registerComponent(
-  "Your360ImageComponent",
-  () => Your360ImageComponent
-);
+// const ImagePano = () => {
+//   useEffect(() => {
+//     const panorama = new PANOLENS.ImagePanorama("images/panel1.jpeg");
+//     const panorama2 = new PANOLENS.ImagePanorama("images/pano5.jpg");
+//     let imageContainer = document.querySelector(".image-container");
+
+//     var infospotPositions = [
+//       new PANOLENS.Vector3(-2136.06, 16.3, 890.14),
+//       new PANOLENS.Vector3(-3136.06, 296.3, -4290.14),
+//     ];
+
+//     const viewer = new PANOLENS.Viewer({
+//       container: imageContainer,
+//       autoRotate: true,
+//       autoRotateSpeed: 0.3,
+//       controlBar: true,
+//       width: "80%",
+//     });
+
+//     panorama.link(panorama2, infospotPositions[0]);
+//     panorama2.link(panorama, infospotPositions[1]);
+
+//     viewer.add(panorama, panorama2);
+
+//     // Clean up on component unmount
+//     return () => {
+//       viewer.dispose();
+//     };
+//   }, []); // Empty dependency array ensures that this effect runs only once on component mount
+
+//   return (
+//     <div className="pano-image">
+//       <div className="image-container">
+//         {/* Your other React components go here */}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ImagePano;

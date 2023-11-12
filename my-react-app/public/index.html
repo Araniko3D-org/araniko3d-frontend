@@ -24,6 +24,10 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
     <title>React App</title>
   </head>
   <body>
@@ -48,19 +52,20 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"></script>
     <script src="./panolens.min.js"></script>
+
+    <script src="js/panolens.min.js"></script>
 
     <script>
       const panorama = new PANOLENS.ImagePanorama("images/panel1.jpeg");
       const panorama2 = new PANOLENS.ImagePanorama("images/pano5.jpg");
       let imageContainer = document.querySelector(".image-container");
-
       var infospotPositions = [
         new THREE.Vector3(-2136.06, 16.3, 890.14),
         new THREE.Vector3(-3136.06, 296.3, -4290.14),
       ];
-
       const viewer = new PANOLENS.Viewer({
         container: imageContainer,
         autoRotate: true,
@@ -68,39 +73,20 @@
         controlBar: true,
         width: "80%",
       });
-
       panorama.link(panorama2, infospotPositions[0]);
       panorama2.link(panorama, infospotPositions[1]);
-
-      viewer.add(panorama, panorama2);
-      /*
-      window.onload = function () {
-        const panorama = new PANOLENS.ImagePanorama("images/panel1.jpeg");
-        const panorama2 = new PANOLENS.ImagePanorama("images/pano5.jpg");
-        let imageContainer = document.querySelector(".image-container");
-
-        var infospotPositions = [
-          new THREE.Vector3(-2136.06, 16.3, 890.14),
-          new THREE.Vector3(-3136.06, 296.3, -4290.14),
-        ];
-
-        const viewer = new PANOLENS.Viewer({
-          container: imageContainer,
-          autoRotate: true,
-          autoRotateSpeed: 0.3,
-          controlBar: true,
-          width: "80%",
-        });
-
-        panorama.link(panorama2, infospotPositions[0]);
-        panorama2.link(panorama, infospotPositions[1]);
-
-        viewer.add(panorama, panorama2);
-
-        // Show the Panolens container once it's loaded
-        imageContainer.style.display = "block";
-      };
-      */
+      viewer.add(panorama, panorama2); /* window.onload =
+    function () { const panorama = new
+    PANOLENS.ImagePanorama("images/panel1.jpeg"); const panorama2 = new
+    PANOLENS.ImagePanorama("images/pano5.jpg"); let imageContainer =
+    document.querySelector(".image-container"); var infospotPositions = [ new
+    THREE.Vector3(-2136.06, 16.3, 890.14), new THREE.Vector3(-3136.06, 296.3,
+    -4290.14), ]; const viewer = new PANOLENS.Viewer({ container:
+    imageContainer, autoRotate: true, autoRotateSpeed: 0.3, controlBar: true,
+    width: "80%", }); panorama.link(panorama2, infospotPositions[0]);
+    panorama2.link(panorama, infospotPositions[1]); viewer.add(panorama,
+    panorama2); // Show the Panolens container once it's loaded
+    imageContainer.style.display = "block"; }; */
     </script>
     <!-- <script src="main.js"></script> -->
   </body>

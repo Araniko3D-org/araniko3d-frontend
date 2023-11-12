@@ -8,6 +8,8 @@ import UmaMaheswori from "../content/images/Umamaheswori.jpeg";
 import BhagBhairav from "../content/images/BhagBhairav.jpg";
 import { DescriptionMap } from "../components/DescriptionMap/DescriptionMap";
 
+// import ImagePano from "../components/360image/360image";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
@@ -149,6 +151,7 @@ The central element of the courtyard is the Tusha Hiti, a sunken water tank with
       <div className="pano-image">
         <div class="image-container"></div>
       </div>
+
       {/* Near by places */}
       <div className="Near-by-palces">
         <p className="Place-title">Near By Places</p>

@@ -1,35 +1,33 @@
 import React from "react";
 import topImage from "./images/topfooter.png";
 import bottomImage from "./images/bottomfooter.png";
-import FacebookIcon  from "./images/facebookIcon.png";
-import LinkedinIcon  from "./images/instaIcon.png";
+import FacebookIcon from "./images/facebookIcon.png";
+import LinkedinIcon from "./images/instaIcon.png";
 import TwitterIcon from "./images/TwitterIcon.png";
 import "./styles.css";
 
-
 const Footer = () => {
-    const topImageStyle = {
-      backgroundImage: `url(${topImage})`,
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat",
-      backgroundSize: "cover",
-      width: "200%",
-      height: "200px", 
-    };
-  
-    const bottomImageStyle = {
-      backgroundImage: `url(${bottomImage})`,
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat",
-      backgroundSize: "cover",
-      width: "100%",
-      height: "250px", 
-    };
-  
-  
-    return (
-      <div className="footer">
-        <div className="footer-mask">
+  const topImageStyle = {
+    backgroundImage: `url(${topImage})`,
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    width: "200%",
+    height: "200px",
+  };
+
+  const bottomImageStyle = {
+    backgroundImage: `url(${bottomImage})`,
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    width: "100%",
+    height: "250px",
+  };
+
+  return (
+    <div className="footer">
+      <div className="footer-mask">
         <div class="footer-upper">
           <div class="footer-text">
             <h3>Schedule a Demo</h3>
@@ -40,7 +38,9 @@ const Footer = () => {
         <div class="footer-lower">
           <div class="footer-column">
             <h4>Get Started</h4>
-            <p>Get started with our platform and explore amazing heritage sites.</p>
+            <p>
+              Get started with our platform and explore amazing heritage sites.
+            </p>
             <div class="email-input">
               <input type="text" placeholder="Enter your email" />
               <button>Subscribe</button>
@@ -67,27 +67,32 @@ const Footer = () => {
             <p>araniko@gmail.com</p>
             <p>+123-456-7890</p>
             <div class="social-icons">
-              <a href="#"><img src={FacebookIcon} alt="Facebook" /></a>
-              <a href="#"><img src={TwitterIcon} alt="Twitter" /></a>
-              <a href="#"><img src={LinkedinIcon} alt="LinkedIn" /></a>
+              <a href="#">
+                <img src={FacebookIcon} alt="Facebook" />
+              </a>
+              <a href="#">
+                <img src={TwitterIcon} alt="Twitter" />
+              </a>
+              <a href="#">
+                <img src={LinkedinIcon} alt="LinkedIn" />
+              </a>
             </div>
           </div>
-          </div>
+        </div>
       </div>
-        <div className="top-image" style={topImageStyle}></div>
-        <div className="bottom-image" style={bottomImageStyle}></div>
-        <p className="copyright">
-          &copy; 2023 All the rights are reserved by{" "}
-          <a
-            href="https://aaraniko3d.co"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            araniko3d.co
-          </a>
-        </p>
-      </div>
-    );
-  };
-  
-  export default Footer;
+      <div className="top-image" style={topImageStyle}></div>
+      <div className="bottom-image" style={bottomImageStyle}></div>
+      <p className="copyright">
+        &copy; 2023 All the rights are reserved by{" "}
+        <a
+          href="https://aaraniko3d.co"
+          style={{ color: "white", textDecoration: "none" }}
+        >
+          araniko3d.co
+        </a>
+      </p>
+    </div>
+  );
+};
 
+export default Footer;
