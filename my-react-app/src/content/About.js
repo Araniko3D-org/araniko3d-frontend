@@ -7,7 +7,7 @@ const About = () => {
       <p className='about'>About <span> Us</span></p>
 
       <div className='about-box'>
-        <p className='about-para'>Araniko3D leverages AI, including Neural Radiance Field and SLAM, to create precise 3D replicas of Nepal's cultural landmarks, safeguarding them from deterioration. These digital replicas serve as virtual references for restoration, preserving the nation's heritage and enabling immersive experiences through virtual reality.</p>
+        <p className='about-para'>Araniko is highly dedicated team committed to promoting cultural sites in Nepal and worldwide. They tirelessly work to raise awareness, protect and showcase the rich history and significance of these sites. Through events, partnerships, responsible tourism, and digital platforms, Araniko strives to preserve and elongate the lifespan of the cultural heritages for future generation.  </p>
       </div>
     </div>
   );
