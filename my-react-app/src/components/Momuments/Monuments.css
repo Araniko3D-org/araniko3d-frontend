@@ -21,8 +21,10 @@
   --transform-scale-y: 1.05;
 }
 .title{
-  text-align:center;
-  font-size: 13px;
+  position: relative;
+    text-align: center;
+    margin-top: 1px;
+    font-size: 14px;
 }
 .monument-image {
   /* position: relative; */
@@ -42,6 +44,10 @@
   padding-bottom: 0.50rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+  text-align: justify;
+}
+.monument-description p{
+  font-size: 14px;
 }
 .monument-description span{
   font-weight: bold;

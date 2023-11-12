@@ -19,11 +19,11 @@ export const Monument = ({ data }) => {
       <div className="monument-description">
         <p>
           <span>Description</span>:{" "}
-          {data.description.split(" ").slice(0, 25).join(" ")}
-          {data.description.split(" ").length > 25 ? "..." : ""}
+          {data.description.split(" ").slice(0, 30).join(" ")}
+          {data.description.split(" ").length > 30 ? "..." : ""}
         </p>
 
-        <div className="flex m-0 p-0 right gap-2" style={{ marginTop: '-10px', marginLeft: '-5px' }}>
+        <div className="flex m-0 p-0 right gap-2" style={{ marginTop: '-20px', marginLeft: '-5px' }}>
           <div className="flex m-0 p-0 gap-2"
                 onClick={navigateToDescriptionPage}
               >

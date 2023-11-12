@@ -24,7 +24,7 @@ const ContactUs = () => {
   };
 
   return (
-    <>
+    <div className="Contact-US">
       <div className="contact-us-container">
         <div className="contact-us-contents">
           <div className="contact-us-content">
@@ -63,8 +63,7 @@ const ContactUs = () => {
           </p>
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="grid-container 
-"
+            className="grid-container"
           >
             <div className="input-fields grid-item">
               <label>Email:</label>
@@ -107,8 +106,10 @@ const ContactUs = () => {
           </p>
         </div>
       </div>
-      <Footer />
-    </>
+      <div className="contact-footer">
+        <Footer />
+      </div>
+    </div>
   );
 };
 

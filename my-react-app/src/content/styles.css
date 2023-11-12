@@ -623,7 +623,7 @@
 
 .top-image {
   position: relative;
-  bottom: 110px;
+  bottom: 100px;
 }
 
 .bottom-image {
@@ -666,6 +666,7 @@
 }
 
 .footer-text a {
+  font-size: 18px;
   color: #2d87f0;
   text-decoration: none;
 }
@@ -713,8 +714,8 @@ ul {
   position: absolute;
   display: flex;
   margin-top: 10px;
-  left: 790px;
-  top: 140px;
+  left: 780px;
+  top: 150px;
   width: 150px;
   /* background: rgba(0, 0, 0, 0.3);*/
 }
@@ -731,6 +732,13 @@ ul {
 
 .footer-column li,
 p {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: lighter;
+}
+.footer-mask h3{
+  font-size: 20px;
+}
+.footer-mask h4{
+  font-size: 18px;
+  color: #2d87f0;
 }

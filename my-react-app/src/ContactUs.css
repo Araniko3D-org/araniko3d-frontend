@@ -1,5 +1,15 @@
+.Contact-US{
+  background: linear-gradient(
+    358.74deg,
+    #aca777 -7.08%,
+    #a8534e 51.24%,
+    #250bc6 107.39%
+  );
+}
 .form-container {
-  /* height: 100vh; */
+  z-index: 2;
+  height: 500px !important;
+  margin-top: -50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,6 +17,7 @@
   font-family: "Inter" !important;
   background-color: white;
 }
+
 .grid-container {
   display: grid;
   grid-template-rows: auto; /* Define four rows */
@@ -54,17 +65,12 @@
 }
 
 .contact-us-container {
+  position: relative;
+  z-index: 1;
   color: white;
   height: 50vh;
   justify-content: center;
   align-items: center;
-
-  background: linear-gradient(
-    358.74deg,
-    #aca777 -7.08%,
-    #a8534e 51.24%,
-    #250bc6 107.39%
-  );
   display: flex;
   line-height: 0%;
 }
@@ -101,8 +107,10 @@
 }
 
 .contact-us-icons {
+  position: relative;
   display: flex;
   gap: 25px;
+  margin-top: -50px;
 }
 
 .contact-us-icon {
@@ -110,6 +118,8 @@
 }
 
 .next-step-container {
+  position: relative;
+  right: 30px;
   color: #4d21a1;
 }
 
@@ -127,7 +137,11 @@
 }
 
 .contact-us-second-container {
+  height: 400px;
   display: flex;
   background-color: #efefef;
   justify-content: space-around;
+}
+.contact-footer{
+  z-index: 1;
 }
