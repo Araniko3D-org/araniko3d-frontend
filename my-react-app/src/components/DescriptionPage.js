@@ -137,7 +137,7 @@ The central element of the courtyard is the Tusha Hiti, a sunken water tank with
               dolor in reprehenderit in voluptate velit esse cillum dolore eu
               fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur
               adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. voluptate{" "}
+              dolore magna aliqua. voluptate
             </p>
           </div>
           <div className="description-map-container">

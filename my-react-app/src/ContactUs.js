@@ -24,7 +24,7 @@ const ContactUs = () => {
   };
 
   return (
-    <>
+    <div className="bg-gradient">
       <div className="contact-us-container">
         <div className="contact-us-contents">
           <div className="contact-us-content">
@@ -56,30 +56,36 @@ const ContactUs = () => {
           <h3>next step?</h3>
         </div>
         <div className="form-container">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do{" "}
-            <br />
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
+          <div className="form-container-upper-div">
+            <p className="form-container-upper-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do{" "}
+              <br />
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="grid-container 
 "
           >
             <div className="input-fields grid-item">
-              <label>Email:</label>
-              <input {...register("email")} className="form-input" />
+              <label>Email *</label>
+              <input
+                {...register("email")}
+                className="form-input"
+                placeholder="Enter Email"
+              />
               <p className="error">{formState.errors.email?.message}</p>
             </div>
 
             <div className="input-fields grid-item">
-              <label>First Name:</label>
+              <label>First Name *</label>
               <input {...register("firstName")} className="form-input" />
               <p className="error">{formState.errors.firstName?.message}</p>
             </div>
 
             <div className="input-fields grid-item">
-              <label>Last Name:</label>
+              <label>Last Name *</label>
               <input {...register("lastName")} className="form-input" />
               <p className="error">{formState.errors.lastName?.message}</p>
             </div>
@@ -100,15 +106,18 @@ const ContactUs = () => {
               Send
             </button>
           </form>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            <br />
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
+
+          <div className="form-container-bottom-div">
+            <p className="form-container-bottom-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              <br />
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
