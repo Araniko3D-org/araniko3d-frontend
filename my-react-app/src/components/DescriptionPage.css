@@ -216,9 +216,11 @@
 }
 
 .pano-image {
-  width: 80% !important;
+  width: 100% !important;
 }
-
+/* 
 .image-container {
-  width: 80% !important;
-}
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+} */

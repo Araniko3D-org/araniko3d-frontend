@@ -30,6 +30,13 @@ export const locationData = [
     latitude: 27.6752289,
     longitude: 85.3219734,
     location: "Patan, Lalitpur",
+    youtube: "https://www.youtube.com/watch?v=WN4-8-jBUG0",
+    panellumImage: [
+      "sundarichowk1.jpg",
+      "sundarichowk2.jpg",
+      "sundarichowk3.jpg",
+      "sundarichowk4.jpg",
+    ],
   },
   {
     title: "bhag bhairav",
@@ -55,6 +62,13 @@ export const locationData = [
     latitude: 27.6794234,
     longitude: 85.2739021,
     location: "Kirtipur, Kathmandu",
+    youtube: "https://www.youtube.com/watch?v=WN4-8-jBUG0",
+    panellumImage: [
+      "sundarichowk1.jpg",
+      "sundarichowk2.jpg",
+      "sundarichowk3.jpg",
+      "sundarichowk4.jpg",
+    ],
   },
   {
     title: "uma maheshwor temple",
@@ -88,6 +102,13 @@ export const locationData = [
     latitude: 27.680058,
     longitude: 85.272057,
     location: "Kirtipur, Kathmandu",
+    youtube: "https://www.youtube.com/watch?v=WN4-8-jBUG0",
+    panellumImage: [
+      "sundarichowk1.jpg",
+      "sundarichowk2.jpg",
+      "sundarichowk3.jpg",
+      "sundarichowk4.jpg",
+    ],
   },
   {
     title: "hiranya varna mahavihar",
@@ -114,6 +135,14 @@ export const locationData = [
     latitude: 27.6735697,
     longitude: 85.3223784,
     location: "Hiranya Varna Mahavihar Bakhundole, Patan, Lalitpur",
+    youtube: "https://www.youtube.com/watch?v=WN4-8-jBUG0",
+
+    panellumImage: [
+      "sundarichowk1.jpg",
+      "sundarichowk2.jpg",
+      "sundarichowk3.jpg",
+      "sundarichowk4.jpg",
+    ],
   },
   {
     title: "sundari chowk",
@@ -142,6 +171,12 @@ export const locationData = [
     longitude: 85.321977,
     location: "Patan Durbar Square, Lalitpur",
     youtube: "https://www.youtube.com/watch?v=WN4-8-jBUG0",
+    panellumImage: [
+      "sundarichowk1.jpg",
+      "sundarichowk2.jpg",
+      "sundarichowk3.jpg",
+      "sundarichowk4.jpg",
+    ],
   },
   {
     title: "mul chowk",
@@ -172,5 +207,11 @@ export const locationData = [
     longitude: 85.428495,
     location: "Mul Chowk, Lalitpur",
     youtube: "https://www.youtube.com/watch?v=NYt3ISwC6jk",
+    panellumImage: [
+      "mulchowk1.jpg",
+      "mulchowk2.jpg",
+      "mulchowk3.jpg",
+      "mulchowk4.jpg",
+    ],
   },
 ];

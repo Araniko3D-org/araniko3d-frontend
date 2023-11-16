@@ -65,6 +65,7 @@ h4 {
 }
 
 .info {
+  z-index: 20;
   margin: 10px 10px;
   padding: 5px 10px;
   border-radius: 10px;
@@ -95,6 +96,7 @@ h4 {
 }
 
 .monument-item-container {
+  /* z-index: 20; */
   overflow-y: auto;
   height: 80vh;
 }

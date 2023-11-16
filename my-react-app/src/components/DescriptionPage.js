@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./DescriptionPage.css";
 import Footer from "../content/footer.js";
+import Image from "../components/360image/360image";
+
 import BhaktapurHero from "./images/BhaktapurHero.png";
 import BhaktapurImage from "../content/images/Bhaktapur.png";
 import UmaMaheswori from "../content/images/Umamaheswori.jpeg";
@@ -48,6 +50,12 @@ function DescriptionPage() {
     console.log(monument);
     // setInitalContent(monument.title);
   }, [title]);
+
+  // const images =
+  //   data &&
+  //   data.panellumImage.map((image) => {
+  //     return <Image imageUrl={image} />;
+  //   });
 
   // const initialContent = data.title;
 
@@ -165,7 +173,6 @@ function DescriptionPage() {
             // onSlideChange={() => console.log("slide change")}
           >
             {data.images.map((image, key) => {
-              console.log(key);
               return (
                 <SwiperSlide key={key}>
                   <div className="hero-column">
@@ -257,8 +264,30 @@ function DescriptionPage() {
       <div className="flex w-full justify-center youtube-video">
         <div className="youtube-video-container">{renderYouTubeVideo()}</div>
       </div>
+
       <div className="pano-image">
-        <div class="image-container"></div>
+        {/* <div class="image-container"> */}
+        {data && (
+          <Swiper
+            modules={[Scrollbar, Navigation, Pagination, A11y]}
+            slidesPerView={1}
+            loop={true}
+            loopedSlides={1}
+          >
+            {data.panellumImage.map((image, key) => {
+              return (
+                <SwiperSlide key={key}>
+                  <Image imageUrl={image} />
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        )}
+
+        {/* {images} */}
+        {/* {data && <Image imageUrl={data.panellumImage[0]} />} */}
+        {/* <Image imageUrl="" /> */}
+        {/* </div> */}
       </div>
 
       {/* Near by places */}
