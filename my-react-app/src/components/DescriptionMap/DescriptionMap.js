@@ -20,7 +20,7 @@ export const DescriptionMap = ({ position }) => {
       <Marker
         position={position}
         icon={L.icon({
-          iconUrl: "icon.svg",
+          iconUrl: "/icon.svg",
           iconSize: [41, 61],
           iconAnchor: [12, 41],
         })}

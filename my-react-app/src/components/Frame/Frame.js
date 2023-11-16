@@ -6,7 +6,7 @@ import BhaktapurImage from "../../content/images/Bhaktapur.png";
 const Frame = ({ data }) => {
   return (
     <div className="frame">
-      <Link to="/description-page">
+      <Link to={"/description-page/" + data.title.replace(/\s/g, "")}>
         <div className="service-image">
           {/* {image ? ( */}
           <img src={`/monuments/${data.images[0]}`} alt="Work 1" />
