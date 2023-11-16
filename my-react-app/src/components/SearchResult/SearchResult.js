@@ -5,7 +5,7 @@ export const SearchResult = (data) => {
   const navigate = useNavigate();
 
   const navigateToDescriptionPage = () => {
-    navigate("/description-page");
+    navigate("/description-page/" + data.data.title.replace(/\s/g, ""));
   };
 
   // const { latitude, longitude } = data.data;
