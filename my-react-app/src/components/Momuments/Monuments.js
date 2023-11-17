@@ -29,10 +29,9 @@ export const Monument = ({ data }) => {
           {data.description.split(" ").slice(0, 30).join(" ")}
           {data.description.split(" ").length > 30 ? "..." : ""}
         </p>
-
         <div
           className="flex m-0 p-0 right gap-2"
-          style={{ marginTop: "-10px", marginLeft: "-5px" }}
+          style={{ marginTop: "-20px", marginLeft: "-5px" }}
         >
           <div
             className="flex m-0 p-0 gap-2"

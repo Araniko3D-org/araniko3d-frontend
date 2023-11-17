@@ -63,10 +63,7 @@ const ContactUs = () => {
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
           </div>
-          <form
-            onSubmit={handleSubmit(onSubmit)}
-            className="grid-container"
-          >
+          <form onSubmit={handleSubmit(onSubmit)} className="grid-container">
             <div className="input-fields grid-item">
               <label>Email *</label>
               <input
