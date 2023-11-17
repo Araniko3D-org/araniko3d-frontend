@@ -84,15 +84,19 @@ export const SearchBar = ({ setCenter, setZoom }) => {
         <img src="searchbar.svg" alt="" className="border-none" />
       </div>
       {suggestions.length > 0 && (
-      <ul className="suggestion">
-        {suggestions.map((suggestion, index) => (
-          <li key={index} onClick={() => setSearchValue(suggestion)} className="suggestion-item">
-            {suggestion}
-          </li>
-        ))}
-      </ul>
-    )}
-      <div>
+        <ul className="suggestion">
+          {suggestions.map((suggestion, index) => (
+            <li
+              key={index}
+              onClick={() => setSearchValue(suggestion)}
+              className="suggestion-item"
+            >
+              {suggestion}
+            </li>
+          ))}
+        </ul>
+      )}
+      <div className="monument-item-container">
         {/* <div className="info">
           <div className="flex m-0 p-0 gap-2">
             <img src="monument.svg" alt="" />
