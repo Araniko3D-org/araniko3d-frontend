@@ -1,47 +1,23 @@
-// import React, { useEffect } from "react";
-// import * as PANOLENS from "panolens";
-// // import "panolens.min.js";
-// import "./360image.css"; // Import your custom styles
+import React, { useState } from "react";
+import ReactPannellum, { getConfig } from "react-pannellum";
+import "./360image.css";
 
-// // import * as THREE from "three";
+const Image = ({ imageUrl }) => {
+  const config = {
+    autoRotate: -2,
+  };
 
-// const ImagePano = () => {
-//   useEffect(() => {
-//     const panorama = new PANOLENS.ImagePanorama("images/panel1.jpeg");
-//     const panorama2 = new PANOLENS.ImagePanorama("images/pano5.jpg");
-//     let imageContainer = document.querySelector(".image-container");
+  return (
+    <div class="image-container">
+      <ReactPannellum
+        className="pano-container"
+        id={imageUrl}
+        sceneId="firstScene"
+        imageSource={`/pano/${imageUrl}`}
+        config={config}
+      />
+    </div>
+  );
+};
 
-//     var infospotPositions = [
-//       new PANOLENS.Vector3(-2136.06, 16.3, 890.14),
-//       new PANOLENS.Vector3(-3136.06, 296.3, -4290.14),
-//     ];
-
-//     const viewer = new PANOLENS.Viewer({
-//       container: imageContainer,
-//       autoRotate: true,
-//       autoRotateSpeed: 0.3,
-//       controlBar: true,
-//       width: "80%",
-//     });
-
-//     panorama.link(panorama2, infospotPositions[0]);
-//     panorama2.link(panorama, infospotPositions[1]);
-
-//     viewer.add(panorama, panorama2);
-
-//     // Clean up on component unmount
-//     return () => {
-//       viewer.dispose();
-//     };
-//   }, []); // Empty dependency array ensures that this effect runs only once on component mount
-
-//   return (
-//     <div className="pano-image">
-//       <div className="image-container">
-//         {/* Your other React components go here */}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default ImagePano;
+export default Image;

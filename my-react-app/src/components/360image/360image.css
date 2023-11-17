@@ -1,7 +1,10 @@
-/* .pano-image {
-  width: 80% !important;
+.image-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  width: 80%;
 }
 
-.image-container {
-  width: 80% !important;
-} */
+.pano-container {
+  width: 100%;
+}
