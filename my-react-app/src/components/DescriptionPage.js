@@ -5,6 +5,7 @@ import "./DescriptionPage.css";
 import Footer from "../content/footer.js";
 import Image from "../components/360image/360image";
 
+
 import BhaktapurHero from "./images/BhaktapurHero.png";
 import BhaktapurImage from "../content/images/Bhaktapur.png";
 import UmaMaheswori from "../content/images/Umamaheswori.jpeg";
@@ -22,6 +23,8 @@ import "swiper/css/scrollbar";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/swiper-bundle.css";
+
+
 
 function DescriptionPage() {
   const [data, setData] = useState();
@@ -125,31 +128,44 @@ function DescriptionPage() {
         <div className="youtube-video-container">{renderYouTubeVideo()}</div>
       </div>
 
+      {/* 360 view */}
       <div className="pano-image swiper-container">
-        {data && (
-          <Swiper
-            className="custom-swiper"
-            modules={[Scrollbar, Navigation, A11y]}
-            navigation
-            slidesPerView={1}
-            loop={true}
-            loopedSlides={1}
-          >
-            {data.panellumImage.map((image, key) => {
-              return (
-                <SwiperSlide key={key}>
-                  <Image imageUrl={image} />
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
-        )}
+  {data && (
+    <div className="custom-swiper">
+      <Swiper
+        modules={[Scrollbar, Navigation, A11y]}
+        navigation
+        slidesPerView={1}
+        loop={true}
+        loopedSlides={1}
+      >
+        {data.panellumImage.map((image, key) => {
+          return (
+            <SwiperSlide key={key}>
+              <Image imageUrl={image} />
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+      <div className="des-navigation-buttons">
+        <div className="des-nav-container">
+          <button className="nav-button" >
+            &lt;&lt;
+          </button>
+          <button className="nav-button" >
+            &gt;&gt;
+          </button>
+        </div>
       </div>
+    </div>
+  )}
+</div>
+
 
       {/* Near by places */}
       <div className="Near-by-palces">
         <p className="Place-title">Near By Places</p>
-        <div className="frame-container">
+        <div className="near-frame-container">
           {/* Rectangle with text overlapping at the bottom */}
 
           <div className="frame">

@@ -334,6 +334,7 @@
 .frame-container {
   position: relative;
   top: 30%;
+  left: 3%;
   display: flex;
   flex-wrap: wrap;
   gap: 100px;

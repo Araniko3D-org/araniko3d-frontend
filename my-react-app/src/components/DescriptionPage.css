@@ -215,7 +215,7 @@
 } */
 
 .youtube-video-container {
-  /* border: 8px solid #fff; */
+  border: 8px solid #fff;
   width: 83%;
   height: 60vh;
 }
@@ -228,7 +228,7 @@
 
 .Place-title {
   position: relative;
-  margin-top: 5%;
+  margin-top: 10%;
   left: 5%;
   font-size: 24px;
   color: #fff;
@@ -236,14 +236,68 @@
 }
 
 .pano-image {
-  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; 
+}
+
+.custom-swiper .swiper-slide {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.custom-swiper {
-  /* Add your custom styles for the first Swiper here */
-  /* Example: */
-  background-color: #f0f0f0;
-  /* ... */
+.custom-swiper .main-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover; 
+}
+.des-navigation-buttons{
+  position: absolute;
+    bottom: -65px;
+    right: 650px;
+    display: flex;
+    gap: 0;
+}
+.des-nav-container{
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+}
+/* .custom-swiper .swiper-button-prev,
+.custom-swiper .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, 30px);
+    right: auto;
+}
+
+.custom-swiper .swiper-button-prev,
+.custom-swiper .swiper-button-next {
+    position: absolute;
+    top: var(--swiper-navigation-top-offset, 65%);
+    width: calc(var(--swiper-navigation-size) / 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; 
+} */
+
+.near-frame-container {
+  position: relative;
+  top: 30%;
+  left: -20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 200px;
+  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
 }
