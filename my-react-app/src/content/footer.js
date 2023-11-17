@@ -1,9 +1,6 @@
 import React from "react";
 import topImage from "./images/topfooter.png";
 import bottomImage from "./images/bottomfooter.png";
-import FacebookIcon from "./images/facebookIcon.png";
-import LinkedinIcon from "./images/instaIcon.png";
-import TwitterIcon from "./images/TwitterIcon.png";
 import "./styles.css";
 
 const Footer = () => {
@@ -12,7 +9,7 @@ const Footer = () => {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
-    width: "200%",
+    width: "150%",
     height: "200px",
   };
 
@@ -68,13 +65,21 @@ const Footer = () => {
             <p>+123-456-7890</p>
             <div class="social-icons">
               <a href="#">
-                <img src={FacebookIcon} alt="Facebook" />
+                <img
+                src="facebook.svg"
+                alt="facebook"
+                />
               </a>
               <a href="#">
-                <img src={TwitterIcon} alt="Twitter" />
+                <img
+                src="linkedin.svg"
+                alt="linkedin"
+                />
               </a>
               <a href="#">
-                <img src={LinkedinIcon} alt="LinkedIn" />
+                <img src="twitter.svg" 
+                alt="twitter"
+                />
               </a>
             </div>
           </div>

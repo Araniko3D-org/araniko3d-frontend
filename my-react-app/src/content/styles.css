@@ -122,6 +122,169 @@
     margin-left: 100px;
     margin-right: 100px;
 }
+/* Problem Statement */
+/* ProblemStatement.css */
+
+.problem-container {
+  padding: 20px;
+  min-height: 60vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.problem-statement {
+  position: absolute;
+  top: 10%;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.problem{
+  position: absolute;
+  top: 15%;
+  font-size: 24px;
+}
+.problem span{
+  position: absolute;
+  display: contents;
+  color: #fff;
+  font-size: 24px;
+  left: 90px;
+  font-weight: bold;
+}
+.problem-para {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 20px;
+  padding: 50px;
+  border-radius: 15px;
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+/* Solution */
+.solution-page{
+  padding: 20px;
+  min-height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+.solution-our {
+  position: absolute;
+  top: 5%;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.solution{
+  position: absolute;
+  top: 10%;
+  font-size: 24px;
+}
+.solution span{
+  position: absolute;
+  display: contents;
+  color: #fff;
+  font-size: 24px;
+  left: 90px;
+  font-weight: bold;
+}
+
+.left-div {
+  flex: 1;
+}
+
+.left-div img {
+  position: relative;
+  width: 30%;
+  left: 30%;
+  border-radius: 8px;
+}
+
+.right-div {
+  flex: 1;
+  position: relative;
+  right: 3%;
+}
+
+.transparent-box {
+  background: rgba(0,0,0,0.3);
+  padding: 20px 20px;
+  color: #fff;
+  justify-content: center;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  font-size: 20px;
+}
+.transparent-box li:before {
+  content: '\2022'; 
+  color: #fff;
+  font-size: 24px; 
+  position: absolute;
+  left: 5%;
+}
+
+.transparent-box h2 {
+  margin-bottom: 10px;
+}
+
+.transparent-box ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.transparent-box li {
+  margin-bottom: 8px;
+  left: 15%;
+}
+/* Mission */
+.Mission-page {
+  padding: 20px;
+  min-height: 50vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+.Mission-us {
+  position: absolute;
+  top: 0%;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.Mission {
+  position: absolute;
+  top: 5%;
+  font-size: 24px;
+}
+.Mission span {
+  position: absolute;
+  display: contents;
+  color: #fff;
+  font-size: 24px;
+  left: 90px;
+  font-weight: bold;
+}
+.Mission-para {
+  background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 20px;
+    padding: 50px;
+    border-radius: 15px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 /* Services.css */
 .services-section {
   padding: 20px;
@@ -623,7 +786,7 @@
 
 .top-image {
   position: relative;
-  bottom: 110px;
+  bottom: 100px;
 }
 
 .bottom-image {
@@ -666,6 +829,7 @@
 }
 
 .footer-text a {
+  font-size: 18px;
   color: #2d87f0;
   text-decoration: none;
 }
@@ -713,8 +877,8 @@ ul {
   position: absolute;
   display: flex;
   margin-top: 10px;
-  left: 790px;
-  top: 140px;
+  left: 780px;
+  top: 150px;
   width: 150px;
   /* background: rgba(0, 0, 0, 0.3);*/
 }
@@ -731,6 +895,13 @@ ul {
 
 .footer-column li,
 p {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: lighter;
+}
+.footer-mask h3{
+  font-size: 20px;
+}
+.footer-mask h4{
+  font-size: 18px;
+  color: #2d87f0;
 }

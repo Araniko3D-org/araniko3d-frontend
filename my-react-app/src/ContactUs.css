@@ -7,7 +7,6 @@
   );
 }
 .form-container {
-  margin-top: -100px;
   /* height: 100vh; */
   display: flex;
   flex-direction: column;
@@ -52,6 +51,7 @@
   justify-content: center;
   display: flex;
 }
+
 .grid-container {
   display: grid;
   grid-template-rows: auto; /* Define four rows */
@@ -70,7 +70,7 @@
 }
 
 .input-fields {
-  padding: 1rem 0 0 0;
+  padding: 1rem 0;
 }
 
 .grid-container > :first-child {
@@ -103,17 +103,19 @@
 }
 
 .contact-us-container {
+  position: relative;
+  z-index: 1;
   color: white;
   height: 50vh;
   justify-content: center;
   align-items: center;
 
-  /* background: linear-gradient(
+  background: linear-gradient(
     358.74deg,
     #aca777 -7.08%,
     #a8534e 51.24%,
     #250bc6 107.39%
-  ); */
+  );
   display: flex;
   line-height: 0%;
 }
@@ -150,8 +152,10 @@
 }
 
 .contact-us-icons {
+  position: relative;
   display: flex;
   gap: 25px;
+  margin-top: -50px;
 }
 
 .contact-us-icon {
@@ -159,7 +163,6 @@
 }
 
 .next-step-container {
-  margin-top: 6rem;
   color: #4d21a1;
   font-family: "Inter" !important;
 }
@@ -177,8 +180,12 @@
 }
 
 .contact-us-second-container {
+  height: 400px;
   display: flex;
   background-color: #efefef;
 
   justify-content: space-around;
+}
+.contact-footer{
+  z-index: 1;
 }
