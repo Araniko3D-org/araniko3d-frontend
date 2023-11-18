@@ -28,13 +28,13 @@
   /* background-color: var(--navbar-bg-color, #ffffff4d); */
   background: #02141e;
   position: fixed;
-  top: 30px;
+  top: 25px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
   display: flex;
   max-width: 950px;
-  height: 35px;
+  height: 40px;
   justify-content: space-between;
   padding: 2px 11px 2px 22px;
   border-radius: 65px;
