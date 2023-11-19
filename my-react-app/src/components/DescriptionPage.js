@@ -128,7 +128,9 @@ function DescriptionPage() {
       </div>
 
       {/* 360 view */}
-      <div className="pano-image swiper-container">
+      {/* <div className="pano-image swiper-container">
+       */}
+      <div className="pano-image">
         {data && (
           <ImageSlider images={data.panellumImage} />
           // <Swiper
@@ -148,12 +150,12 @@ function DescriptionPage() {
           //   })}
           // </Swiper>
         )}
-        <div className="des-navigation-buttons">
+        {/* <div className="des-navigation-buttons">
           <div className="des-nav-container">
             <button className="nav-button">&lt;&lt;</button>
             <button className="nav-button">&gt;&gt;</button>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Near by places */}
