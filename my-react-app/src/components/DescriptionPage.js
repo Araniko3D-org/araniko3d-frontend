@@ -127,6 +127,7 @@ function DescriptionPage() {
         <div className="youtube-video-container">{renderYouTubeVideo()}</div>
       </div>
 
+      {/* 360 view */}
       <div className="pano-image swiper-container">
         {data && (
           <ImageSlider images={data.panellumImage} />
@@ -147,12 +148,18 @@ function DescriptionPage() {
           //   })}
           // </Swiper>
         )}
+        <div className="des-navigation-buttons">
+          <div className="des-nav-container">
+            <button className="nav-button">&lt;&lt;</button>
+            <button className="nav-button">&gt;&gt;</button>
+          </div>
+        </div>
       </div>
 
       {/* Near by places */}
       <div className="Near-by-palces">
         <p className="Place-title">Near By Places</p>
-        <div className="frame-container">
+        <div className="near-frame-container">
           {/* Rectangle with text overlapping at the bottom */}
 
           <div className="frame">
