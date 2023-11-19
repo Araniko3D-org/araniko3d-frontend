@@ -3,7 +3,9 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./DescriptionPage.css";
 import Footer from "../content/footer.js";
-import Image from "../components/360image/360image";
+// import Image from "../components/360image/360image";
+
+import { ImageSlider } from "../components/ImageSlider/ImageSlider";
 
 import BhaktapurHero from "./images/BhaktapurHero.png";
 import BhaktapurImage from "../content/images/Bhaktapur.png";
@@ -127,22 +129,23 @@ function DescriptionPage() {
 
       <div className="pano-image swiper-container">
         {data && (
-          <Swiper
-            className="custom-swiper"
-            modules={[Scrollbar, Navigation, A11y]}
-            navigation
-            slidesPerView={1}
-            loop={true}
-            loopedSlides={1}
-          >
-            {data.panellumImage.map((image, key) => {
-              return (
-                <SwiperSlide key={key}>
-                  <Image imageUrl={image} />
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
+          <ImageSlider images={data.panellumImage} />
+          // <Swiper
+          //   className="custom-swiper"
+          //   modules={[Scrollbar, Navigation, A11y]}
+          //   navigation
+          //   slidesPerView={1}
+          //   loop={true}
+          //   loopedSlides={1}
+          // >
+          //   {data.panellumImage.map((image, key) => {
+          //     return (
+          //       <SwiperSlide key={key}>
+          //         <Image imageUrl={image} />
+          //       </SwiperSlide>
+          //     );
+          //   })}
+          // </Swiper>
         )}
       </div>
 

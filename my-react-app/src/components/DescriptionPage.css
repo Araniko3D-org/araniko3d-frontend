@@ -34,24 +34,27 @@
   opacity: 1;
 }
 
+/* YourCustomSwiperStyles.css */
+
 .swiper-container {
-  position: relative !important;
+  position: relative;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
   position: absolute;
-  bottom: 10px;
+  bottom: 10rem;
   left: 50%;
   transform: translateX(-50%);
   margin: 4px; /* Adjust the margin as needed */
+  background-color: transparent; /* Ensure the background is transparent */
 }
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
   color: #a8534e;
   display: flex;
-
-  /* Adjust the font size of the navigation icons */
+  font-size: 16px; /* Adjust the font size of the navigation icons */
 }
 
 .UpperDiv {
@@ -239,11 +242,4 @@
   width: 100% !important;
   justify-content: center;
   align-items: center;
-}
-
-.custom-swiper {
-  /* Add your custom styles for the first Swiper here */
-  /* Example: */
-  background-color: #f0f0f0;
-  /* ... */
 }
