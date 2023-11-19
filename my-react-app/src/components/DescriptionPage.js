@@ -50,14 +50,15 @@ function DescriptionPage() {
       // setData(monument[0]);
     }
 
-    console.log(monument);
     // setInitalContent(monument.title);
   }, [title]);
 
   const [showFullContent, setShowFullContent] = useState(false);
 
   function renderYouTubeVideo() {
-    const videoUrl = "https://www.youtube.com/watch?v=WN4-8-jBUG0";
+    const videoUrl = data.youtube;
+
+    // const videoUrl = "https://www.youtube.com/watch?v=WN4-8-jBUG0";
 
     // Extract the video ID from the URL
     const videoId = videoUrl.split("v=")[1];
@@ -89,8 +90,8 @@ function DescriptionPage() {
             loopedSlides={4} // Number of total slides (adjust as ne
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log("slide change")}
+            // onSwiper={(swiper) => console.log(swiper)}
+            // onSlideChange={() => console.log("slide change")}
           >
             {data.images.map((image, key) => {
               return (
@@ -124,7 +125,9 @@ function DescriptionPage() {
         </div>
       </div>
       <div className="flex w-full justify-center youtube-video">
-        <div className="youtube-video-container">{renderYouTubeVideo()}</div>
+        <div className="youtube-video-container">
+          {data && renderYouTubeVideo()}
+        </div>
       </div>
 
       {/* 360 view */}
@@ -168,7 +171,7 @@ function DescriptionPage() {
             <div className="service-image">
               <img src={BhaktapurImage} alt="Work 1" />
             </div>
-            <div className="text-overlay">
+            <div className="text-overlay near-by-place">
               <h4 className="frameh4">Bhaktapur Durbar Square</h4>
               <h5 className="frameh5">Bhaktapur</h5>
             </div>

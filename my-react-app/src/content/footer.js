@@ -65,21 +65,13 @@ const Footer = () => {
             <p>+123-456-7890</p>
             <div class="social-icons">
               <a href="#">
-                <img
-                src="facebook.svg"
-                alt="facebook"
-                />
+                <img src="/facebook.svg" alt="facebook" />
               </a>
               <a href="#">
-                <img
-                src="linkedin.svg"
-                alt="linkedin"
-                />
+                <img src="/linkedin.svg" alt="linkedin" />
               </a>
               <a href="#">
-                <img src="twitter.svg" 
-                alt="twitter"
-                />
+                <img src="/twitter.svg" alt="twitter" />
               </a>
             </div>
           </div>
