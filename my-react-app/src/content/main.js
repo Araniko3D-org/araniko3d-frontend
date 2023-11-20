@@ -4,6 +4,7 @@ import ProblemStatement from './ProblemStatement.js';
 import Solution from './Solution.js';
 import Mission from './Mission.js';
 import WebsiteStats from "./WebsiteStats.js";
+import YTVideoComponent from './YTvideo.js';
 import Services from "./services";
 import HowItWorks from "./howItWorks.js";
 import CustomerReview from "./customerReview.js";
@@ -18,6 +19,7 @@ const main =() =>{
             <ProblemStatement/>
             <Solution/>
             <Mission/>
+            <YTVideoComponent/>
             <Services/>
             <WebsiteStats />
             <HowItWorks/>
