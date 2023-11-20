@@ -180,11 +180,13 @@ function DescriptionPage() {
               return (
                 <div
                   className="frame near-by-place-container"
-                  onClick={console.log(nearbylocation.title.replace(/\s/g, ""))}
-                  // onClick={navigate(
-                  //   "/description-page/" +
-                  //     nearbylocation.title.replace(/\s/g, "")
-                  // )}
+                  // onClick={console.log(nearbylocation.title.replace(/\s/g, ""))}
+                  onClick={() =>
+                    navigate(
+                      "/description-page/" +
+                        nearbylocation.title.replace(/\s/g, "")
+                    )
+                  }
                 >
                   <div className="service-image ">
                     <img
