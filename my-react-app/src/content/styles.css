@@ -50,7 +50,7 @@
 }
 
 .nav-links li {
-  margin-right: 40px;
+  margin-right: 30px;
 }
 
 .nav-links a {
@@ -63,10 +63,10 @@
   text-decoration: underline;
 }
 
-.logo img {
-  max-width: 90px;
+.nav-logo img {
+  max-width: 200px;
   padding-right: 80px;
-  margin-top: -3px;
+  margin-top: -9px;
 }
 
 .nav-links button {
@@ -85,7 +85,7 @@
 /* About */
 .about-page {
   padding: 20px;
-  min-height: 50vh;
+  min-height: 70vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -112,22 +112,31 @@
   left: 90px;
   font-weight: bold;
 }
+.about-box{
+  position: relative;
+    left: -40px;
+}
 .about-para {
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
   font-size: 20px;
   padding: 50px;
+  
   border-radius: 15px;
   margin-top: 100px;
   margin-left: 100px;
   margin-right: 100px;
 }
-/* Problem Statement */
+.about-image img {
+  position: relative;
+  top: 60px;
+  right: 40px;
+}
 /* ProblemStatement.css */
 
 .problem-container {
   padding: 20px;
-  min-height: 60vh;
+  min-height: 50vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -435,13 +444,13 @@
 }
 
 .curved-rectangle {
-  margin: 100px;
+  margin: 70px;
   background: rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   text-align: center;
-  padding: 20px;
-  max-height: 150px;
-  max-width: 200px;
+  padding: 0px;
+  max-height: 180px;
+  max-width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -449,13 +458,15 @@
 }
 
 .curved-rectangle img {
+  position: relative;
   max-width: 100%;
+  top: -20px;
 }
 
 .curved-rectangle h4 {
   color: #fff;
-  font-size: 18px;
-  margin-top: -40px;
+    font-size: 16px;
+    margin-top: -80px;
 }
 
 /* WebsiteStats css */
@@ -724,29 +735,31 @@
 
 .expert-image img {
   width: 50%;
-  height: 220px;
-  border-radius: 50%;
-  object-fit: cover;
-  position: relative;
-  top: -250px;
-  left: -70px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    top: -240px;
+    left: -40px;
 }
 
 .expert-social-icons {
   background: #fff;
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  width: 57.3%;
-  top: 230px;
-  left: 0px;
-  height: 30px;
-  padding: 5px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 60.3%;
+    top: 235px;
+    left: 0px;
+    height: 35px;
+    padding: 5px;
 }
 
 .expert-social-icons img {
-  width: 12%;
+  width: 13%;
   height: 80%;
+  position: relative;
+  top: 5px;
 }
 .expert-details {
   position: absolute;
@@ -787,7 +800,7 @@
 
 .top-image {
   position: relative;
-  bottom: 100px;
+  bottom: 140px;
 }
 
 .bottom-image {
@@ -816,7 +829,7 @@
   width: 950px;
   border-radius: 50px;
   z-index: 2;
-  top: 150px;
+  top: 90px;
 }
 .footer-upper {
   position: relative;

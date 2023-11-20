@@ -20,7 +20,7 @@ const Header = ({ color }) => {
       <nav className={navbar}>
         <ul className="nav-links">
           <li>
-            <div className="logo">
+            <div className="nav-logo">
               <img src={Logo} alt="logo" className="logo" />
             </div>
           </li>
@@ -48,10 +48,10 @@ const Header = ({ color }) => {
               onClick={() => scrollToSection("services")}
               className={activeLink === "services" ? "active" : ""}
             >
-              Services
+              Documented Areas
             </a>
           </li>
-          <li>
+          {/* <li>
             <a
               href="/#works"
               onClick={() => scrollToSection("works")}
@@ -59,7 +59,7 @@ const Header = ({ color }) => {
             >
               Works
             </a>
-          </li>
+          </li> */}
           <li>
             <a
               href="/#how_it_works"
@@ -71,11 +71,11 @@ const Header = ({ color }) => {
           </li>
           <li>
             <a
-              href="/#blogs"
-              onClick={() => scrollToSection("blogs")}
-              className={activeLink === "blogs" ? "active" : ""}
+              href="/#experts"
+              onClick={() => scrollToSection("experts")}
+              className={activeLink === "experts" ? "active" : ""}
             >
-              Blogs
+              Our Team
             </a>
           </li>
           <li>

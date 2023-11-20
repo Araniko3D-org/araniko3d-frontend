@@ -74,7 +74,7 @@
   position: absolute;
   width: 70%; 
   height: auto;
-  top: 10%;
+  top:9%;
   left: 10%;
   z-index: 5;
 }
@@ -99,4 +99,12 @@
   left: 0%;
   top: 90%;
   color: #fff;
+}
+.scroll-button{
+  background: linear-gradient(180deg, #250e44 -73.33%, #703480 278.33%);
+    position: absolute;
+    left: 40%;
+    top: 120%;
+    color: #fff;
+    height: 40px;
 }

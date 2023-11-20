@@ -10,7 +10,7 @@ const Footer = () => {
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     width: "150%",
-    height: "200px",
+    height: "100px",
   };
 
   const bottomImageStyle = {

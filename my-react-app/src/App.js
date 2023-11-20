@@ -1,4 +1,5 @@
-import React from "react";
+// App.js
+import React, { useState, useLayoutEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Header from "./content/header.js";
@@ -10,6 +11,19 @@ import "./App.css";
 import ContactUs from "./ContactUs.js";
 
 const App = () => {
+  const [headerVisible, setHeaderVisible] = useState(false);
+
+  useLayoutEffect(() => {
+    const delay = 5000; // 5 seconds
+
+    const timer = setTimeout(() => {
+      setHeaderVisible(true);
+    }, delay);
+
+    // Cleanup the timer to prevent memory leaks
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <Router>
       <div className="App">
@@ -18,7 +32,7 @@ const App = () => {
             path="/"
             element={
               <>
-                <Header color={""} />
+                <Header color={""} visible={headerVisible} />
                 <Main />
               </>
             }
@@ -27,7 +41,7 @@ const App = () => {
             path="/map"
             element={
               <>
-                <Header />
+                <Header visible={headerVisible} />
                 <MapPage />
               </>
             }
@@ -36,7 +50,7 @@ const App = () => {
             path="/description-page"
             element={
               <>
-                <Header />
+                <Header visible={headerVisible} />
                 <DescriptionPage />
               </>
             }
@@ -46,7 +60,7 @@ const App = () => {
             path="/description-page/:title"
             element={
               <>
-                <Header />
+                <Header visible={headerVisible} />
                 <DescriptionPage />
               </>
             }
@@ -56,7 +70,7 @@ const App = () => {
             path="/contactus"
             element={
               <>
-                <Header />
+                <Header visible={headerVisible} />
                 <ContactUs />
               </>
             }
