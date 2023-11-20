@@ -1,6 +1,9 @@
 // Scene.js
 import React, { useState, useEffect } from "react";
 import "./Scene0.css";
+// import { Helmet } from "react-helmet";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import star from "./images/stars.png";
 import sun from "./images/circle.png";
 import forestImage from "./images/forest.png";
@@ -112,7 +115,7 @@ const Scene = () => {
             </Buttons>
           </Link>
           <button className="scroll-button" onClick={handleScrollDown}>
-            ↓
+            <FontAwesomeIcon icon={faAngleDown} size="4x" />
           </button>
         </div>
       </div>

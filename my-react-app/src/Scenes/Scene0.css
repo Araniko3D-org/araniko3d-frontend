@@ -100,11 +100,16 @@
   top: 90%;
   color: #fff;
 }
-.scroll-button{
-  background: linear-gradient(180deg, #250e44 -73.33%, #703480 278.33%);
-    position: absolute;
-    left: 40%;
-    top: 120%;
-    color: #fff;
-    height: 40px;
+.scroll-button {
+  position: absolute;
+  left: 400px;
+  /* transform: translateX(-50%); */
+  font-size:5em;
+  top: 120px;
+  font-weight: lighter;
+  color: #F5E290;
+  height: 40px;
+  background: none;
+  border: none;
 }
+
