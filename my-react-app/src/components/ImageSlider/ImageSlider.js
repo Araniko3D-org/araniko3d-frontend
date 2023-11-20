@@ -20,7 +20,6 @@ export function ImageSlider({ images }) {
       return index - 1;
     });
   }
-  console.log(images);
   return (
     <section
       aria-label="Image Slider"
@@ -36,7 +35,6 @@ export function ImageSlider({ images }) {
           display: "flex",
           overflow: "hidden",
         }}
-        {...images.map((val) => console.log("/pano/" + val))}
       >
         {images.map((url, index) => (
           <div

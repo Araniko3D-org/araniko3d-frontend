@@ -1,6 +1,6 @@
 // DescriptionPage.js
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "./DescriptionPage.css";
 import Footer from "../content/footer.js";
 // import Image from "../components/360image/360image";
@@ -26,7 +26,10 @@ import "swiper/css";
 import "swiper/swiper-bundle.css";
 
 function DescriptionPage() {
+  const navigate = useNavigate();
   const [data, setData] = useState();
+  const [nearBy, setNearBy] = useState();
+  console.log(nearBy);
 
   const [initialContent, setInitalContent] = useState();
   const { title } = useParams();
@@ -35,6 +38,11 @@ function DescriptionPage() {
     const monument = locationData.filter(
       (data) => data.title.replace(/\s/g, "") === title
     );
+    const nearByPlaces = locationData.filter(
+      (data) => data.title.replace(/\s/g, "") !== title
+    );
+    setNearBy(nearByPlaces);
+
     if (monument.length > 0) {
       const capitalizedTitle = monument[0].title
         .toLowerCase()
@@ -167,7 +175,31 @@ function DescriptionPage() {
         <div className="near-frame-container">
           {/* Rectangle with text overlapping at the bottom */}
 
-          <div className="frame">
+          {nearBy &&
+            nearBy.slice(0, 3).map((nearbylocation) => {
+              return (
+                <div
+                  className="frame near-by-place-container"
+                  onClick={console.log(nearbylocation.title.replace(/\s/g, ""))}
+                  // onClick={navigate(
+                  //   "/description-page/" +
+                  //     nearbylocation.title.replace(/\s/g, "")
+                  // )}
+                >
+                  <div className="service-image ">
+                    <img
+                      src={`/monuments/${nearbylocation.images[0]}`}
+                      alt="Work 1"
+                    />
+                  </div>
+                  <div className="text-overlay near-by-place">
+                    <h4 className="frameh4">{nearbylocation.title}</h4>
+                    <h5 className="frameh5">{nearbylocation.location}</h5>
+                  </div>
+                </div>
+              );
+            })}
+          {/* <div className="frame">
             <div className="service-image">
               <img src={BhaktapurImage} alt="Work 1" />
             </div>
@@ -177,7 +209,6 @@ function DescriptionPage() {
             </div>
           </div>
 
-          {/* Repeat the frame for more images */}
           <div className="frame">
             <div className="service-image">
               <img src={UmaMaheswori} alt="Work 1" />
@@ -196,7 +227,7 @@ function DescriptionPage() {
               <h4 className="frameh4">BhagBhairab</h4>
               <h5 className="frameh5">Kritipur</h5>
             </div>
-          </div>
+          </div> */}
           {/* Add more frames as needed */}
         </div>
       </div>

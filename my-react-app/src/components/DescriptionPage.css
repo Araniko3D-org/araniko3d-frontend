@@ -316,6 +316,9 @@
   justify-content: center;
   align-items: center;
 }
+.near-by-place-container {
+  cursor: pointer;
+}
 
 .near-by-place {
   display: flex;
