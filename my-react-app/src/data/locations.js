@@ -1,6 +1,6 @@
 export const locationData = [
   {
-    title: "krishna temple",
+    title: "Krishna temple",
     description: `Krishna Temple is a historic Hindu temple located in the city of Patan, Nepal. 
       The temple is dedicated to Lord Krishna and is a significant religious and cultural site. 
       It is known for its intricate architecture and beautiful carvings, making it a popular 
@@ -39,7 +39,7 @@ export const locationData = [
     ],
   },
   {
-    title: "bhag bhairav",
+    title: "Bhag bhairav",
     description: `Bhag Bhairav is an ancient temple dedicated to the god Bhairav located in the 
       historic town of Kirtipur, Nepal. This temple holds great religious significance for 
       devotees and is a symbol of the town's rich cultural heritage.
@@ -71,7 +71,7 @@ export const locationData = [
     ],
   },
   {
-    title: "uma maheshwor temple",
+    title: "Uma maheshwor temple",
     description: `Uma Maheshwor Temple is a sacred Hindu temple situated in the picturesque town of Kirtipur, Nepal. 
       The temple is dedicated to Lord Shiva and Goddess Parvati and is an important pilgrimage site for 
       devotees.
@@ -92,8 +92,8 @@ export const locationData = [
       the cultural riches of Nepal, the Uma Maheshwor Temple in Kirtipur is a place where you can 
       connect with the divine and appreciate the artistic heritage of the region.`,
     images: [
+      "Umamaheswori.jpeg",
       "uma_maheshwor_1.jpeg",
-      // "Umamaheswori.jpeg",
       "uma_maheshwor_2.jpeg",
       "uma_maheshwor_3.jpeg",
       "uma_maheshwor_4.jpeg",
@@ -111,7 +111,7 @@ export const locationData = [
     ],
   },
   {
-    title: "hiranya varna mahavihar",
+    title: "Hiranya varna mahavihar",
     description: `Hiranya Varna Mahavihar, also known as the Golden Temple, is a Buddhist monastery located 
       in Lalitpur, Nepal. This majestic temple is renowned for its stunning architecture, intricate 
       woodcarvings, and a rich cultural heritage.
@@ -134,7 +134,7 @@ export const locationData = [
     mapUrl: "https://maps.google.com/?q=27.6735697, 85.3223784",
     latitude: 27.6735697,
     longitude: 85.3223784,
-    location: "Hiranya Varna Mahavihar Bakhundole, Patan, Lalitpur",
+    location: "Patan, Lalitpur",
     youtube: "https://www.youtube.com/watch?v=WN4-8-jBUG0",
 
     panellumImage: [
@@ -145,7 +145,7 @@ export const locationData = [
     ],
   },
   {
-    title: "sundari chowk",
+    title: "Sundari chowk",
     description: `Sundari Chowk is a historic courtyard located in the heart of Patan, Nepal.
       This exquisite courtyard is known for its architectural beauty and cultural significance.
 
@@ -179,7 +179,7 @@ export const locationData = [
     ],
   },
   {
-    title: "mul chowk",
+    title: "Mul chowk",
     description: `Mul Chowk is a historic courtyard situated in Bhaktapur, Nepal.
       This charming chowk is known for its cultural significance and traditional architecture.
 
