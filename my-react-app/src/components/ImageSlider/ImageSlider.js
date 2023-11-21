@@ -74,7 +74,7 @@ export function ImageSlider({ images }) {
           gap: ".25rem",
         }}
       >
-        {images.map((_, index) => (
+        {/* {images.map((_, index) => (
           <button
             key={index}
             className="img-slider-dot-btn"
@@ -83,7 +83,7 @@ export function ImageSlider({ images }) {
           >
             {index === imageIndex ? <GoDotFill /> : <GoDot />}
           </button>
-        ))}
+        ))} */}
       </div>
       <div id="after-image-slider-controls" />
     </section>
