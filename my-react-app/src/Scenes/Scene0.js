@@ -1,7 +1,5 @@
-// Scene.js
 import React, { useState, useEffect } from "react";
 import "./Scene0.css";
-// import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import star from "./images/stars.png";
@@ -12,7 +10,6 @@ import Temple from "./images/temple.png";
 import hillImage from "./images/hill.png";
 import Buttons from "../components/Buttons/Button";
 import Wave from "./images/wave.png";
-
 import { Link } from "react-router-dom";
 
 const Scene = () => {
@@ -21,64 +18,70 @@ const Scene = () => {
   useEffect(() => {
     const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
-    const animateElements = async () => {
-      // Disable scrolling initially
-      setScrollDisabled(true);
-
-      // Initial state: land, hill, temple, wave, stars, and slightly blurry forest
-      document.querySelector(".land").style.opacity = 1;
-      document.querySelector(".hill").style.opacity = 1;
-      document.querySelector(".temple").style.opacity = 1;
-      document.querySelector(".wave").style.opacity = 1;
-      document.querySelector(".star").style.opacity = 1;
-      document.querySelector(".forest").style.opacity = 0.8; // Initial opacity
-      document.querySelector(".forest").style.filter = "blur(5px)"; // Initial blur
-
-      // Hide  initially
-      document.querySelector(".sun").style.opacity = 0;
-      document.querySelector(".embark").style.opacity = 0;
-      document.querySelector(".ex-nepal").style.opacity = 0;
-      document.querySelector(".get-started").style.opacity = 0;
-      document.querySelector(".scroll-button").style.opacity = 0;
-
-      // Display sun after a delay
-      await delay(1000); 
-      document.querySelector(".sun").style.opacity = 1;
-
-      // Stars gradually fade out
-      document.querySelector(".star").style.transition = "opacity 3000ms ease-in-out";
-      document.querySelector(".star").style.opacity = 0;
-
-      // Forest gradually becomes clear
-      document.querySelector(".forest").style.transition = "opacity 3000ms ease-in-out, filter 2000ms ease-in-out";
-      document.querySelector(".forest").style.opacity = 1;
-      document.querySelector(".forest").style.filter = "none";
-
-      // Display text "Araniko 3D"
-      await delay(3500); 
-      document.querySelector(".ex-nepal").style.opacity = 1;
-
-      await delay(4000); 
-      document.querySelector(".embark").style.opacity = 1;
-
-      await delay(4500); 
-      document.querySelector(".get-started").style.opacity = 1;
-
-      await delay(5000); 
-      document.querySelector(".scroll-button").style.opacity = 1;
-      // Enable scrolling
-      await delay(5500); 
-      setScrollDisabled(false);
+    const setElementStyle = (selector, style, value) => {
+      const element = document.querySelector(selector);
+      if (element) {
+        element.style[style] = value;
+      } else {
+        console.error(`Element with selector "${selector}" not found`);
+      }
     };
 
-    animateElements();
+    const runAnimation = async () => {
+      setScrollDisabled(true);
+
+      const landElement = document.querySelector(".land");
+      if (landElement) {
+        setElementStyle(".land", "opacity", 1);
+        setElementStyle(".hill", "opacity", 1);
+        setElementStyle(".temple", "opacity", 1);
+        setElementStyle(".wave", "opacity", 1);
+        setElementStyle(".star", "opacity", 1);
+        setElementStyle(".forest", "opacity", 0.8);
+        setElementStyle(".forest", "filter", "blur(5px)");
+
+        setElementStyle(".sun", "opacity", 0);
+        setElementStyle(".embark", "opacity", 0);
+        setElementStyle(".ex-nepal", "opacity", 0);
+        setElementStyle(".get-started", "opacity", 0);
+        setElementStyle(".scroll-button", "opacity", 0);
+
+        await delay(1000);
+        setElementStyle(".sun", "opacity", 1);
+
+        setElementStyle(".star", "transition", "opacity 3000ms ease-in-out");
+        setElementStyle(".star", "opacity", 0);
+
+        setElementStyle(".forest", "transition", "opacity 3000ms ease-in-out, filter 2000ms ease-in-out");
+        setElementStyle(".forest", "opacity", 1);
+        setElementStyle(".forest", "filter", "none");
+
+        await delay(3500);
+        setElementStyle(".ex-nepal", "opacity", 1);
+
+        await delay(3550);
+        setElementStyle(".embark", "opacity", 1);
+
+        await delay(3600);
+        setElementStyle(".get-started", "opacity", 1);
+
+        await delay(3650);
+        setElementStyle(".scroll-button", "opacity", 1);
+
+        await delay(3700);
+        setScrollDisabled(false);
+      } else {
+        console.error("Land element not found");
+      }
+    };
+
+    document.addEventListener("DOMContentLoaded", runAnimation);
   }, []);
 
   const handleScrollDown = () => {
-    // Scroll down to a specific Y coordinate. You can adjust the value as needed.
     window.scrollTo({
       top: 800,
-      behavior: "smooth", // for smooth scrolling
+      behavior: "smooth",
     });
   };
 
@@ -97,23 +100,13 @@ const Scene = () => {
       <img src={Wave} alt="wave" className="wave" />
       <img src={forestImage} alt="forest1" className="forest" />
       <div className="explore-nepal">
-        <h2 className="ex-nepal">
-          Araniko 3D
-        </h2>
-        <h1 className="embark">
-          Cultural Resilience Through Digital Preservation
-        </h1>
+        <h2 className="ex-nepal">Araniko 3D</h2>
+        <h1 className="embark">Cultural Resilience Through Digital Preservation</h1>
 
         <div className="get-started">
-          {/* <Link to="/map"> */}
-            <Buttons
-              mode="hover"
-              size="medium"
-              className="get-started-button"
-            >
-              Book Now
-            </Buttons>
-          {/* </Link> */}
+          <Buttons mode="hover" size="medium" className="get-started-button">
+            Book Now
+          </Buttons>
           <button className="scroll-button" onClick={handleScrollDown}>
             <FontAwesomeIcon icon={faAngleDown} size="4x" />
           </button>

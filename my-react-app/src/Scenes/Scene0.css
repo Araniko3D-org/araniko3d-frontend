@@ -103,10 +103,10 @@
 .scroll-button {
   cursor: pointer;
   position: absolute;
-  left: 600px;
+  left: 540px;
   /* transform: translateX(-50%); */
   font-size: 1rem;
-  top: 10px;
+  top: 15px;
   font-weight: lighter;
   color: #f5e290;
   height: 40px;
