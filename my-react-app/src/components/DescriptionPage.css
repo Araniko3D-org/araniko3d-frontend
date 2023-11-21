@@ -248,6 +248,7 @@
   justify-content: center;
   align-items: center;
   height: 70vh;
+  z-index: 0;
 }
 
 .custom-swiper .swiper-slide {

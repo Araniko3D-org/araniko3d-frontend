@@ -51,7 +51,7 @@ export function ImageSlider({ images }) {
       <button
         onClick={showPrevImage}
         className="img-slider-btn"
-        style={{ left: 0 }}
+        style={{ marginLeft: '650px' }}
         aria-label="View Previous Image"
       >
         <AiOutlineLeft />
@@ -59,7 +59,7 @@ export function ImageSlider({ images }) {
       <button
         onClick={showNextImage}
         className="img-slider-btn"
-        style={{ right: 0 }}
+        style={{ marginLeft: '700px' }}
         aria-label="View Next Image"
       >
         <AiOutlineRight />
@@ -67,7 +67,7 @@ export function ImageSlider({ images }) {
       <div
         style={{
           position: "absolute",
-          bottom: "-2.5rem",
+          bottom: "0.5rem",
           left: "50%",
           translate: "-50%",
           display: "flex",

@@ -105,7 +105,7 @@ const Scene = () => {
         </h1>
 
         <div className="get-started">
-          <Link to="/map">
+          {/* <Link to="/map"> */}
             <Buttons
               mode="hover"
               size="medium"
@@ -113,7 +113,7 @@ const Scene = () => {
             >
               Book Now
             </Buttons>
-          </Link>
+          {/* </Link> */}
           <button className="scroll-button" onClick={handleScrollDown}>
             <FontAwesomeIcon icon={faAngleDown} size="4x" />
           </button>
