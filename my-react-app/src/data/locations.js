@@ -30,7 +30,7 @@ export const locationData = [
     latitude: 27.6752289,
     longitude: 85.3219734,
     location: "Patan, Lalitpur",
-    youtube: "https://www.youtube.com/watch?v=WN4-8-jBUG0",
+    youtube: "https://www.youtube.com/watch?v=SiooIanaw0o",
     panellumImage: [
       "sundarichowk1.jpg",
       "sundarichowk2.jpg",
@@ -135,7 +135,7 @@ export const locationData = [
     latitude: 27.6735697,
     longitude: 85.3223784,
     location: "Patan, Lalitpur",
-    youtube: "https://www.youtube.com/watch?v=WN4-8-jBUG0",
+    youtube: "https://www.youtube.com/watch?v=-Tr_Rig1u8I",
 
     panellumImage: [
       "sundarichowk1.jpg",

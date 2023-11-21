@@ -1,9 +1,8 @@
 import React from "react";
 
 function YTVideoComponent() {
-  function renderYouTubeVideo() {
-    
-    const videoUrl = 'https://youtu.be/wJM9e6m_Vbc?si=wcAjA0HT2urcCnCS';
+  const renderYouTubeVideo = () => {
+    const videoUrl = "https://www.youtube.com/watch?v=wJM9e6m_Vbc";
 
     const urlParams = new URLSearchParams(new URL(videoUrl).search);
     const videoId = urlParams.get("v");
@@ -18,13 +17,11 @@ function YTVideoComponent() {
         allowFullScreen
       />
     );
-  }
+  };
 
   return (
     <div className="flex w-full justify-center youtube-video">
-      <div className="youtube-video-container">
-        {true  && renderYouTubeVideo()}
-      </div>
+      <div className="youtube-video-container">{renderYouTubeVideo()}</div>
     </div>
   );
 }

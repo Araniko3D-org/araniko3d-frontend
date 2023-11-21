@@ -23,7 +23,7 @@ const LeafletMap = ({ position }) => {
 
   return (
     <>
-      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+      {/* <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" /> */}
       <Marker position={position} icon={defaultIcon}>
         <Popup>
           Sundari Chowk, also known as the Beautiful Courtyard, is a remarkable{" "}
