@@ -1,17 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import Buttons from "../components/Buttons/Button";
 import Logo from "../Scenes/images/Logo.png";
 import "./styles.css";
 
 const Header = ({ color }) => {
   const navbar = `navbar${color ? ` color-${color}` : ""}`;
-  const [activeLink, setActiveLink] = useState("home");
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
-      setActiveLink(sectionId);
+      // setActiveLink(sectionId);
     }
   };
 
@@ -24,50 +23,24 @@ const Header = ({ color }) => {
               <img src={Logo} alt="logo" className="logo" />
             </div>
           </li>
-          <li>
-            <a
-              onClick={() => scrollToSection("scene")}
-            >
+          <li onClick={() => scrollToSection("scene")}>
               Home
-            </a>
           </li>
-          <li>
-            <a
-              onClick={() => scrollToSection("about")}
-            >
+          <li  onClick={() => scrollToSection("about")}>
+           
               About
-            </a>
           </li>
-          <li>
-            <a
-              onClick={() => scrollToSection("documented-areas")}
-            >
+          <li onClick={() => scrollToSection("documented-areas")}>
+           
               Documented Areas
-            </a>
           </li>
-          {/* <li>
-            <a
-              href="/#works"
-              onClick={() => scrollToSection("works")}
-              className={activeLink === "works" ? "active" : ""}
-            >
-              Works
-            </a>
-          </li> */}
-          <li>
-            <a
-              onClick={() => scrollToSection("how_it_works")}
-            >
-              How It Works
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => scrollToSection("team")}
 
-            >
+          <li onClick={() => scrollToSection("how_it_works")}>
+            
+              How It Works
+          </li>
+          <li onClick={() => scrollToSection("team")}>
               Our Team
-            </a>
           </li>
           <li>
             <div className="button">
