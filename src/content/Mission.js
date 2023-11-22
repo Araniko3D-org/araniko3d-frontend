@@ -3,7 +3,6 @@ import React from 'react';
 const Mission = () => {
   return (
     <div id="Mission" className="Mission-page">
-      <p className='Mission-us'>Our Mission</p>
       <p className='Mission'>Our  <span> Mission</span></p>
 
       <div className='Mission-box'>

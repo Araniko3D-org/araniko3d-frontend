@@ -66,7 +66,7 @@
 //   );
 // };
 
-import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
+import { MapContainer, TileLayer} from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "./DescriptionMap.css";
 import L from "leaflet"; // Import the 'L' object from the 'leaflet' package

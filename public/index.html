@@ -2,14 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/logoBlue.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -28,7 +27,7 @@
       href="https://fonts.googleapis.com/css?family=Inter"
       rel="stylesheet"
     />
-    <title>React App</title>
+    <title>Araniko3D</title>
   </head>
   <body>
     <style>
@@ -42,52 +41,6 @@
     </style>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"></script>
-    <script src="./panolens.min.js"></script>
-
-    <script src="js/panolens.min.js"></script>
-
-    <script>
-      const panorama = new PANOLENS.ImagePanorama("images/panel1.jpeg");
-      const panorama2 = new PANOLENS.ImagePanorama("images/pano5.jpg");
-      let imageContainer = document.querySelector(".image-container");
-      var infospotPositions = [
-        new THREE.Vector3(-2136.06, 16.3, 890.14),
-        new THREE.Vector3(-3136.06, 296.3, -4290.14),
-      ];
-      const viewer = new PANOLENS.Viewer({
-        container: imageContainer,
-        autoRotate: true,
-        autoRotateSpeed: 0.3,
-        controlBar: true,
-        width: "80%",
-      });
-      panorama.link(panorama2, infospotPositions[0]);
-      panorama2.link(panorama, infospotPositions[1]);
-      viewer.add(panorama, panorama2); /* window.onload =
-    function () { const panorama = new
-    PANOLENS.ImagePanorama("images/panel1.jpeg"); const panorama2 = new
-    PANOLENS.ImagePanorama("images/pano5.jpg"); let imageContainer =
-    document.querySelector(".image-container"); var infospotPositions = [ new
-    THREE.Vector3(-2136.06, 16.3, 890.14), new THREE.Vector3(-3136.06, 296.3,
-    -4290.14), ]; const viewer = new PANOLENS.Viewer({ container:
-    imageContainer, autoRotate: true, autoRotateSpeed: 0.3, controlBar: true,
-    width: "80%", }); panorama.link(panorama2, infospotPositions[0]);
-    panorama2.link(panorama, infospotPositions[1]); viewer.add(panorama,
-    panorama2); // Show the Panolens container once it's loaded
-    imageContainer.style.display = "block"; }; */
-    </script> -->
-    <!-- <script src="main.js"></script> -->
   </body>
 </html>

@@ -4,7 +4,6 @@ import TempleImage from "./images/temple.png";
 const About = () => {
   return (
     <div id="about" className="about-page">
-      <p className='about-us'>About Us</p>
       <p className='about'>About <span> Us</span></p>
 
       <div className='about-box'>

@@ -34,7 +34,6 @@ const services = () => {
             <img src={slideIcon} alt="Slide Icon" />
           </Link>
         </div>
-        <p className="OurServices">Documented Areas</p>
         <p className="OServices">
           Documented &nbsp;<span>Areas</span>
         </p>

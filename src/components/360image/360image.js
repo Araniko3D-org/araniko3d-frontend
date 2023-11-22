@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import ReactPannellum, { getConfig } from "react-pannellum";
+import React from "react";
+// import ReactPannellum from "react-pannellum";
 import "./360image.css";
 
 const Image = ({ imageUrl }) => {
@@ -9,13 +9,13 @@ const Image = ({ imageUrl }) => {
 
   return (
     <div class="image-container">
-      <ReactPannellum
+      {/* <ReactPannellum
         className="pano-container"
         id={imageUrl}
         sceneId="firstScene"
         imageSource={`/pano/${imageUrl}`}
         config={config}
-      />
+      /> */}
     </div>
   );
 };

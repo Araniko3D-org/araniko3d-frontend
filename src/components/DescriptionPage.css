@@ -218,14 +218,10 @@
   cursor: pointer;
 } */
 
-/* .youtube-video {
-  background: #000;
-} */
-
 .youtube-video-container {
   border: 8px solid #fff;
-  width: 83%;
-  height: 60vh;
+  width: 1080px;
+  height: 615px;
 }
 
 .justify-center {

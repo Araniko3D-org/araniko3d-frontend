@@ -64,13 +64,13 @@ const Footer = () => {
             <p>araniko@gmail.com</p>
             <p>+123-456-7890</p>
             <div class="social-icons">
-              <a href="#">
+              <a href="facebook.com">
                 <img src="/facebook.svg" alt="facebook" />
               </a>
-              <a href="#">
+              <a href="linkedin.com">
                 <img src="/linkedin.svg" alt="linkedin" />
               </a>
-              <a href="#">
+              <a href="x.com">
                 <img src="/twitter.svg" alt="twitter" />
               </a>
             </div>
@@ -82,7 +82,7 @@ const Footer = () => {
       <p className="copyright">
         &copy; 2023 All the rights are reserved by{" "}
         <a
-          href="https://aaraniko3d.co"
+          href="https://araniko3d.com"
           style={{ color: "white", textDecoration: "none" }}
         >
           araniko3d.co

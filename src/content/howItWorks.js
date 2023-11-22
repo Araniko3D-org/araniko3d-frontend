@@ -4,7 +4,6 @@ import "./styles.css";
 import OptimizeNerf from "./images/OptimizeNerf.png";
 import CaptureImages from "./images/captureImage.png";
 import GenerateVideos from "./images/generateVideos.png";
-import slideIcon from "./images/seemore.png";
 
 const YourNewPage = () => {
   return (
@@ -13,7 +12,6 @@ const YourNewPage = () => {
         {/* <div className="slide-icon">
           <img src={slideIcon} alt="Slide Icon" />
         </div> */}
-        <p className="HowItWorks">How It Works</p>
         <p className="ItWorks">How It <span>Works</span></p>
 
         <div className="curved-rectangles">

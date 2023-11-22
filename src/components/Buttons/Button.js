@@ -5,7 +5,7 @@ const Button = ({ children, icon, mode, size, onClick }) => {
   const buttonClasses = `custom-button ${mode} ${size}`;
 
   return (
-    <button className={buttonClasses} onClick={onClick}>
+    <button className={buttonClasses} style={{cursor: 'pointer'}} onClick={onClick}>
       {icon && <span className="button-icon">{icon}</span>}
       <span className="button-text">{children}</span>
     </button>

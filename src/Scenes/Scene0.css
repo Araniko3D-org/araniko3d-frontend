@@ -5,7 +5,9 @@
   overflow: hidden;
   text-align: center; /* Center content */
 }
-
+body {
+  margin: 0px;
+}
 /* Images (example sizes and positions, adjust as needed) */
 .sun {
   position: absolute;
@@ -101,15 +103,16 @@
   color: #fff;
 }
 .scroll-button {
+  display: block;
   cursor: pointer;
   position: absolute;
   left: 540px;
   /* transform: translateX(-50%); */
   font-size: 1rem;
-  top: 15px;
+  top: 350px;
   font-weight: lighter;
   color: #f5e290;
-  height: 40px;
+  height: 60px;
   background: none;
   border: none;
 }

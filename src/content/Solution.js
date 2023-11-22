@@ -4,7 +4,7 @@ import './styles.css';
 const Solution = () => {
   return (
     <div id="solution" className="solution-page">
-      <p className='solution-our'>Our Solution</p>
+      {/* <p className='solution-our'>Our Solution</p> */}
       <p className='solution'>Our <span> Solution</span></p>
 
         <div className="left-div">

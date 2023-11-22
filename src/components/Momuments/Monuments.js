@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 
-import { useState, useEffect } from "react";
 import "./Monuments.css";
 
 export const Monument = ({ data }) => {

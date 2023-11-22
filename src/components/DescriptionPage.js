@@ -7,16 +7,12 @@ import Footer from "../content/footer.js";
 
 import { ImageSlider } from "../components/ImageSlider/ImageSlider";
 
-import BhaktapurHero from "./images/BhaktapurHero.png";
-import BhaktapurImage from "../content/images/Bhaktapur.png";
-import UmaMaheswori from "../content/images/Umamaheswori.jpeg";
-import BhagBhairav from "../content/images/BhagBhairav.jpg";
 import { DescriptionMap } from "../components/DescriptionMap/DescriptionMap";
 
 import { locationData } from "../data/locations";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Pagination, Scrollbar, A11y } from "swiper/modules";
 
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -31,7 +27,6 @@ function DescriptionPage() {
   const [nearBy, setNearBy] = useState();
   console.log(nearBy);
 
-  const [initialContent, setInitalContent] = useState();
   const { title } = useParams();
 
   useEffect(() => {
@@ -54,14 +49,10 @@ function DescriptionPage() {
       };
 
       setData(capitalizedMonument);
-      setInitalContent(capitalizedMonument.description);
       // setData(monument[0]);
     }
 
-    // setInitalContent(monument.title);
   }, [title]);
-
-  const [showFullContent, setShowFullContent] = useState(false);
 
   function renderYouTubeVideo() {
     const videoUrl = data.youtube;
@@ -83,7 +74,6 @@ function DescriptionPage() {
       />
     );
   }
-  const imageUrl = { BhaktapurHero };
 
   return (
     <div className="DescriptionPage">

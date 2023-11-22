@@ -12,6 +12,7 @@ import Buttons from "../components/Buttons/Button";
 import Wave from "./images/wave.png";
 import { Link } from "react-router-dom";
 
+
 const Scene = () => {
   const [scrollDisabled, setScrollDisabled] = useState(true);
 
@@ -104,9 +105,11 @@ const Scene = () => {
         <h1 className="embark">Cultural Resilience Through Digital Preservation</h1>
 
         <div className="get-started">
+          <Link to='/map'>
           <Buttons mode="hover" size="medium" className="get-started-button">
-            Book Now
+            Explore Now
           </Buttons>
+          </Link>
           <button className="scroll-button" onClick={handleScrollDown}>
             <FontAwesomeIcon icon={faAngleDown} size="4x" />
           </button>

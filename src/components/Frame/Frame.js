@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { Link } from "react-router-dom"; // Assuming you are using React Router
-import BhaktapurImage from "../../content/images/Bhaktapur.png";
 
 const Frame = ({ data }) => {
   return (

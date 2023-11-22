@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-import { GoDotFill, GoDot } from "react-icons/go";
 import Image from "../360image/360image";
 import "./ImageSlider.css";
 

@@ -102,13 +102,13 @@
 .about {
   position: absolute;
   top: 5%;
-  font-size: 24px;
+  font-size: 44px;
 }
 .about span {
   position: absolute;
   display: contents;
   color: #fff;
-  font-size: 24px;
+  font-size: 44px;
   left: 90px;
   font-weight: bold;
 }
@@ -154,13 +154,13 @@
 .problem {
   position: absolute;
   top: 15%;
-  font-size: 24px;
+  font-size: 44px;
 }
 .problem span {
   position: absolute;
   display: contents;
   color: #fff;
-  font-size: 24px;
+  font-size: 44px;
   left: 90px;
   font-weight: bold;
 }
@@ -194,13 +194,13 @@
 .solution {
   position: absolute;
   top: 10%;
-  font-size: 24px;
+  font-size: 44px;
 }
 .solution span {
   position: absolute;
   display: contents;
   color: #fff;
-  font-size: 24px;
+  font-size: 44px;
   left: 90px;
   font-weight: bold;
 }
@@ -235,7 +235,7 @@
 .transparent-box li:before {
   content: "\2022";
   color: #fff;
-  font-size: 24px;
+  font-size: 44px;
   position: absolute;
   left: 5%;
 }
@@ -273,16 +273,31 @@
 .Mission {
   position: absolute;
   top: 5%;
-  font-size: 24px;
+  font-size: 44px;
 }
 .Mission span {
   position: absolute;
   display: contents;
   color: #fff;
-  font-size: 24px;
+  font-size: 44px;
   left: 90px;
   font-weight: bold;
 }
+
+.Demo {
+  position: absolute;
+  top: -20%;
+  font-size: 44px;
+}
+.Demo span {
+  position: absolute;
+  display: contents;
+  color: #fff;
+  font-size: 44px;
+  left: 90px;
+  font-weight: bold;
+}
+
 .Mission-para {
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
@@ -329,14 +344,14 @@
   position: absolute;
   top: 13%;
   left: 5%;
-  font-size: 24px;
+  font-size: 44px;
 }
 
 .OServices span {
   position: absolute;
   display: contents;
   color: #fff;
-  font-size: 24px;
+  font-size: 44px;
   left: 50%;
   font-weight: bold;
 }
@@ -426,13 +441,13 @@
   position: absolute;
   top: 18%;
   left: 5%;
-  font-size: 24px;
+  font-size: 44px;
 }
 .ItWorks span {
   position: absolute;
   display: contents;
   color: #fff;
-  font-size: 24px;
+  font-size: 44px;
   left: 10%;
   font-weight: bold;
 }
@@ -562,13 +577,13 @@
 .what {
   position: absolute;
   top: 7%;
-  font-size: 24px;
+  font-size: 44px;
 }
 .what span {
   position: absolute;
   display: contents;
   color: #fff;
-  font-size: 24px;
+  font-size: 44px;
   left: 90px;
   font-weight: bold;
 }
@@ -693,13 +708,13 @@
   position: absolute;
   top: 16%;
   left: 5%;
-  font-size: 24px;
+  font-size: 44px;
 }
 .OExperts span {
   position: absolute;
   display: contents;
   color: #fff;
-  font-size: 24px;
+  font-size: 44px;
   left: 10%;
   font-weight: bold;
 }
@@ -903,8 +918,8 @@ ul {
   font-size: small;
 }
 .social-icons a img {
-  width: 24px;
-  height: 24px;
+  width: 44px;
+  height: 44px;
 }
 
 .footer-column li,

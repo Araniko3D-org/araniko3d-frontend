@@ -5,7 +5,6 @@ import './styles.css';
 const ProblemStatement = () => {
   return (
     <div id= "problem " className="problem-container">
-      <p className='problem-statement'>Problem Statement </p>
       <p className='problem'>Problem <span> Statement</span></p>
 
       <div className=' problem-box'>
