@@ -12,7 +12,7 @@ import TwitterIcon from "./images/TwitterIcon.png";
 const experts = () => {
   return (
     <div className="expertpage">
-      <div id="experts" className="experts-section">
+      <div id="team" className="experts-section">
       <div className="nav-arrow">
           <img src={NavArrow} alt="Slide Icon" />
         </div>

@@ -26,27 +26,21 @@ const Header = ({ color }) => {
           </li>
           <li>
             <a
-              href="/#home"
-              onClick={() => scrollToSection("home")}
-              className={activeLink === "home" ? "active" : ""}
+              onClick={() => scrollToSection("scene")}
             >
               Home
             </a>
           </li>
           <li>
             <a
-              href="/#about"
               onClick={() => scrollToSection("about")}
-              className={activeLink === "about" ? "active" : ""}
             >
               About
             </a>
           </li>
           <li>
             <a
-              href="/#services"
-              onClick={() => scrollToSection("services")}
-              className={activeLink === "services" ? "active" : ""}
+              onClick={() => scrollToSection("documented-areas")}
             >
               Documented Areas
             </a>
@@ -62,18 +56,15 @@ const Header = ({ color }) => {
           </li> */}
           <li>
             <a
-              href="/#how_it_works"
               onClick={() => scrollToSection("how_it_works")}
-              className={activeLink === "how_it_works" ? "active" : ""}
             >
               How It Works
             </a>
           </li>
           <li>
             <a
-              href="/#experts"
-              onClick={() => scrollToSection("experts")}
-              className={activeLink === "experts" ? "active" : ""}
+              onClick={() => scrollToSection("team")}
+
             >
               Our Team
             </a>
