@@ -43,7 +43,7 @@ const Header = ({ color }) => {
               Our Team
           </li>
           <li>
-            <div className="button">
+            <div className="button" onClick={()=>scrollToSection('demo')}>
               <Buttons mode="hover" size="large">
                 Demo
               </Buttons>

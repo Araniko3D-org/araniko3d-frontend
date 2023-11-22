@@ -38,10 +38,10 @@ const Footer = () => {
             <p>
               Get started with our platform and explore amazing heritage sites.
             </p>
-            <div class="email-input">
+            {/* <div class="email-input">
               <input type="text" placeholder="Enter your email" />
               <button>Subscribe</button>
-            </div>
+            </div> */}
           </div>
           <div class="footer-column">
             <h4>Services</h4>
@@ -60,9 +60,9 @@ const Footer = () => {
             </ul>
           </div>
           <div class="footer-column">
-            <h4>Follow Us</h4>
+            <h4>Contact us</h4>
             <p>araniko@gmail.com</p>
-            <p>+123-456-7890</p>
+            {/* <p>+123-456-7890</p> */}
             <div class="social-icons">
               <a href="facebook.com">
                 <img src="/facebook.svg" alt="facebook" />

@@ -1,8 +1,10 @@
 import React from 'react';
 import './styles.css';
-import Expert1 from "./images/expert1.png";
-import Expert2 from "./images/expert2.png";
-import Expert3 from "./images/expert3.png";
+import Bishad from './images/bishad.png'
+import Regish from './images/regish.png'
+import Salina from './images/salina.png'
+import Tek from './images/tek.png'
+
 import BgImage from "./images/slantRectangle.png";
 import NavArrow from "./images/meetallmembers.png";
 import FacebookIcon from "./images/facebookIcon.png"; 
@@ -27,7 +29,7 @@ const experts = () => {
               <img src={BgImage} alt="Expert Background" />
             </div>
             <div className="expert-image">
-              <img src={Expert1} alt="Expert" />
+              <img src={Bishad} alt="Expert" />
             </div>
             <div className="expert-social-icons">
               <img src={FacebookIcon} alt="Facebook" />
@@ -35,8 +37,8 @@ const experts = () => {
               <img src={TwitterIcon} alt="Twitter" />
             </div>
             <div className="expert-details">
-              <div className="expert-name">Chaya Sharma</div>
-              <div className="expert-position">CEO</div>
+              <div className="expert-name">Bishad Koju</div>
+              {/* <div className="expert-position">CEO</div> */}
             </div>
           </div>
 
@@ -46,7 +48,7 @@ const experts = () => {
               <img src={BgImage} alt="Expert Background" />
             </div>
             <div className="expert-image">
-              <img src={Expert2} alt="Expert" />
+              <img src={Regish} alt="Expert" />
             </div>
             <div className="expert-social-icons">
               <img src={FacebookIcon} alt="Facebook" />
@@ -54,8 +56,8 @@ const experts = () => {
               <img src={TwitterIcon} alt="Twitter" />
             </div>
             <div className="expert-details">
-              <div className="expert-name">Daya Harma</div>
-              <div className="expert-position">COO</div>
+              <div className="expert-name">Regish Shrestha</div>
+              {/* <div className="expert-position">COO</div> */}
             </div>
           </div>
 
@@ -64,7 +66,7 @@ const experts = () => {
               <img src={BgImage} alt="Expert Background" />
             </div>
             <div className="expert-image">
-              <img src={Expert3} alt="Expert" />
+              <img src={Salina} alt="Expert" />
             </div>
             <div className="expert-social-icons">
               <img src={FacebookIcon} alt="Facebook" />
@@ -72,8 +74,8 @@ const experts = () => {
               <img src={TwitterIcon} alt="Twitter" />
             </div>
             <div className="expert-details">
-              <div className="expert-name">Ram Shyam</div>
-              <div className="expert-position">HR</div>
+              <div className="expert-name">Salina Gurung</div>
+              {/* <div className="expert-position">HR</div> */}
             </div>
           </div>
 
@@ -82,7 +84,7 @@ const experts = () => {
               <img src={BgImage} alt="Expert Background" />
             </div>
             <div className="expert-image">
-              <img src={Expert3} alt="Expert" />
+              <img src={Tek} alt="Expert" />
             </div>
             <div className="expert-social-icons">
               <img src={FacebookIcon} alt="Facebook" />
@@ -90,8 +92,8 @@ const experts = () => {
               <img src={TwitterIcon} alt="Twitter" />
             </div>
             <div className="expert-details">
-              <div className="expert-name">Ram Shyam</div>
-              <div className="expert-position">HR</div>
+              <div className="expert-name">Tek Jung Singh</div>
+              {/* <div className="expert-position">HR</div> */}
             </div>
           </div>
 
