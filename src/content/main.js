@@ -23,7 +23,7 @@ const main =() =>{
             <Services/>
             <WebsiteStats />
             <HowItWorks/>
-            <CustomerReview />
+            {/* <CustomerReview /> */}
             <Experts />
             <Footer/>   
         </main>
