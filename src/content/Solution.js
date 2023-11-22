@@ -8,7 +8,7 @@ const Solution = () => {
       <p className='solution'>Our <span> Solution</span></p>
 
         <div className="left-div">
-            <img src="bulb.png" alt="Solution Image" />
+            <img src="bulb.png" alt="Solution" />
         </div>
         <div className="right-div">
             <div className="transparent-box">
