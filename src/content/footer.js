@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
           <div class="footer-column">
             <h4>Contact us</h4>
-            <p>araniko@gmail.com</p>
+            <p>araniko3d@gmail.com</p>
             {/* <p>+123-456-7890</p> */}
             <div class="social-icons">
               <a href="facebook.com">
