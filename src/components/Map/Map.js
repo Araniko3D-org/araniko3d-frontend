@@ -54,7 +54,7 @@ export const Map = ({ center, zoom }) => {
       key={`${center[0]}-${center[1]}-${zoom}`}
       center={center}
       zoom={zoom}
-      scrollWheelZoom={false}
+      scrollWheelZoom={true}
       className="map"
       // whenCreated={(map) => {
       //   mapRef.current = map;

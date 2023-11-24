@@ -12,13 +12,12 @@ import Buttons from "../components/Buttons/Button";
 import Wave from "./images/wave.png";
 import { Link } from "react-router-dom";
 
-
 const Scene = () => {
   const [scrollDisabled, setScrollDisabled] = useState(true);
 
-  useEffect(() => {
-    const delay = (ms) => new Promise((res) => setTimeout(res, ms));
+  const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
+  useEffect(() => {
     const setElementStyle = (selector, style, value) => {
       const element = document.querySelector(selector);
       if (element) {
@@ -50,10 +49,8 @@ const Scene = () => {
         await delay(1000);
         setElementStyle(".sun", "opacity", 1);
 
-        setElementStyle(".star", "transition", "opacity 3000ms ease-in-out");
         setElementStyle(".star", "opacity", 0);
 
-        setElementStyle(".forest", "transition", "opacity 3000ms ease-in-out, filter 2000ms ease-in-out");
         setElementStyle(".forest", "opacity", 1);
         setElementStyle(".forest", "filter", "none");
 
@@ -76,8 +73,8 @@ const Scene = () => {
       }
     };
 
-    document.addEventListener("DOMContentLoaded", runAnimation);
-  }, []);
+    runAnimation();
+  }, []); 
 
   const handleScrollDown = () => {
     window.scrollTo({
@@ -105,10 +102,10 @@ const Scene = () => {
         <h1 className="embark">Cultural Resilience Through Digital Preservation</h1>
 
         <div className="get-started">
-          <Link to='/map'>
-          <Buttons mode="hover" size="medium" className="get-started-button">
-            Explore Now
-          </Buttons>
+          <Link to="/map">
+            <Buttons mode="hover" size="medium" className="get-started-button">
+              Explore Now
+            </Buttons>
           </Link>
           <button className="scroll-button" onClick={handleScrollDown}>
             <FontAwesomeIcon icon={faAngleDown} size="4x" />

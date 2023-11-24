@@ -433,9 +433,10 @@
 
 .ItWorks {
   position: absolute;
-  top: 18%;
-  left: 5%;
-  font-size: 44px;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 44px;
 }
 .ItWorks span {
   position: absolute;
