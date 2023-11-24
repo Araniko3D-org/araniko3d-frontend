@@ -112,7 +112,9 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <div className="contact-footer">
+        <Footer />
+      </div>
     </div>
   );
 };

@@ -28,10 +28,10 @@ body {
 
 .forest {
   position: absolute;
-  width: 80%;
-  height: auto;
-  top: 13%;
-  left: 0%;
+  width: 100%;
+  height: 50%;
+  top: 16%;
+  right: 65px;
   z-index: 1;
 }
 
@@ -39,7 +39,7 @@ body {
   position: absolute;
   width: 80%;
   height: auto;
-  top: 40%;
+  top: 40.5%;
   left: 0%;
   z-index: 2;
 }
@@ -48,7 +48,7 @@ body {
   position: absolute;
   width: 100%;
   height: auto;
-  top: 57%;
+  top: 58%;
   left: 0;
   z-index: 3;
 }
@@ -67,7 +67,7 @@ body {
   height: auto;
   bottom: 0;
   left: 0;
-  top: 66%;
+  top: 68%;
   z-index: 6;
 }
 
@@ -108,8 +108,8 @@ body {
   position: absolute;
   left: 540px;
   /* transform: translateX(-50%); */
-  font-size: 1rem;
-  top: 350px;
+  font-size: 1.2rem;
+  top: 320px;
   font-weight: lighter;
   color: #f5e290;
   height: 60px;

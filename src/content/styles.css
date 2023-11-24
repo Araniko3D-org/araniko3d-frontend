@@ -34,7 +34,7 @@
   width: 100%;
   display: flex;
   max-width: 950px;
-  height: 40px;
+  height: 45px;
   justify-content: space-between;
   padding: 2px 11px 2px 22px;
   border-radius: 65px;
@@ -60,13 +60,13 @@
 .nav-logo img {
   max-width: 200px;
   padding-right: 80px;
-  margin-top: -9px;
+  margin-top: -5px;
 }
 
 .nav-links button {
   width: 70px;
   margin-left: 100px;
-  margin-top: -6px;
+  margin-top: -2px;
   height: 25px;
   font-size: 12px;
   padding: inherit;
@@ -147,7 +147,7 @@
 }
 .problem {
   position: absolute;
-  top: 15%;
+  top: 10%;
   font-size: 44px;
 }
 .problem span {
@@ -266,7 +266,7 @@
 }
 .Mission {
   position: absolute;
-  top: 5%;
+  top: 0%;
   font-size: 44px;
 }
 .Mission span {
@@ -317,7 +317,7 @@
 }
 .slide {
   position: absolute;
-  top: 13%;
+  top: 16%;
   width: 1%;
   right: 30%;
 }
@@ -336,7 +336,7 @@
 }
 .OServices {
   position: absolute;
-  top: 13%;
+  top: 10%;
   left: 5%;
   font-size: 44px;
 }
@@ -686,7 +686,7 @@
 }
 .nav-arrow {
   position: absolute;
-  top: 15%;
+  top: 19%;
   width: 1%;
   right: 30%;
 }
@@ -700,7 +700,7 @@
 }
 .OExperts {
   position: absolute;
-  top: 16%;
+  top: 12%;
   left: 5%;
   font-size: 44px;
 }
@@ -761,7 +761,7 @@
     top: 235px;
     left: 0px;
     height: 35px;
-    padding: 5px;
+    padding: 5px 15px;
 }
 
 .expert-social-icons img {
@@ -901,7 +901,7 @@ ul {
   display: flex;
   margin-top: 10px;
   left: 750px;
-  top: 150px;
+  top: 130px;
   width: 150px;
   /* background: rgba(0, 0, 0, 0.3);*/
 }
@@ -912,8 +912,8 @@ ul {
   font-size: small;
 }
 .social-icons a img {
-  width: 44px;
-  height: 44px;
+  width: 24px;
+  height: 24px;
 }
 
 .footer-column li,

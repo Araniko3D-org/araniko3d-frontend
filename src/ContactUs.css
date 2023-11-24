@@ -7,7 +7,8 @@
   );
 }
 .form-container {
-  /* height: 100vh; */
+  z-index: 3;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,31 +18,35 @@
   width: 650px;
   border: 0px solid transparent;
   border-radius: 20px;
-  /* padding-top: 10px; */
-  margin-bottom: 3rem;
+  padding-top: 10px;
+  margin-top: -7rem;
 }
 
 .form-container-upper-div {
-  border-radius: 20px 20px 0px 0px;
-  padding: 20px 0px 20px 0px;
-  background-color: #efefef;
-  display: flex;
-  width: 100%;
-  align-items: center;
+  position: relative;
+    border-radius: 20px 20px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    /* background-color: #efefef; */
+    display: flex;
+    width: 100%;
+    align-items: center;
+    top: 10px;
 }
 
 .form-container-bottom-div {
+  position: relative;
   border-radius: 20px 20px 0px 0px;
-  padding: 20px 0px 20px 0px;
+  padding: 0px 0px 0px 0px;
   display: flex;
   width: 100%;
   align-items: center;
+  bottom: 10px;
 }
 
 .form-container-upper-paragraph {
   /* padding: 44px, 89px, 44px, 89px; */
   width: 100%;
-  background-color: #efefef;
+  /* background-color: #efefef; */
   justify-content: center;
   display: flex;
 }
@@ -54,12 +59,10 @@
 
 .grid-container {
   display: grid;
-  grid-template-rows: auto; /* Define four rows */
-  grid-template-columns: 1fr 1fr; /* Define two columns for the second row */
-
-  /* Optional: Set grid gap for better visualization */
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 
@@ -118,6 +121,7 @@
   );
   display: flex;
   line-height: 0%;
+  z-index: 1;
 }
 .contact-us-contents {
   width: 80%;
@@ -163,9 +167,13 @@
 }
 
 .next-step-container {
+  position: relative;
+  top: 80px;
   color: #4d21a1;
   font-family: "Inter" !important;
 }
+
+
 
 .next-step-container h5 {
   font-size: 35px;
@@ -186,6 +194,8 @@
 
   justify-content: space-around;
 }
-.contact-footer{
+.contact-footer {
+  top: 70px;
+  position: relative;
   z-index: 1;
 }
