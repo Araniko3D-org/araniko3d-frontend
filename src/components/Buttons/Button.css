@@ -72,6 +72,13 @@
     font-size:14px;
     background: linear-gradient(180deg, #250e44 -73.33%, #703480 278.33%);
   }
+
+  .medium-explore{
+    width: 150px;
+    height: 43px;
+    font-size:20px;
+    background: linear-gradient(180deg, #250e44 -73.33%, #703480 278.33%);
+  }
   
   .large{
     width: 128px;

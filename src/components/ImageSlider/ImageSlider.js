@@ -50,7 +50,7 @@ export function ImageSlider({ images }) {
       <button
         onClick={showPrevImage}
         className="img-slider-btn"
-        style={{ marginLeft: '650px' }}
+        style={{ marginLeft: "650px" }}
         aria-label="View Previous Image"
       >
         <AiOutlineLeft />
@@ -58,7 +58,7 @@ export function ImageSlider({ images }) {
       <button
         onClick={showNextImage}
         className="img-slider-btn"
-        style={{ marginLeft: '700px' }}
+        style={{ marginLeft: "700px" }}
         aria-label="View Next Image"
       >
         <AiOutlineRight />
@@ -72,18 +72,7 @@ export function ImageSlider({ images }) {
           display: "flex",
           gap: ".25rem",
         }}
-      >
-        {/* {images.map((_, index) => (
-          <button
-            key={index}
-            className="img-slider-dot-btn"
-            aria-label={`View Image ${index + 1}`}
-            onClick={() => setImageIndex(index)}
-          >
-            {index === imageIndex ? <GoDotFill /> : <GoDot />}
-          </button>
-        ))} */}
-      </div>
+      ></div>
       <div id="after-image-slider-controls" />
     </section>
   );

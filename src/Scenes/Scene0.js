@@ -106,7 +106,7 @@ const Scene = () => {
 
         <div className="get-started">
           <Link to='/map'>
-          <Buttons mode="hover" size="medium" className="get-started-button">
+          <Buttons mode="hover" size="medium-explore" className="get-started-button">
             Explore Now
           </Buttons>
           </Link>

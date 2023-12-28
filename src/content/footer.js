@@ -2,6 +2,7 @@ import React from "react";
 import topImage from "./images/topfooter.png";
 import bottomImage from "./images/bottomfooter.png";
 import "./styles.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const topImageStyle = {
@@ -60,7 +61,9 @@ const Footer = () => {
             </ul>
           </div>
           <div class="footer-column">
-            <h4>Contact us</h4>
+            <h4>
+              <Link to="/contactus" > Contact us</Link>
+            </h4>
             <p>araniko3d@gmail.com</p>
             {/* <p>+123-456-7890</p> */}
             <div class="social-icons">

@@ -23,6 +23,9 @@
 .navbar.color-blue {
   --navbar-bg-color: blue;
 }
+a {
+  text-decoration: none;
+}
 /* header */
 .navbar {
   /* background-color: var(--navbar-bg-color, #ffffff4d); */
@@ -42,12 +45,29 @@
   z-index: 100;
 }
 
+.second-navbar {
+  /* background-color: var(--navbar-bg-color, #ffffff4d); */
+  background: #02141e;
+  position: fixed;
+  top: 25px;
+  left: 10%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  max-width: 200px;
+  height: 40px;
+  justify-content: space-between;
+  padding: 2px 11px 2px 22px;
+  border-radius: 65px;
+  /* background: #ffffff4d; */
+  z-index: 100;
+}
+
 .nav-links {
   font-size: 14px;
   list-style: none;
   margin-top: 1px;
   display: flex;
-
 }
 
 .nav-links li {
@@ -55,6 +75,10 @@
   text-decoration: none;
   color: #fff;
   cursor: pointer;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .nav-logo img {
@@ -106,16 +130,16 @@
   left: 90px;
   font-weight: bold;
 }
-.about-box{
+.about-box {
   position: relative;
-    left: -40px;
+  left: -40px;
 }
 .about-para {
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
   font-size: 20px;
   padding: 50px;
-  
+
   border-radius: 15px;
   margin-top: 100px;
   margin-left: 100px;
@@ -474,8 +498,8 @@
 
 .curved-rectangle h4 {
   color: #fff;
-    font-size: 16px;
-    margin-top: -80px;
+  font-size: 16px;
+  margin-top: -80px;
 }
 
 /* WebsiteStats css */
@@ -680,7 +704,7 @@
 /* Experts */
 .experts-section {
   padding: 20px;
-  max-height: 80vh;
+  max-height: 120vh;
   text-align: center;
   position: relative;
 }
@@ -715,7 +739,8 @@
 .expert-container {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  /* justify-content: space-between; */
   margin-top: 15%;
   margin-left: 10%;
 }
@@ -727,6 +752,11 @@
   border-radius: 20px;
   position: relative;
   overflow: hidden;
+}
+
+.expert-frame.full-width {
+  position: relative;
+  left: 35%;
 }
 
 .expert-frame:hover {
@@ -744,24 +774,40 @@
 
 .expert-image img {
   width: 50%;
-    height: 220px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: relative;
-    top: -240px;
-    left: -60px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  top: -240px;
+  left: -60px;
+}
+.expert-frame.full-width .expert-image {
+  position: absolute;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.expert-frame.full-width .expert-image img {
+  position: relative;
+  left: 0.5px;
+}
+
+.expert-frame.full-width .expert-details {
+  position: relative;
+  padding-top: 20px;
+  left: -20%;
+  bottom: -10%;
 }
 
 .expert-social-icons {
   background: #fff;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    width: 60.3%;
-    top: 235px;
-    left: 0px;
-    height: 35px;
-    padding: 5px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 60.3%;
+  top: 235px;
+  left: 0px;
+  height: 35px;
+  padding: 5px;
 }
 
 .expert-social-icons img {
@@ -770,6 +816,7 @@
   position: relative;
   top: 5px;
 }
+
 .expert-details {
   position: absolute;
   top: 58%;
@@ -782,6 +829,11 @@
   font-size: 12px;
 }
 
+.flexed-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 /* @media (max-width: 768px) {
     .frame-container {
       flex-direction: column;
@@ -869,6 +921,9 @@
   flex: 1;
   padding: 0 20px;
 }
+.footer-column a {
+  color: #2d87f0;
+}
 
 ul {
   list-style: none;
@@ -900,20 +955,20 @@ ul {
   position: absolute;
   display: flex;
   margin-top: 10px;
-  left: 750px;
-  top: 150px;
+  left: 700px;
+  top: 130px;
   width: 150px;
   /* background: rgba(0, 0, 0, 0.3);*/
 }
 
 .social-icons a {
-  margin-right: 10px;
+  margin-right: 20px;
   text-decoration: none;
   font-size: small;
 }
 .social-icons a img {
   width: 44px;
-  height: 44px;
+  height: 30px;
 }
 
 .footer-column li,
@@ -928,6 +983,7 @@ p {
   font-size: 18px;
   color: #2d87f0;
 }
+
 .naamii-logo{
   width: 200px;
   margin-right: 100px;

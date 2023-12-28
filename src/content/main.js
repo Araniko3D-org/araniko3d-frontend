@@ -4,9 +4,7 @@ import ProblemStatement from './ProblemStatement.js';
 import Solution from './Solution.js';
 import Mission from './Mission.js';
 import WebsiteStats from "./WebsiteStats.js";
-import YTVideoComponent from './YTvideo.js';
 import Services from "./services";
-import HowItWorks from "./howItWorks.js";
 import Experts from "./experts.js";
 import Footer from "./footer.js";
 import SupportedBy from './SupportedBy.js';
@@ -19,10 +17,8 @@ const main =() =>{
             <ProblemStatement/>
             <Solution/>
             <Mission/>
-            <YTVideoComponent/>
             <Services/>
             <WebsiteStats />
-            <HowItWorks/>
             <Experts />
             <SupportedBy />
             <Footer/>   

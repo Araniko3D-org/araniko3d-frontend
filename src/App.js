@@ -3,6 +3,8 @@ import React, { useState, useLayoutEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Header from "./content/header.js";
+import Navbar from "./content/navbar.js";
+
 import Main from "./content/main.js";
 import MapPage from "./components/MapPage.js";
 import DescriptionPage from "./components/DescriptionPage.js";
@@ -41,7 +43,7 @@ const App = () => {
             path="/map"
             element={
               <>
-                <Header visible={headerVisible} />
+                <Navbar />
                 <MapPage />
               </>
             }
@@ -50,7 +52,7 @@ const App = () => {
             path="/description-page"
             element={
               <>
-                <Header visible={headerVisible} />
+                <Navbar />
                 <DescriptionPage />
               </>
             }
@@ -60,7 +62,7 @@ const App = () => {
             path="/description-page/:title"
             element={
               <>
-                <Header visible={headerVisible} />
+                <Navbar />
                 <DescriptionPage />
               </>
             }
@@ -70,7 +72,7 @@ const App = () => {
             path="/contactus"
             element={
               <>
-                <Header visible={headerVisible} />
+                <Navbar />
                 <ContactUs />
               </>
             }

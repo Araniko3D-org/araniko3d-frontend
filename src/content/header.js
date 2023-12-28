@@ -34,14 +34,13 @@ const Header = ({ color }) => {
            
               Documented Areas
           </li>
-
-          <li onClick={() => scrollToSection("how_it_works")}>
-            
-              How It Works
-          </li>
           <li onClick={() => scrollToSection("team")}>
-              Our Team
+              Team
           </li>
+          <li onClick={() => scrollToSection("supported-by")}>
+            
+            Supported By
+        </li>
           <li>
             <div className="button" onClick={()=>scrollToSection('demo')}>
               <Buttons mode="hover" size="large">
