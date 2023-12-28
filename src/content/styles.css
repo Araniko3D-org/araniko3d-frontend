@@ -928,3 +928,25 @@ p {
   font-size: 18px;
   color: #2d87f0;
 }
+.naamii-logo{
+  width: 200px;
+  margin-right: 100px;
+  border-radius: 20px;
+}
+
+.diyo-logo{
+  width: 534px;
+  border-radius: 20px;
+
+}
+
+.solution-page {
+  padding: 20px;
+  min-height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}

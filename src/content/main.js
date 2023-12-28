@@ -9,6 +9,7 @@ import Services from "./services";
 import HowItWorks from "./howItWorks.js";
 import Experts from "./experts.js";
 import Footer from "./footer.js";
+import SupportedBy from './SupportedBy.js';
 
 const main =() =>{
     return(
@@ -23,6 +24,7 @@ const main =() =>{
             <WebsiteStats />
             <HowItWorks/>
             <Experts />
+            <SupportedBy />
             <Footer/>   
         </main>
     );
